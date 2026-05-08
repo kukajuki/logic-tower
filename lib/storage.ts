@@ -1,8 +1,11 @@
 import { HistoryEntry } from "./types";
+import { Level } from "./questions";
 
 const HISTORY_KEY = "logic-tower-history";
-const USED_BASIC_KEY = "logic-tower-used-basic";
+const USED_KEY = "logic-tower-used";
 const MAX_HISTORY = 200;
+
+type UsedByLevel = Partial<Record<Level, string[]>>;
 
 function safeRead(key: string): string | null {
   if (typeof window === "undefined") return null;
@@ -44,19 +47,29 @@ export function appendHistory(entry: HistoryEntry): HistoryEntry[] {
   return next;
 }
 
-export function loadUsedBasic(): string[] {
-  const raw = safeRead(USED_BASIC_KEY);
-  if (!raw) return [];
+export function loadUsed(): UsedByLevel {
+  const raw = safeRead(USED_KEY);
+  if (!raw) return {};
   try {
     const parsed = JSON.parse(raw);
-    return Array.isArray(parsed) ? (parsed as string[]) : [];
+    return parsed && typeof parsed === "object" ? (parsed as UsedByLevel) : {};
   } catch {
-    return [];
+    return {};
   }
 }
 
-export function saveUsedBasic(ids: string[]) {
-  safeWrite(USED_BASIC_KEY, JSON.stringify(ids));
+export function saveUsed(used: UsedByLevel) {
+  safeWrite(USED_KEY, JSON.stringify(used));
+}
+
+export function loadUsedForLevel(level: Level): string[] {
+  return loadUsed()[level] ?? [];
+}
+
+export function saveUsedForLevel(level: Level, ids: string[]) {
+  const current = loadUsed();
+  current[level] = ids;
+  saveUsed(current);
 }
 
 export function nowDateTime(): { date: string; time: string } {

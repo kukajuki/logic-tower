@@ -1,62 +1,62 @@
 "use client";
 
 import { useCallback, useEffect, useState } from "react";
-import StartScreen, { Mode } from "@/components/StartScreen";
+import StartScreen from "@/components/StartScreen";
 import PlayPhase1 from "@/components/PlayPhase1";
 import ResultPhase1 from "@/components/ResultPhase1";
 import StatsScreen from "@/components/StatsScreen";
-import { BASIC_QUESTIONS } from "@/lib/questions-basic";
+import { Level, getQuestionsByLevel } from "@/lib/questions";
 import { HistoryEntry, Question, Slots } from "@/lib/types";
 import { Phase1Result, scorePhase1 } from "@/lib/scoring";
 import {
   appendHistory,
   loadHistory,
-  loadUsedBasic,
+  loadUsedForLevel,
   nowDateTime,
-  saveUsedBasic,
+  saveUsedForLevel,
 } from "@/lib/storage";
 
 type Screen = "start" | "play" | "result" | "stats";
 
-export default function Page() {
+export default function Game() {
   const [screen, setScreen] = useState<Screen>("start");
-  const [mode, setMode] = useState<Mode | null>(null);
+  const [level, setLevel] = useState<Level | null>(null);
   const [question, setQuestion] = useState<Question | null>(null);
   const [submission, setSubmission] = useState<{
     slots: Slots;
     result: Phase1Result;
   } | null>(null);
   const [history, setHistory] = useState<HistoryEntry[]>([]);
-  const [usedBasic, setUsedBasic] = useState<string[]>([]);
 
   useEffect(() => {
     setHistory(loadHistory());
-    setUsedBasic(loadUsedBasic());
   }, []);
 
-  const startBasic = useCallback(() => {
-    let pool = BASIC_QUESTIONS.filter((q) => !usedBasic.includes(q.id));
-    let nextUsed = usedBasic;
+  const startLevel = useCallback((lv: Level) => {
+    const all = getQuestionsByLevel(lv);
+    if (all.length === 0) return;
+    const used = loadUsedForLevel(lv);
+    let pool = all.filter((q) => !used.includes(q.id));
+    let nextUsed = used;
     if (pool.length === 0) {
-      pool = BASIC_QUESTIONS;
+      pool = all;
       nextUsed = [];
     }
     const picked = pool[Math.floor(Math.random() * pool.length)];
     const updatedUsed = [...nextUsed, picked.id];
-    setUsedBasic(updatedUsed);
-    saveUsedBasic(updatedUsed);
+    saveUsedForLevel(lv, updatedUsed);
     setQuestion(picked);
     setSubmission(null);
     setScreen("play");
-  }, [usedBasic]);
+  }, []);
 
   const onStart = useCallback(() => {
-    if (mode === "basic") startBasic();
-  }, [mode, startBasic]);
+    if (level !== null) startLevel(level);
+  }, [level, startLevel]);
 
   const onSubmit = useCallback(
     (slots: Slots, timeLeft: number) => {
-      if (!question) return;
+      if (!question || level === null) return;
       const result = scorePhase1(question.phase1, slots, timeLeft);
       const { date, time } = nowDateTime();
       const entry: HistoryEntry = {
@@ -64,7 +64,8 @@ export default function Page() {
         time,
         questionId: question.id,
         questionTitle: question.title,
-        isBasic: question.id.startsWith("f"),
+        level,
+        isBasic: level === 1,
         scores: {
           phase1: {
             score: result.score,
@@ -80,16 +81,16 @@ export default function Page() {
       setSubmission({ slots, result });
       setScreen("result");
     },
-    [question]
+    [question, level]
   );
 
   const onNext = useCallback(() => {
-    if (mode === "basic") startBasic();
+    if (level !== null) startLevel(level);
     else setScreen("start");
-  }, [mode, startBasic]);
+  }, [level, startLevel]);
 
   const onHome = useCallback(() => {
-    setMode(null);
+    setLevel(null);
     setQuestion(null);
     setSubmission(null);
     setScreen("start");
@@ -118,8 +119,8 @@ export default function Page() {
 
   return (
     <StartScreen
-      mode={mode}
-      onSelectMode={setMode}
+      level={level}
+      onSelectLevel={setLevel}
       onStart={onStart}
       onOpenStats={() => setScreen("stats")}
       totalPlays={history.length}

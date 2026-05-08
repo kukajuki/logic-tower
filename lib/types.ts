@@ -48,7 +48,9 @@ export interface HistoryEntry {
   time: string;
   questionId: string;
   questionTitle: string;
-  isBasic: boolean;
+  level: 1 | 2 | 3;
+  /** @deprecated kept for backward compatibility with v1 entries; use `level` */
+  isBasic?: boolean;
   scores: RoundScore;
 }
 

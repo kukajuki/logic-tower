@@ -172,7 +172,9 @@ export default function StatsScreen({ history, onBack }: StatsScreenProps) {
               >
                 <div>
                   <span style={{ fontSize: 10, color: "#CBD5E1" }}>
-                    {h.isBasic ? "📚 " : ""}
+                    <span style={{ color: "#64748B", marginRight: 4 }}>
+                      {`Lv.${h.level ?? (h.isBasic ? 1 : 1)}`}
+                    </span>
                     {h.questionTitle}
                   </span>
                   <span style={{ fontSize: 8, color: "#475569", marginLeft: 4 }}>{h.date}</span>

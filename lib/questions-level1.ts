@@ -1,6 +1,6 @@
 import { Question } from "./types";
 
-export const BASIC_QUESTIONS: Question[] = [
+export const LEVEL1_QUESTIONS: Question[] = [
   {
     id: "f1",
     title: "老舗旅館のインバウンド戦略",
@@ -30,9 +30,9 @@ export const BASIC_QUESTIONS: Question[] = [
       cards: [
         { id: "c1", text: "段階的に取り込むべき。ただし既存顧客体験の毀損防止が前提条件", type: "conclusion", tier: 0, phrase: "段階的に取り込むべき（条件付き）", reason: "立場＋条件を明示。結論は常にActionableに。" },
         { id: "c2", text: "市場機会の大きさ：訪日客は年15%増、宿泊単価は国内客の1.8倍", type: "evidence", tier: 2, phrase: "訪日客15%増・単価1.8倍", reason: "攻めの定量データ。最も強い推進根拠を左端に。" },
-        { id: "c3", text: "参入リスクの管理可能性", type: "argument", tier: 1, phrase: "リスクは管理できる", reason: "守りの論点を右に。攻めとバランスを取る。" },
+        { id: "c3", text: "参入リスクは管理可能か？", type: "argument", tier: 1, phrase: "リスクは管理可能か？", reason: "守りの論点を右に。このサブイシューに根拠が答えることで、結論「段階的に取り込むべき」を支える。" },
         { id: "c4", text: "競合の星野リゾートは顧客動線の分離設計で両立に成功", type: "evidence", tier: 2, phrase: "星野リゾートが動線分離で成功", reason: "守りの裏付け事例。中央に配置。" },
-        { id: "c5", text: "成長余地の存在：未開拓市場へのアクセス", type: "argument", tier: 1, phrase: "成長余地がある", reason: "攻めの論点を左に。「なぜやるか」の軸。" },
+        { id: "c5", text: "インバウンド市場に成長余地はあるか？", type: "argument", tier: 1, phrase: "成長余地はあるか？", reason: "攻めの論点を左に。このサブイシューに根拠が答えることで、結論「段階的に取り込むべき」を支える。" },
         { id: "c6", text: "常連客の満足度低下事例あり（騒音・文化摩擦で口コミ評価-0.8pt）", type: "evidence", tier: 2, phrase: "常連客満足度-0.8pt", reason: "反証データを右端に。議論に奥行きを出す。" },
         { id: "d1", text: "旅館の建築様式は江戸時代から続く伝統工法である", type: "distractor", tier: -1, phrase: "建築は伝統工法", reason: "意思決定に直接影響しない事実。" },
         { id: "d2", text: "最近の円安傾向は日銀の金融政策に起因する", type: "distractor", tier: -1, phrase: "円安は日銀政策起因", reason: "マクロ背景。固有の判断根拠にならない。" },
@@ -69,9 +69,9 @@ export const BASIC_QUESTIONS: Question[] = [
       cards: [
         { id: "c1", text: "生産管理のデジタル化を最優先とし、段階的に営業・人事へ展開すべき", type: "conclusion", tier: 0, phrase: "生産管理を最優先に段階展開", reason: "優先領域＋展開順序を明示。" },
         { id: "c2", text: "生産現場の属人化率68%、ベテラン退職で年間損失2.3億円リスク", type: "evidence", tier: 2, phrase: "属人化率68%・損失2.3億円", reason: "緊急性データを左端に。" },
-        { id: "c3", text: "投資対効果が最も高い領域の特定", type: "argument", tier: 1, phrase: "ROIが最も高い", reason: "価値面の論点を左に。" },
+        { id: "c3", text: "どの領域のROIが最も高いか？", type: "argument", tier: 1, phrase: "どこのROIが最も高いか？", reason: "価値面の論点を左に。このサブイシューに根拠が答えることで、結論「生産管理を最優先」を支える。" },
         { id: "c4", text: "現場の受容性：生産管理部門のITリテラシー調査でスコア最高", type: "evidence", tier: 2, phrase: "ITリテラシーが最高", reason: "内部データを右端で補完。" },
-        { id: "c5", text: "組織の変革準備度による実現可能性", type: "argument", tier: 1, phrase: "組織が受容できる", reason: "実現性を右に。価値→実現性の順。" },
+        { id: "c5", text: "組織は変革を受容する準備があるか？", type: "argument", tier: 1, phrase: "組織は変革を受容できるか？", reason: "実現性を右に。価値→実現性の順。このサブイシューに根拠が答えることで、結論「生産管理を最優先」を支える。" },
         { id: "c6", text: "同業他社のPoC成功率：生産管理78%、営業45%、人事32%", type: "evidence", tier: 2, phrase: "PoC成功率：生産管理78%", reason: "客観的外部データを中央に。" },
         { id: "d1", text: "経済産業省はDX推進ガイドラインを2024年に改訂した", type: "distractor", tier: -1, phrase: "経産省ガイドライン", reason: "背景情報。固有の判断根拠にならない。" },
         { id: "d2", text: "ChatGPTの登場以降、AI関連の投資が世界的に急増している", type: "distractor", tier: -1, phrase: "世界的AI投資急増", reason: "トレンドであり固有の優先順位とは無関係。" },
@@ -108,9 +108,9 @@ export const BASIC_QUESTIONS: Question[] = [
       cards: [
         { id: "c1", text: "段階的にダイレクトリクルーティングへ移行すべき。ただし運用体制の整備が前提", type: "conclusion", tier: 0, phrase: "段階的にダイレクトへ移行（体制整備前提）", reason: "移行方向＋前提条件を明示。" },
         { id: "c2", text: "ダイレクト経由の採用単価42万円、ナビサイト経由は78万円（前年実績）", type: "evidence", tier: 2, phrase: "採用単価42万vs78万", reason: "コスト効率のデータを左端。" },
-        { id: "c3", text: "採用コスト効率の改善余地", type: "argument", tier: 1, phrase: "コスト効率が改善できる", reason: "最大の推進理由を左に。" },
+        { id: "c3", text: "ダイレクト経由のほうがコスト効率は高いか？", type: "argument", tier: 1, phrase: "ダイレクトの方がコスト効率は高いか？", reason: "推進理由を左に。このサブイシューに根拠が答えることで、結論「ダイレクトへ移行」を支える。" },
         { id: "c4", text: "ダイレクト経由の1年後定着率92%、ナビ経由は76%", type: "evidence", tier: 2, phrase: "定着率92%vs76%", reason: "品質差を中央に。" },
-        { id: "c5", text: "社内の運用負荷増大リスク", type: "argument", tier: 1, phrase: "運用負荷が増大する", reason: "制約条件を右に。" },
+        { id: "c5", text: "運用負荷の増大は許容範囲か？", type: "argument", tier: 1, phrase: "運用負荷は許容範囲か？", reason: "制約条件を右に。このサブイシューに根拠が答えることで、結論「ダイレクトへ移行」を支える。" },
         { id: "c6", text: "スカウト文面作成に人事1名あたり月40時間追加が必要（同規模企業調査）", type: "evidence", tier: 2, phrase: "月40時間の追加工数", reason: "負荷の定量化を右端。" },
         { id: "d1", text: "2025年の大卒求人倍率は1.75倍で売り手市場が継続", type: "distractor", tier: -1, phrase: "求人倍率1.75倍", reason: "市場全体の話。チャネル選択に無関係。" },
         { id: "d2", text: "採用ブランディングにはSNS運用が不可欠と言われている", type: "distractor", tier: -1, phrase: "SNSブランディング", reason: "一般論でチャネル判断材料にならない。" },
@@ -147,9 +147,9 @@ export const BASIC_QUESTIONS: Question[] = [
       cards: [
         { id: "c1", text: "8%の段階的値上げを実施。サイドメニュー増量とセット割引で顧客離反を緩和", type: "conclusion", tier: 0, phrase: "8%値上げ＋緩和策", reason: "値上げ幅＋緩和策セット。" },
         { id: "c2", text: "原材料費が前年比23%上昇、営業利益率が8.2%→2.1%に悪化", type: "evidence", tier: 2, phrase: "利益率8.2%→2.1%", reason: "緊急性データを左端。" },
-        { id: "c3", text: "値上げなしでは事業継続性が危機的", type: "argument", tier: 1, phrase: "値上げしなければ事業が危ない", reason: "緊急性の論点を左に。" },
+        { id: "c3", text: "値上げなしで事業は継続できるか？", type: "argument", tier: 1, phrase: "値上げなしで事業は継続できるか？", reason: "緊急性の論点を左に。このサブイシューに根拠が答えることで、結論「8%値上げ＋緩和策」を支える。" },
         { id: "c4", text: "競合の松屋は10%値上げ後もリピート率を維持(品質訴求戦略)", type: "evidence", tier: 2, phrase: "松屋は値上げでもリピート維持", reason: "競合事例を中央に。" },
-        { id: "c5", text: "値上げ幅と顧客離反率の制御可能性", type: "argument", tier: 1, phrase: "顧客離反は制御できる", reason: "対策面を右に。" },
+        { id: "c5", text: "値上げしても顧客離反は制御できるか？", type: "argument", tier: 1, phrase: "顧客離反は制御できるか？", reason: "対策面を右に。このサブイシューに根拠が答えることで、結論「8%値上げ＋緩和策」を支える。" },
         { id: "c6", text: "自社アンケート：5%値上げなら許容83%、10%なら許容52%、15%なら許容21%", type: "evidence", tier: 2, phrase: "許容度：8%圏内なら過半数OK", reason: "自社データを右端。" },
         { id: "d1", text: "ドル円レートは150円台で推移し、輸入食材価格に影響を与えている", type: "distractor", tier: -1, phrase: "ドル円150円台", reason: "マクロ背景。値上げ幅の根拠にならない。" },
         { id: "d2", text: "食品ロス削減推進法により、外食産業全体で廃棄量削減が求められている", type: "distractor", tier: -1, phrase: "食品ロス削減法", reason: "規制動向であり値上げとは別論点。" },
@@ -186,9 +186,9 @@ export const BASIC_QUESTIONS: Question[] = [
       cards: [
         { id: "c1", text: "職種別に週2〜3出社の段階的移行を実施。6ヶ月のトライアル期間を設定", type: "conclusion", tier: 0, phrase: "職種別に段階移行（6ヶ月トライアル）", reason: "柔軟性＋段階移行でリスク最小化。" },
         { id: "c2", text: "部門横断プロジェクトの完了速度が完全リモート後に34%低下", type: "evidence", tier: 2, phrase: "完了速度34%低下", reason: "生産性データを左端に。" },
-        { id: "c3", text: "対面コラボレーションの組織的価値", type: "argument", tier: 1, phrase: "対面に組織的価値がある", reason: "Why論点を左に。" },
+        { id: "c3", text: "対面にはリモートを上回る組織的価値があるか？", type: "argument", tier: 1, phrase: "対面に組織的価値はあるか？", reason: "Why論点を左に。このサブイシューに根拠が答えることで、結論「職種別に段階移行」を支える。" },
         { id: "c4", text: "社内サーベイ：「週3以上の出社義務なら転職検討」が38%", type: "evidence", tier: 2, phrase: "38%が転職検討", reason: "離反リスクを中央に。" },
-        { id: "c5", text: "従業員エンゲージメントと離職リスクの管理", type: "argument", tier: 1, phrase: "離反をどう防ぐか", reason: "How論点を右に。" },
+        { id: "c5", text: "従業員の離反リスクは抑えられるか？", type: "argument", tier: 1, phrase: "離反リスクは抑えられるか？", reason: "How論点を右に。このサブイシューに根拠が答えることで、結論「職種別に段階移行」を支える。" },
         { id: "c6", text: "Salesforceは職種別ハイブリッド制で離職率を移行前水準に維持", type: "evidence", tier: 2, phrase: "Salesforceが職種別で成功", reason: "解決事例を右端に。" },
         { id: "d1", text: "都心のオフィス空室率は2024年に6.2%まで上昇した", type: "distractor", tier: -1, phrase: "空室率6.2%", reason: "不動産市況。制度設計に無関係。" },
         { id: "d2", text: "Z世代は柔軟な働き方を重視する傾向が強い", type: "distractor", tier: -1, phrase: "Z世代の傾向", reason: "世代論一般。固有の根拠にならない。" },

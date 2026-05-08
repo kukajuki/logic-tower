@@ -191,9 +191,19 @@ interface HistoryEntry {
 
 ## 4. 問題データの構成
 
-### 基礎編（5問）: `lib/questions-basic.ts`
+3レベル構成（Lv.1 / Lv.2 / Lv.3）。すべてのレベルを最初から選択可能。
 
-以下5問をハードコード。全データ（cards, correctSlots, explanation, narrative）は添付のプロトタイプコード `prototype/logic-tower.jsx` を参照して移植すること。
+| Level | 問題数 | ファイル | 生成方法 |
+|---|---|---|---|
+| Lv.1（基礎） | 5問 | `lib/questions-level1.ts` | ハードコード |
+| Lv.2（応用） | 20問 | `lib/questions-level2.ts` | バッチ生成（セクション7） |
+| Lv.3（実戦） | 70問 | `lib/questions-level3.ts` | バッチ生成（セクション7） |
+
+集約は `lib/questions.ts` で `QUESTION_BANK: Record<Level, Question[]>` として行う。
+
+### Lv.1（5問）
+
+以下5問をハードコード。全データ（cards, correctSlots, explanation, narrative）は添付のプロトタイプコード `prototype/logic-tower.jsx` を参照して移植すること。論点カードは「〇〇か？」の問い形式に書き換えること（セクション7のルールを参照）。
 
 | ID | タイトル | イシュー |
 |----|----------|----------|
@@ -203,13 +213,12 @@ interface HistoryEntry {
 | f4 | 飲食チェーンの値上げ判断 | 主力メニューを値上げすべきか？ |
 | f5 | リモートワーク制度の再設計 | 完全リモートから出社型に移行すべきか？ |
 
-### 実践編（100問）: `lib/questions-practice.ts`
+### Lv.2（20問）/ Lv.3（70問）
 
-バッチ生成スクリプト（セクション7）で事前生成し、JSONとして格納。
+バッチ生成スクリプト（セクション7）で事前生成し、JSONとして格納。難易度のチューニング（業界の馴染み深さ、論点の見抜きやすさ、ノイズの紛らわしさ等）はセクション7で扱う。
 
 ### アンロック条件
-- 基礎編：最初からプレイ可能
-- 実践編：累計5回プレイ後にアンロック
+- すべてのレベルを最初からプレイ可能。
 
 ---
 
@@ -384,9 +393,10 @@ const THEMES = [
 ## カード設計ルール
 - 結論1枚、論点2枚、根拠3枚、ノイズ2枚＝計8枚
 - 論点は左が「推進理由/価値/Why/緊急性」、右が「制約条件/実現性/How/対策」
+- **論点カードは「〇〇か？」というサブイシュー（問い）の形式で書くこと。トピック名やカテゴリラベル（例：「成長余地の存在」「リスクの管理可能性」）にしないこと。ピラミッド全体が「問い→答え」の連鎖になるよう設計する：イシュー（問い）→結論（答え）→論点（サブ問い）→根拠（サブ答え）。**
 - 根拠は左が最重要データ、中央が補強データ、右が反証or内部データ
 - ノイズは「一見関連あるが意思決定に直接影響しない」情報
-- 全カードにphrase（15字以内の要約）とreason（なぜこの位置かの説明）を付ける
+- 全カードにphrase（15字以内の要約。論点カードのphraseも問い形式で）とreason（なぜこの位置かの説明）を付ける
 - 結論は「〇〇すべき。ただし△△が条件」の形式
 - 根拠には必ず具体的な数字を含める
 
@@ -410,9 +420,9 @@ const THEMES = [
   "cards": [
     {"id":"c1","text":"結論テキスト","type":"conclusion","tier":0,"phrase":"15字以内","reason":"配置理由"},
     {"id":"c2","text":"根拠左","type":"evidence","tier":2,"phrase":"","reason":""},
-    {"id":"c3","text":"論点右","type":"argument","tier":1,"phrase":"","reason":""},
+    {"id":"c3","text":"論点右（〇〇か？形式のサブ問い）","type":"argument","tier":1,"phrase":"〇〇か？","reason":""},
     {"id":"c4","text":"根拠中","type":"evidence","tier":2,"phrase":"","reason":""},
-    {"id":"c5","text":"論点左","type":"argument","tier":1,"phrase":"","reason":""},
+    {"id":"c5","text":"論点左（〇〇か？形式のサブ問い）","type":"argument","tier":1,"phrase":"〇〇か？","reason":""},
     {"id":"c6","text":"根拠右","type":"evidence","tier":2,"phrase":"","reason":""},
     {"id":"d1","text":"ノイズ1","type":"distractor","tier":-1,"phrase":"","reason":""},
     {"id":"d2","text":"ノイズ2","type":"distractor","tier":-1,"phrase":"","reason":""}
