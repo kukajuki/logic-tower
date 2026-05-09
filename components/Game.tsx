@@ -5,6 +5,8 @@ import StartScreen from "@/components/StartScreen";
 import PlayPhase1 from "@/components/PlayPhase1";
 import ResultPhase1 from "@/components/ResultPhase1";
 import StatsScreen from "@/components/StatsScreen";
+import IssueSelection from "@/components/IssueSelection";
+import SubIssueSelection from "@/components/SubIssueSelection";
 import { Level, getQuestionsByLevel } from "@/lib/questions";
 import { HistoryEntry, Question, Slots } from "@/lib/types";
 import { Phase1Result, scorePhase1 } from "@/lib/scoring";
@@ -16,12 +18,32 @@ import {
   saveUsedForLevel,
 } from "@/lib/storage";
 
-type Screen = "start" | "play" | "result" | "stats";
+type Screen =
+  | "start"
+  | "issue-select"
+  | "subissue-select"
+  | "play"
+  | "result"
+  | "stats";
+
+// Lv.3 hides all argument cards from the play-screen pool — they're either
+// auto-placed (the 2 picked sub-issues) or filtered out (the unselected one).
+const LV3_HIDDEN_CARD_IDS = ["c5", "c3", "c7"];
+
+interface PlayContext {
+  initialLocks?: Slots;
+  hiddenCardIds?: string[];
+  /** Tracks whether the player picked the correct issue (Lv.2 / Lv.3). */
+  issueCorrect?: boolean;
+  /** For Lv.3: number of sub-issue picks that match c5/c3 (0..2). */
+  subIssueCorrect?: number;
+}
 
 export default function Game() {
   const [screen, setScreen] = useState<Screen>("start");
   const [level, setLevel] = useState<Level | null>(null);
   const [question, setQuestion] = useState<Question | null>(null);
+  const [playContext, setPlayContext] = useState<PlayContext>({});
   const [submission, setSubmission] = useState<{
     slots: Slots;
     result: Phase1Result;
@@ -32,9 +54,9 @@ export default function Game() {
     setHistory(loadHistory());
   }, []);
 
-  const startLevel = useCallback((lv: Level) => {
+  const pickRandomQuestion = useCallback((lv: Level): Question | null => {
     const all = getQuestionsByLevel(lv);
-    if (all.length === 0) return;
+    if (all.length === 0) return null;
     const used = loadUsedForLevel(lv);
     let pool = all.filter((q) => !used.includes(q.id));
     let nextUsed = used;
@@ -45,14 +67,88 @@ export default function Game() {
     const picked = pool[Math.floor(Math.random() * pool.length)];
     const updatedUsed = [...nextUsed, picked.id];
     saveUsedForLevel(lv, updatedUsed);
-    setQuestion(picked);
-    setSubmission(null);
-    setScreen("play");
+    return picked;
   }, []);
+
+  const startLevel = useCallback(
+    (lv: Level) => {
+      const picked = pickRandomQuestion(lv);
+      if (!picked) return;
+      setQuestion(picked);
+      setSubmission(null);
+      setPlayContext({});
+      // Routing branch by level:
+      //   Lv.1 → straight to play
+      //   Lv.2 → issue selection → play
+      //   Lv.3 → issue selection → sub-issue selection → play
+      if (lv === 1 || !picked.issueSelection) {
+        setScreen("play");
+      } else {
+        setScreen("issue-select");
+      }
+    },
+    [pickRandomQuestion],
+  );
 
   const onStart = useCallback(() => {
     if (level !== null) startLevel(level);
   }, [level, startLevel]);
+
+  const onIssuePicked = useCallback(
+    (_chosenIssue: string, isCorrect: boolean) => {
+      if (!question || level === null) return;
+      if (level === 3 && question.subIssueSelection) {
+        setPlayContext((p) => ({ ...p, issueCorrect: isCorrect }));
+        setScreen("subissue-select");
+      } else {
+        // Lv.2 → straight to play, no card locks
+        setPlayContext({ issueCorrect: isCorrect });
+        setScreen("play");
+      }
+    },
+    [question, level],
+  );
+
+  const onSubIssuePicked = useCallback(
+    (chosenTexts: string[]) => {
+      if (!question) return;
+      const cards = question.phase1.cards;
+      const correctSlots = question.phase1.correctSlots;
+      const c5Id = correctSlots["t1-0"];
+      const c3Id = correctSlots["t1-1"];
+
+      // Map each picked sub-issue text to the card it corresponds to (c5/c3/c7).
+      // "Trap" candidates that don't match any card produce no auto-placement.
+      const matchedCards = chosenTexts
+        .map((text) => cards.find((c) => c.text === text) ?? null);
+
+      const initialLocks: Slots = {};
+      let subCorrect = 0;
+      for (const card of matchedCards) {
+        if (!card) continue;
+        if (card.id === c5Id) {
+          initialLocks["t1-0"] = card.id;
+          subCorrect++;
+        } else if (card.id === c3Id) {
+          initialLocks["t1-1"] = card.id;
+          subCorrect++;
+        } else {
+          // c7 (or any other tier-1 card) → place into whichever arg slot is free.
+          if (!initialLocks["t1-0"]) initialLocks["t1-0"] = card.id;
+          else if (!initialLocks["t1-1"]) initialLocks["t1-1"] = card.id;
+        }
+      }
+
+      setPlayContext((p) => ({
+        ...p,
+        initialLocks,
+        hiddenCardIds: LV3_HIDDEN_CARD_IDS,
+        subIssueCorrect: subCorrect,
+      }));
+      setScreen("play");
+    },
+    [question],
+  );
 
   const onSubmit = useCallback(
     (slots: Slots, timeLeft: number) => {
@@ -72,6 +168,12 @@ export default function Game() {
             tierScores: result.tierScores,
             timeLeft: result.timeLeft,
           },
+          ...(playContext.issueCorrect !== undefined
+            ? { issueCorrect: playContext.issueCorrect }
+            : {}),
+          ...(playContext.subIssueCorrect !== undefined
+            ? { subIssueCorrect: playContext.subIssueCorrect }
+            : {}),
           total: result.score,
         },
       };
@@ -80,7 +182,7 @@ export default function Game() {
       setSubmission({ slots, result });
       setScreen("result");
     },
-    [question, level]
+    [question, level, playContext],
   );
 
   const onNext = useCallback(() => {
@@ -92,6 +194,7 @@ export default function Game() {
     setLevel(null);
     setQuestion(null);
     setSubmission(null);
+    setPlayContext({});
     setScreen("start");
   }, []);
 
@@ -99,8 +202,36 @@ export default function Game() {
     return <StatsScreen history={history} onBack={() => setScreen("start")} />;
   }
 
+  if (screen === "issue-select" && question) {
+    return (
+      <IssueSelection
+        question={question}
+        onPick={onIssuePicked}
+        onBack={onHome}
+      />
+    );
+  }
+
+  if (screen === "subissue-select" && question) {
+    return (
+      <SubIssueSelection
+        question={question}
+        chosenIssue={question.issue}
+        onPick={onSubIssuePicked}
+        onBack={() => setScreen("issue-select")}
+      />
+    );
+  }
+
   if (screen === "play" && question) {
-    return <PlayPhase1 question={question} onSubmit={onSubmit} />;
+    return (
+      <PlayPhase1
+        question={question}
+        onSubmit={onSubmit}
+        initialLocks={playContext.initialLocks}
+        hiddenCardIds={playContext.hiddenCardIds}
+      />
+    );
   }
 
   if (screen === "result" && question && submission) {

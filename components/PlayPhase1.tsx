@@ -10,6 +10,10 @@ import { Card, Question, Slots } from "@/lib/types";
 interface PlayPhase1Props {
   question: Question;
   onSubmit: (slots: Slots, timeLeft: number) => void;
+  /** Slots that should be pre-placed and locked (cannot be removed). */
+  initialLocks?: Slots;
+  /** Card IDs that should never appear in the card pool (regardless of slot). */
+  hiddenCardIds?: string[];
 }
 
 function shuffle<T>(arr: T[]): T[] {
@@ -21,7 +25,12 @@ function shuffle<T>(arr: T[]): T[] {
   return out;
 }
 
-export default function PlayPhase1({ question, onSubmit }: PlayPhase1Props) {
+export default function PlayPhase1({
+  question,
+  onSubmit,
+  initialLocks,
+  hiddenCardIds,
+}: PlayPhase1Props) {
   const [cards, setCards] = useState<Card[]>([]);
   const [slots, setSlots] = useState<Slots>({});
   const [selected, setSelected] = useState<string | null>(null);
@@ -31,12 +40,22 @@ export default function PlayPhase1({ question, onSubmit }: PlayPhase1Props) {
   const submittedRef = useRef(false);
   const timerRef = useRef<ReturnType<typeof setTimeout> | null>(null);
 
+  const lockedSlotIds = useMemo(
+    () => new Set(Object.keys(initialLocks ?? {})),
+    [initialLocks],
+  );
+  const hiddenSet = useMemo(
+    () => new Set(hiddenCardIds ?? []),
+    [hiddenCardIds],
+  );
+
   useEffect(() => {
     setCards(shuffle(question.phase1.cards));
-    setSlots({});
+    setSlots({ ...(initialLocks ?? {}) });
     setSelected(null);
     setTimer(PHASE1_TIME);
     submittedRef.current = false;
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [question.id, question.phase1.cards]);
 
   const placedSet = useMemo(() => new Set(Object.values(slots)), [slots]);
@@ -64,6 +83,12 @@ export default function PlayPhase1({ question, onSubmit }: PlayPhase1Props) {
   const onCardTap = (cid: string) => {
     if (placedSet.has(cid)) {
       const sid = Object.keys(slots).find((k) => slots[k] === cid);
+      // Cards locked into a slot can't be removed via tap.
+      if (sid && lockedSlotIds.has(sid)) {
+        setShake(sid);
+        setTimeout(() => setShake(null), 500);
+        return;
+      }
       if (sid) {
         setSlots((p) => {
           const n = { ...p };
@@ -78,6 +103,12 @@ export default function PlayPhase1({ question, onSubmit }: PlayPhase1Props) {
   };
 
   const onSlotTap = (sid: string) => {
+    if (lockedSlotIds.has(sid)) {
+      // Locked slot — visual nudge instead of any state change.
+      setShake(sid);
+      setTimeout(() => setShake(null), 500);
+      return;
+    }
     if (slots[sid]) {
       const cid = slots[sid];
       setSlots((p) => {
@@ -160,12 +191,15 @@ export default function PlayPhase1({ question, onSubmit }: PlayPhase1Props) {
             letterSpacing: 1,
           }}
         >
-          カード（{cards.length - filled}枚）
+          カード（
+          {cards.filter((c) => !placedSet.has(c.id) && !hiddenSet.has(c.id)).length}
+          枚）
         </span>
       </div>
       <div style={{ padding: "0 5px", display: "flex", flexDirection: "column", gap: 3 }}>
         {cards.map((card) => {
           if (placedSet.has(card.id)) return null;
+          if (hiddenSet.has(card.id)) return null;
           const isSelected = selected === card.id;
           return (
             <div
