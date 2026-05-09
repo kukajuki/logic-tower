@@ -273,12 +273,19 @@ export default function ResultPhase1({
                 const sid = `t${tier}-${i}`;
                 const correctCid = phase1.correctSlots[sid];
                 const correctCard = phase1.cards.find((c) => c.id === correctCid);
-                const ok = slots[sid] === correctCid;
+                const exact = slots[sid] === correctCid;
+                const swapped =
+                  !exact &&
+                  (sid === "t2-1" || sid === "t2-2") &&
+                  result.evSwap;
+                const ok = exact || swapped;
                 const ekey = `r-${sid}`;
                 const isOpen = expanded === ekey;
                 const userReport = result.cardReport[correctCid];
                 let detailLine: string | null = null;
-                if (!ok) {
+                if (swapped) {
+                  detailLine = "中央と右が入れ替わっていますが、補強と反証は対等なので正解扱い";
+                } else if (!ok) {
                   if (userReport) {
                     const posIdx = parseInt(userReport.placedSlot.split("-")[1] ?? "0", 10);
                     detailLine = `あなたは「${TIER_LABELS[userReport.placedTier]}の${POSITION_LABELS[posIdx]}」に配置`;

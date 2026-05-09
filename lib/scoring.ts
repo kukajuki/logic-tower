@@ -17,6 +17,40 @@ export interface Phase1Result {
   timeLeft: number;
   cardReport: Record<string, CardReportEntry>;
   argSwap: boolean;
+  evSwap: boolean;
+}
+
+/**
+ * Mid-right evidence swap: the user placed the two correct cards into
+ * t2-1 / t2-2 but with their positions exchanged. We treat this as both
+ * slots being correct because the spec defines the middle slot as
+ * "補強データ" and the right slot as "反証 or 内部データ" — both have the
+ * same status as supporting evidence, so a left-right swap among them is
+ * not a meaningful structural error (unlike t2-0, the most-important data,
+ * which we still grade strictly).
+ */
+export function isMidRightEvidenceSwap(phase1: Phase1Data, slots: Slots): boolean {
+  const correctMid = phase1.correctSlots["t2-1"];
+  const correctRight = phase1.correctSlots["t2-2"];
+  if (!correctMid || !correctRight) return false;
+  return (
+    slots["t2-1"] === correctRight &&
+    slots["t2-2"] === correctMid
+  );
+}
+
+export function isSlotPlacementCorrect(
+  sid: string,
+  cid: string | undefined,
+  phase1: Phase1Data,
+  slots: Slots,
+): boolean {
+  if (!cid) return false;
+  if (phase1.correctSlots[sid] === cid) return true;
+  if ((sid === "t2-1" || sid === "t2-2") && isMidRightEvidenceSwap(phase1, slots)) {
+    return true;
+  }
+  return false;
 }
 
 export function scorePhase1(phase1: Phase1Data, slots: Slots, timeLeft: number): Phase1Result {
@@ -26,7 +60,7 @@ export function scorePhase1(phase1: Phase1Data, slots: Slots, timeLeft: number):
   for (let t = 0; t < 3; t++) {
     for (let i = 0; i < TIER_SLOTS[t]; i++) {
       const sid = `t${t}-${i}`;
-      if (slots[sid] && slots[sid] === phase1.correctSlots[sid]) {
+      if (isSlotPlacementCorrect(sid, slots[sid], phase1, slots)) {
         tierScores[t]++;
         correct++;
       }
@@ -49,7 +83,7 @@ export function scorePhase1(phase1: Phase1Data, slots: Slots, timeLeft: number):
     cardReport[cid] = {
       placedSlot: sid,
       placedTier: tier,
-      correct: phase1.correctSlots[sid] === cid,
+      correct: isSlotPlacementCorrect(sid, cid, phase1, slots),
       isDistractor: phase1.cards.find((c) => c.id === cid)?.type === "distractor",
     };
   }
@@ -60,6 +94,8 @@ export function scorePhase1(phase1: Phase1Data, slots: Slots, timeLeft: number):
     slots["t1-0"] === phase1.correctSlots["t1-1"] &&
     slots["t1-1"] === phase1.correctSlots["t1-0"];
 
+  const evSwap = isMidRightEvidenceSwap(phase1, slots);
+
   return {
     score,
     accuracy: correct,
@@ -69,6 +105,7 @@ export function scorePhase1(phase1: Phase1Data, slots: Slots, timeLeft: number):
     timeLeft,
     cardReport,
     argSwap,
+    evSwap,
   };
 }
 

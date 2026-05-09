@@ -113,22 +113,29 @@ export function buildNarrative(phase1: Phase1Data, slots: Slots): NarrativePart[
   if (!evidences.length) {
     parts.push({ kind: "x", message: "根拠が未配置。データなしでは主張が空論です。" });
   } else if (evOk === 3 && !evDist) {
-    const allExact = (
-      [
-        ["t2-0", evLeft],
-        ["t2-1", evMid],
-        ["t2-2", evRight],
-      ] as const
-    ).every(([sid, c]) => c?.id === phase1.correctSlots[sid]);
-    parts.push(
-      allExact
-        ? { kind: "o", message: "根拠3枚の選択と順序も完璧です。" }
-        : {
-            kind: "p",
-            message:
-              "根拠3枚は正しいですが順序が異なります。左から重要度順に並べるとスムーズです。",
-          }
-    );
+    const t20Exact = evLeft?.id === phase1.correctSlots["t2-0"];
+    const t21Exact = evMid?.id === phase1.correctSlots["t2-1"];
+    const t22Exact = evRight?.id === phase1.correctSlots["t2-2"];
+    const allExact = t20Exact && t21Exact && t22Exact;
+    const midRightSwap =
+      t20Exact &&
+      evMid?.id === phase1.correctSlots["t2-2"] &&
+      evRight?.id === phase1.correctSlots["t2-1"];
+    if (allExact) {
+      parts.push({ kind: "o", message: "根拠3枚の選択と順序も完璧です。" });
+    } else if (midRightSwap) {
+      parts.push({
+        kind: "o",
+        message:
+          "根拠の中央と右が入れ替わっていますが、補強と反証は対等なので両方正解として扱います。",
+      });
+    } else {
+      parts.push({
+        kind: "p",
+        message:
+          "根拠3枚は正しいですが順序が異なります。左から重要度順に並べるとスムーズです。",
+      });
+    }
   } else {
     const msgs: string[] = [];
     if (evDist) msgs.push(`${evDist}枚のノイズが根拠に混入`);
