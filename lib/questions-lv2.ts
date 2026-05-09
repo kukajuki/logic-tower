@@ -280,7 +280,7 @@ export const LV2_QUESTIONS: Question[] = [
   {
     id: "lv2-07",
     level: 2,
-    pattern: "投資判断型",
+    pattern: "価格変更型",
     title: "出版社のサブスク化",
     situation: "老舗ビジネス書出版社。紙の書籍売上が5年で40%減少。編集部が月額制の電子書籍サブスクリプションサービスの立ち上げを提案。",
     issue: "電子書籍サブスクリプションを始めるべきか？",
@@ -418,7 +418,7 @@ export const LV2_QUESTIONS: Question[] = [
   {
     id: "lv2-10",
     level: 2,
-    pattern: "新規参入・拡大型",
+    pattern: "投資判断型",
     title: "広告代理店の自社プロダクト",
     situation: "従業員400人の中堅デジタル広告代理店。クライアントワーク依存で利益率が低迷。開発チームが自社SaaSプロダクトの立ち上げを提案。",
     issue: "自社SaaSプロダクトを立ち上げるべきか？",
@@ -556,7 +556,7 @@ export const LV2_QUESTIONS: Question[] = [
   {
     id: "lv2-13",
     level: 2,
-    pattern: "新規参入・拡大型",
+    pattern: "危機対応型",
     title: "自動車部品のEVシフト",
     situation: "年商800億円のエンジン部品メーカー。EV化の加速でエンジン部品の需要減が予想される中、EV向けモーター部品への事業転換を検討中。",
     issue: "EV向けモーター部品に事業転換すべきか？",
@@ -786,7 +786,7 @@ export const LV2_QUESTIONS: Question[] = [
   {
     id: "lv2-18",
     level: 2,
-    pattern: "新規参入・拡大型",
+    pattern: "チャネル転換型",
     title: "EdTechの法人研修参入",
     situation: "個人向けプログラミング学習アプリを運営するEdTech企業。DAU10万人だが個人課金の単価が頭打ち。法人向け社員研修サービスへの参入を検討中。",
     issue: "法人向け研修サービスに参入すべきか？",

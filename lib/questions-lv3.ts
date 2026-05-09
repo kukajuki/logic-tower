@@ -103,7 +103,7 @@ export const LV3_QUESTIONS: Question[] = [
     }
   },
   {
-    id: "lv3-04", level: 3, pattern: "新規参入・拡大型", title: "ホテルのワーケーション",
+    id: "lv3-04", level: 3, pattern: "危機対応型", title: "ホテルのワーケーション",
     situation: "地方の温泉リゾートホテル。平日稼働率が35%に低迷。ワーケーション（ワーク＋バケーション）向けの長期滞在プランの導入を検討中。",
     issue: "ワーケーション向け長期滞在プランを導入すべきか？",
     issueSelection: { correctIssue: "ワーケーション向け長期滞在プランを導入すべきか？", wrongIssues: [
@@ -169,7 +169,7 @@ export const LV3_QUESTIONS: Question[] = [
     }
   },
   {
-    id: "lv3-06", level: 3, pattern: "新規参入・拡大型", title: "物流大手のドローン配送",
+    id: "lv3-06", level: 3, pattern: "テクノロジー導入型", title: "物流大手のドローン配送",
     situation: "全国カバーの物流大手。ECの再配達コストが年120億円超に膨張。山間部・離島ではドローン配送の規制緩和が進んでいる。",
     issue: "ドローン配送網を構築すべきか？",
     issueSelection: { correctIssue: "ドローン配送網を構築すべきか？", wrongIssues: [
@@ -235,7 +235,7 @@ export const LV3_QUESTIONS: Question[] = [
     }
   },
   {
-    id: "lv3-08", level: 3, pattern: "チャネル転換型", title: "出版社の電子主軸転換",
+    id: "lv3-08", level: 3, pattern: "危機対応型", title: "出版社の電子主軸転換",
     situation: "老舗の文芸出版社。紙書籍売上が10年で40%減、一方で電子書籍売上は年20%増。電子主軸への事業転換を検討中。",
     issue: "電子書籍を主軸に事業転換すべきか？",
     issueSelection: { correctIssue: "電子書籍を主軸に事業転換すべきか？", wrongIssues: [
@@ -268,7 +268,7 @@ export const LV3_QUESTIONS: Question[] = [
     }
   },
   {
-    id: "lv3-09", level: 3, pattern: "チャネル転換型", title: "人材紹介のスカウト型シフト",
+    id: "lv3-09", level: 3, pattern: "危機対応型", title: "人材紹介のスカウト型シフト",
     situation: "中堅人材紹介会社。業界がスカウト型（ダイレクトリクルーティング）主軸に移行する中、自社は登録型のまま。受注額が3年で22%減。",
     issue: "スカウト型に主軸を移すべきか？",
     issueSelection: { correctIssue: "スカウト型に主軸を移すべきか？", wrongIssues: [
@@ -334,7 +334,7 @@ export const LV3_QUESTIONS: Question[] = [
     }
   },
   {
-    id: "lv3-11", level: 3, pattern: "新規参入・拡大型", title: "食品メーカーの代替肉参入",
+    id: "lv3-11", level: 3, pattern: "市場開拓型", title: "食品メーカーの代替肉参入",
     situation: "創業60年の食品メーカー。動物性たんぱく食品が主力。世界的な代替肉市場の急拡大を受けて新規参入の検討に入った。",
     issue: "代替肉事業に参入すべきか？",
     issueSelection: { correctIssue: "代替肉事業に参入すべきか？", wrongIssues: [
@@ -367,7 +367,7 @@ export const LV3_QUESTIONS: Question[] = [
     }
   },
   {
-    id: "lv3-12", level: 3, pattern: "新規参入・拡大型", title: "アパレルの越境EC本格化",
+    id: "lv3-12", level: 3, pattern: "チャネル転換型", title: "アパレルの越境EC本格化",
     situation: "国内売上中心の中堅アパレル。海外SNSで自社ブランド人気が拡大。越境ECサイトの本格立ち上げを検討中。",
     issue: "越境ECに本格参入すべきか？",
     issueSelection: { correctIssue: "越境ECに本格参入すべきか？", wrongIssues: [
@@ -433,7 +433,7 @@ export const LV3_QUESTIONS: Question[] = [
     }
   },
   {
-    id: "lv3-14", level: 3, pattern: "新規参入・拡大型", title: "建設会社の中大規模木造化",
+    id: "lv3-14", level: 3, pattern: "市場開拓型", title: "建設会社の中大規模木造化",
     situation: "中堅ゼネコン。脱炭素規制とCLT技術の進化で、中大規模木造建築への転換余地が広がる。木造分野の本格強化を検討中。",
     issue: "中大規模木造を主軸事業の一角に据えるべきか？",
     issueSelection: { correctIssue: "中大規模木造を主軸事業の一角に据えるべきか？", wrongIssues: [
@@ -499,7 +499,7 @@ export const LV3_QUESTIONS: Question[] = [
     }
   },
   {
-    id: "lv3-16", level: 3, pattern: "新規参入・拡大型", title: "自動車部品メーカーのEV転換",
+    id: "lv3-16", level: 3, pattern: "危機対応型", title: "自動車部品メーカーのEV転換",
     situation: "創業70年のエンジン関連部品メーカー。EV化で主力事業の縮小が見込まれる。EV専用部品（モーター・電池ケース）への事業転換を検討中。",
     issue: "EV専用部品事業に主軸を移すべきか？",
     issueSelection: { correctIssue: "EV専用部品事業に主軸を移すべきか？", wrongIssues: [
@@ -598,7 +598,7 @@ export const LV3_QUESTIONS: Question[] = [
     }
   },
   {
-    id: "lv3-19", level: 3, pattern: "チャネル転換型", title: "旅行代理店の法人特化",
+    id: "lv3-19", level: 3, pattern: "撤退・縮小型", title: "旅行代理店の法人特化",
     situation: "国内中堅の旅行代理店。個人旅行はOTA（オンライン旅行会社）に侵食され続け、法人MICE案件は安定推移。法人特化への転換を検討中。",
     issue: "個人旅行から撤退し法人特化に転換すべきか？",
     issueSelection: { correctIssue: "個人旅行から撤退し法人特化に転換すべきか？", wrongIssues: [
@@ -697,7 +697,7 @@ export const LV3_QUESTIONS: Question[] = [
     }
   },
   {
-    id: "lv3-22", level: 3, pattern: "新規参入・拡大型", title: "不動産のサブスク住宅",
+    id: "lv3-22", level: 3, pattern: "市場開拓型", title: "不動産のサブスク住宅",
     situation: "中堅不動産デベロッパー。賃貸住宅市場の成長鈍化で新規収益源を模索。家具・サービス込みの月額サブスク住宅事業の立ち上げを検討中。",
     issue: "サブスク住宅事業を新たに立ち上げるべきか？",
     issueSelection: { correctIssue: "サブスク住宅事業を新たに立ち上げるべきか？", wrongIssues: [
@@ -796,7 +796,7 @@ export const LV3_QUESTIONS: Question[] = [
     }
   },
   {
-    id: "lv3-25", level: 3, pattern: "新規参入・拡大型", title: "フィンテックの銀行ライセンス",
+    id: "lv3-25", level: 3, pattern: "市場開拓型", title: "フィンテックの銀行ライセンス",
     situation: "決済アプリで国内ユーザー2000万人を抱えるフィンテック企業。融資・預金事業に進出するため、銀行ライセンス取得を検討中。",
     issue: "銀行ライセンスを取得すべきか？",
     issueSelection: { correctIssue: "銀行ライセンスを取得すべきか？", wrongIssues: [
@@ -829,7 +829,7 @@ export const LV3_QUESTIONS: Question[] = [
     }
   },
   {
-    id: "lv3-26", level: 3, pattern: "新規参入・拡大型", title: "地方銀行のM&A仲介",
+    id: "lv3-26", level: 3, pattern: "アライアンス型", title: "地方銀行のM&A仲介",
     situation: "預金残高1.5兆円の地方銀行。融資収益が低迷する一方、地域中小企業の事業承継ニーズが顕在化。M&A仲介を本格事業化する検討に入った。",
     issue: "M&A仲介を本格事業化すべきか？",
     issueSelection: { correctIssue: "M&A仲介を本格事業化すべきか？", wrongIssues: [
@@ -961,7 +961,7 @@ export const LV3_QUESTIONS: Question[] = [
     }
   },
   {
-    id: "lv3-30", level: 3, pattern: "新規参入・拡大型", title: "学校法人の通信制設置",
+    id: "lv3-30", level: 3, pattern: "市場開拓型", title: "学校法人の通信制設置",
     situation: "私立大学を運営する学校法人。少子化で18歳人口減が加速し、定員割れリスクが顕在化。社会人向け通信制学部の新設を検討中。",
     issue: "通信制学部を新設すべきか？",
     issueSelection: { correctIssue: "通信制学部を新設すべきか？", wrongIssues: [
@@ -1060,7 +1060,7 @@ export const LV3_QUESTIONS: Question[] = [
     }
   },
   {
-    id: "lv3-33", level: 3, pattern: "新規参入・拡大型", title: "銀行の暗号資産対応",
+    id: "lv3-33", level: 3, pattern: "市場開拓型", title: "銀行の暗号資産対応",
     situation: "メガバンク系証券会社。投資家から暗号資産関連商品の取扱要望が増加。本格対応の検討に入った。",
     issue: "暗号資産関連商品を本格取扱いすべきか？",
     issueSelection: { correctIssue: "暗号資産関連商品を本格取扱いすべきか？", wrongIssues: [
@@ -1192,7 +1192,7 @@ export const LV3_QUESTIONS: Question[] = [
     }
   },
   {
-    id: "lv3-37", level: 3, pattern: "新規参入・拡大型", title: "化学メーカーのグリーン素材",
+    id: "lv3-37", level: 3, pattern: "市場開拓型", title: "化学メーカーのグリーン素材",
     situation: "売上3,000億円の総合化学メーカー。脱炭素規制でグリーン素材（バイオプラスチック等）への投資要請が強まる。専用事業ラインの立ち上げを検討中。",
     issue: "グリーン素材事業を本格立ち上げすべきか？",
     issueSelection: { correctIssue: "グリーン素材事業を本格立ち上げすべきか？", wrongIssues: [
@@ -1258,7 +1258,7 @@ export const LV3_QUESTIONS: Question[] = [
     }
   },
   {
-    id: "lv3-39", level: 3, pattern: "新規参入・拡大型", title: "飲料メーカーの機能性食品",
+    id: "lv3-39", level: 3, pattern: "市場開拓型", title: "飲料メーカーの機能性食品",
     situation: "売上2,000億円の飲料メーカー。清涼飲料市場の成熟で売上鈍化。健康志向の高まりを受けた機能性食品（特定保健用・機能性表示）参入を検討中。",
     issue: "機能性食品市場に参入すべきか？",
     issueSelection: { correctIssue: "機能性食品市場に参入すべきか？", wrongIssues: [
@@ -1291,7 +1291,7 @@ export const LV3_QUESTIONS: Question[] = [
     }
   },
   {
-    id: "lv3-40", level: 3, pattern: "新規参入・拡大型", title: "総合商社の再エネ事業",
+    id: "lv3-40", level: 3, pattern: "市場開拓型", title: "総合商社の再エネ事業",
     situation: "売上8兆円の総合商社。化石燃料関連の脱炭素圧力を受け、再生可能エネルギー事業を主力の一つに据える戦略転換を検討中。",
     issue: "再エネ事業を主力の一つに据えるべきか？",
     issueSelection: { correctIssue: "再エネ事業を主力の一つに据えるべきか？", wrongIssues: [
@@ -1390,7 +1390,7 @@ export const LV3_QUESTIONS: Question[] = [
     }
   },
   {
-    id: "lv3-43", level: 3, pattern: "新規参入・拡大型", title: "ガス会社の水素事業",
+    id: "lv3-43", level: 3, pattern: "市場開拓型", title: "ガス会社の水素事業",
     situation: "都市ガス大手。脱炭素規制で天然ガス事業の長期縮小が予測される。水素製造・販売事業への主軸転換を検討中。",
     issue: "水素事業を主軸事業の一角に据えるべきか？",
     issueSelection: { correctIssue: "水素事業を主軸事業の一角に据えるべきか？", wrongIssues: [
@@ -1423,7 +1423,7 @@ export const LV3_QUESTIONS: Question[] = [
     }
   },
   {
-    id: "lv3-44", level: 3, pattern: "新規参入・拡大型", title: "電力会社の蓄電池事業",
+    id: "lv3-44", level: 3, pattern: "市場開拓型", title: "電力会社の蓄電池事業",
     situation: "中堅電力会社。再エネ電源比率上昇で需給調整需要が高まる。大規模蓄電池事業（系統用蓄電池）への参入を検討中。",
     issue: "系統用蓄電池事業に本格参入すべきか？",
     issueSelection: { correctIssue: "系統用蓄電池事業に本格参入すべきか？", wrongIssues: [
@@ -1522,7 +1522,7 @@ export const LV3_QUESTIONS: Question[] = [
     }
   },
   {
-    id: "lv3-47", level: 3, pattern: "新規参入・拡大型", title: "美容クリニックの男性市場参入",
+    id: "lv3-47", level: 3, pattern: "市場開拓型", title: "美容クリニックの男性市場参入",
     situation: "都内30院展開の美容クリニックチェーン。女性向け美容医療市場は飽和、男性美容医療の急成長を受け、男性市場の本格参入を検討中。",
     issue: "男性美容医療市場に本格参入すべきか？",
     issueSelection: { correctIssue: "男性美容医療市場に本格参入すべきか？", wrongIssues: [
@@ -1588,7 +1588,7 @@ export const LV3_QUESTIONS: Question[] = [
     }
   },
   {
-    id: "lv3-49", level: 3, pattern: "新規参入・拡大型", title: "ベビー用品の高齢者市場参入",
+    id: "lv3-49", level: 3, pattern: "市場開拓型", title: "ベビー用品の高齢者市場参入",
     situation: "売上700億円のベビー用品メーカー。少子化で主力市場縮小、高齢者向け生活支援用品市場の急拡大に注目。シニア市場参入を検討中。",
     issue: "シニア生活支援用品市場に参入すべきか？",
     issueSelection: { correctIssue: "シニア生活支援用品市場に参入すべきか？", wrongIssues: [
@@ -1621,7 +1621,7 @@ export const LV3_QUESTIONS: Question[] = [
     }
   },
   {
-    id: "lv3-50", level: 3, pattern: "新規参入・拡大型", title: "スポーツ用品のeスポーツ事業",
+    id: "lv3-50", level: 3, pattern: "市場開拓型", title: "スポーツ用品のeスポーツ事業",
     situation: "総合スポーツ用品メーカー。リアルスポーツ参加人口の伸び鈍化、eスポーツ市場の急拡大を受け、eスポーツ周辺事業（用品・スポンサー・施設）への参入を検討中。",
     issue: "eスポーツ周辺事業に本格参入すべきか？",
     issueSelection: { correctIssue: "eスポーツ周辺事業に本格参入すべきか？", wrongIssues: [
@@ -1654,7 +1654,7 @@ export const LV3_QUESTIONS: Question[] = [
     }
   },
   {
-    id: "lv3-51", level: 3, pattern: "新規参入・拡大型", title: "ペット業界の介護サービス",
+    id: "lv3-51", level: 3, pattern: "市場開拓型", title: "ペット業界の介護サービス",
     situation: "全国50店舗のペットショップチェーン。ペット飼育者の高齢化とペット長寿化で、ペット介護需要が顕在化。介護サービス事業の本格立ち上げを検討中。",
     issue: "ペット介護サービス事業を立ち上げるべきか？",
     issueSelection: { correctIssue: "ペット介護サービス事業を立ち上げるべきか？", wrongIssues: [
@@ -1819,7 +1819,7 @@ export const LV3_QUESTIONS: Question[] = [
     }
   },
   {
-    id: "lv3-56", level: 3, pattern: "新規参入・拡大型", title: "警備会社のサイバー警備",
+    id: "lv3-56", level: 3, pattern: "市場開拓型", title: "警備会社のサイバー警備",
     situation: "売上1,500億円の総合警備会社。物理警備が成熟する一方、企業向けサイバーセキュリティ需要が急成長。サイバー警備事業の本格立ち上げを検討中。",
     issue: "サイバー警備事業を本格立ち上げすべきか？",
     issueSelection: { correctIssue: "サイバー警備事業を本格立ち上げすべきか？", wrongIssues: [
