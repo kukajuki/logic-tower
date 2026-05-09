@@ -46,6 +46,10 @@ export function buildNarrative(phase1: Phase1Data, slots: Slots): NarrativePart[
   }
 
   if (argLeft && argRight) {
+    const correctArgIds = new Set([
+      phase1.correctSlots["t1-0"],
+      phase1.correctSlots["t1-1"],
+    ]);
     const swapped =
       argLeft.id === phase1.correctSlots["t1-1"] && argRight.id === phase1.correctSlots["t1-0"];
     if (swapped) {
@@ -80,10 +84,19 @@ export function buildNarrative(phase1: Phase1Data, slots: Slots): NarrativePart[
             issues.join("、") + "が配置されています。論点層には「結論を支える判断軸」を置きます。",
         });
       } else {
-        parts.push({
-          kind: "p",
-          message: `論点は正しい層ですが配置が異なります。「${argLeft.phrase}」→「${argRight.phrase}」と読めます。`,
-        });
+        // どちらも tier=1 だが正解スロットの組み合わせと違う = c7（核心でないサブイシュー）が混入
+        const offCore = [argLeft, argRight].filter((c) => !correctArgIds.has(c.id));
+        if (offCore.length) {
+          parts.push({
+            kind: "p",
+            message: `「${offCore[0].phrase}」は関連しますが、このイシューの核心サブイシューではありません。論点層は「結論を直接支える問い」だけに絞ります。`,
+          });
+        } else {
+          parts.push({
+            kind: "p",
+            message: `論点は正しい層ですが配置が異なります。「${argLeft.phrase}」→「${argRight.phrase}」と読めます。`,
+          });
+        }
       }
     }
   } else {
@@ -100,22 +113,29 @@ export function buildNarrative(phase1: Phase1Data, slots: Slots): NarrativePart[
   if (!evidences.length) {
     parts.push({ kind: "x", message: "根拠が未配置。データなしでは主張が空論です。" });
   } else if (evOk === 3 && !evDist) {
-    const allExact = (
-      [
-        ["t2-0", evLeft],
-        ["t2-1", evMid],
-        ["t2-2", evRight],
-      ] as const
-    ).every(([sid, c]) => c?.id === phase1.correctSlots[sid]);
-    parts.push(
-      allExact
-        ? { kind: "o", message: "根拠3枚の選択と順序も完璧です。" }
-        : {
-            kind: "p",
-            message:
-              "根拠3枚は正しいですが順序が異なります。左から重要度順に並べるとスムーズです。",
-          }
-    );
+    const t20Exact = evLeft?.id === phase1.correctSlots["t2-0"];
+    const t21Exact = evMid?.id === phase1.correctSlots["t2-1"];
+    const t22Exact = evRight?.id === phase1.correctSlots["t2-2"];
+    const allExact = t20Exact && t21Exact && t22Exact;
+    const midRightSwap =
+      t20Exact &&
+      evMid?.id === phase1.correctSlots["t2-2"] &&
+      evRight?.id === phase1.correctSlots["t2-1"];
+    if (allExact) {
+      parts.push({ kind: "o", message: "根拠3枚の選択と順序も完璧です。" });
+    } else if (midRightSwap) {
+      parts.push({
+        kind: "o",
+        message:
+          "根拠の中央と右が入れ替わっていますが、補強と反証は対等なので両方正解として扱います。",
+      });
+    } else {
+      parts.push({
+        kind: "p",
+        message:
+          "根拠3枚は正しいですが順序が異なります。左から重要度順に並べるとスムーズです。",
+      });
+    }
   } else {
     const msgs: string[] = [];
     if (evDist) msgs.push(`${evDist}枚のノイズが根拠に混入`);
