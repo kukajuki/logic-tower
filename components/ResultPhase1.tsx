@@ -381,6 +381,157 @@ export default function ResultPhase1({
             </div>
           ))}
 
+          {(() => {
+            const correctArgIds = new Set([
+              phase1.correctSlots["t1-0"],
+              phase1.correctSlots["t1-1"],
+            ]);
+            const offCoreArgs = phase1.cards.filter(
+              (c) => c.type === "argument" && !correctArgIds.has(c.id),
+            );
+            if (offCoreArgs.length === 0) return null;
+            return (
+              <div style={{ marginBottom: 12 }}>
+                <div
+                  style={{
+                    display: "flex",
+                    justifyContent: "space-between",
+                    alignItems: "center",
+                    marginBottom: 3,
+                  }}
+                >
+                  <span
+                    style={{
+                      fontSize: 9,
+                      fontWeight: 700,
+                      letterSpacing: 2,
+                      padding: "1px 6px",
+                      borderRadius: 3,
+                      backgroundColor: "#3B82F622",
+                      color: "#3B82F6",
+                    }}
+                  >
+                    核心ではない論点
+                  </span>
+                  <span
+                    style={{
+                      fontSize: 9,
+                      fontWeight: 700,
+                      color: "#94A3B8",
+                    }}
+                  >
+                    優先度低
+                  </span>
+                </div>
+                <p
+                  style={{
+                    fontSize: 9,
+                    lineHeight: 1.6,
+                    color: "#64748B",
+                    margin: "0 0 3px",
+                  }}
+                >
+                  関連はあるが、このイシューの核心ではないサブイシュー。
+                </p>
+                {offCoreArgs.map((card) => {
+                  const placed = !!result.cardReport[card.id];
+                  const ekey = `oc-${card.id}`;
+                  const isOpen = expanded === ekey;
+                  return (
+                    <div key={card.id} style={{ marginBottom: 3 }}>
+                      <div
+                        onClick={() => setExpanded(isOpen ? null : ekey)}
+                        style={{
+                          padding: "7px 9px",
+                          backgroundColor: "#1E293B",
+                          borderRadius: 6,
+                          borderLeft: `3px solid ${
+                            placed ? "#FDE68A" : "#22C55E"
+                          }`,
+                          cursor: "pointer",
+                        }}
+                      >
+                        <div style={{ display: "flex", alignItems: "flex-start" }}>
+                          <span
+                            style={{
+                              fontSize: 10,
+                              fontWeight: 700,
+                              color: placed ? "#FDE68A" : "#22C55E",
+                              marginRight: 4,
+                              flexShrink: 0,
+                            }}
+                          >
+                            {placed ? "△" : "✓"}
+                          </span>
+                          <span
+                            style={{
+                              fontSize: 9,
+                              lineHeight: 1.5,
+                              color: "#CBD5E1",
+                              flex: 1,
+                            }}
+                          >
+                            {card.text}
+                          </span>
+                          <span
+                            style={{
+                              fontSize: 8,
+                              color: "#64748B",
+                              marginLeft: 2,
+                              flexShrink: 0,
+                              transform: isOpen ? "rotate(180deg)" : "none",
+                              transition: "transform 0.2s",
+                            }}
+                          >
+                            ▼
+                          </span>
+                        </div>
+                        {placed && (
+                          <span
+                            style={{
+                              display: "block",
+                              fontSize: 8,
+                              color: "#FDE68A",
+                              marginTop: 2,
+                              paddingLeft: 14,
+                            }}
+                          >
+                            → 論点スロットに配置されました（核心の問いと差し替え推奨）
+                          </span>
+                        )}
+                      </div>
+                      {isOpen && card.reason && (
+                        <div
+                          style={{
+                            padding: "7px 9px 7px 12px",
+                            marginTop: 1,
+                            backgroundColor: "#334155",
+                            borderRadius: "0 0 6px 6px",
+                            borderLeft: "3px solid #475569",
+                          }}
+                        >
+                          <p
+                            style={{
+                              fontSize: 9,
+                              lineHeight: 1.7,
+                              color: "#94A3B8",
+                              margin: 0,
+                            }}
+                          >
+                            <strong style={{ color: "#CBD5E1" }}>
+                              なぜ核心ではないか：
+                            </strong>
+                            {card.reason}
+                          </p>
+                        </div>
+                      )}
+                    </div>
+                  );
+                })}
+              </div>
+            );
+          })()}
+
           <div style={{ marginBottom: 12 }}>
             <div
               style={{

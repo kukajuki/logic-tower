@@ -1,8 +1,9 @@
 import { Question } from "./types";
 
-export const LEVEL1_QUESTIONS: Question[] = [
+export const LV1_QUESTIONS: Question[] = [
   {
     id: "f1",
+    level: 1,
     title: "老舗旅館のインバウンド戦略",
     situation:
       "創業80年の温泉旅館。訪日観光客の急増を受けてインバウンド対応の投資提案が上がったが、常連客からは「雰囲気が変わるのでは」と懸念の声も出ている。",
@@ -34,6 +35,7 @@ export const LEVEL1_QUESTIONS: Question[] = [
         { id: "c4", text: "競合の星野リゾートは顧客動線の分離設計で両立に成功", type: "evidence", tier: 2, phrase: "星野リゾートが動線分離で成功", reason: "守りの裏付け事例。中央に配置。" },
         { id: "c5", text: "インバウンド市場に成長余地はあるか？", type: "argument", tier: 1, phrase: "成長余地はあるか？", reason: "攻めの論点を左に。このサブイシューに根拠が答えることで、結論「段階的に取り込むべき」を支える。" },
         { id: "c6", text: "常連客の満足度低下事例あり（騒音・文化摩擦で口コミ評価-0.8pt）", type: "evidence", tier: 2, phrase: "常連客満足度-0.8pt", reason: "反証データを右端に。議論に奥行きを出す。" },
+        { id: "c7", text: "従業員の英語接客スキル育成は間に合うか？", type: "argument", tier: 1, phrase: "英語スキル育成は間に合うか？", reason: "実行段階の運用論点。Yes/Noを判断する核ではない。意思決定後に並行検討すべき実装課題。" },
         { id: "d1", text: "旅館の建築様式は江戸時代から続く伝統工法である", type: "distractor", tier: -1, phrase: "建築は伝統工法", reason: "意思決定に直接影響しない事実。" },
         { id: "d2", text: "最近の円安傾向は日銀の金融政策に起因する", type: "distractor", tier: -1, phrase: "円安は日銀政策起因", reason: "マクロ背景。固有の判断根拠にならない。" },
       ],
@@ -42,6 +44,7 @@ export const LEVEL1_QUESTIONS: Question[] = [
   },
   {
     id: "f2",
+    level: 1,
     title: "DX推進の優先順位",
     situation:
       "従業員800名の中堅製造業。全社DX推進の号令がかかったが、生産管理・営業・人事の3部門がそれぞれ予算を要求している。",
@@ -73,6 +76,7 @@ export const LEVEL1_QUESTIONS: Question[] = [
         { id: "c4", text: "現場の受容性：生産管理部門のITリテラシー調査でスコア最高", type: "evidence", tier: 2, phrase: "ITリテラシーが最高", reason: "内部データを右端で補完。" },
         { id: "c5", text: "組織は変革を受容する準備があるか？", type: "argument", tier: 1, phrase: "組織は変革を受容できるか？", reason: "実現性を右に。価値→実現性の順。このサブイシューに根拠が答えることで、結論「生産管理を最優先」を支える。" },
         { id: "c6", text: "同業他社のPoC成功率：生産管理78%、営業45%、人事32%", type: "evidence", tier: 2, phrase: "PoC成功率：生産管理78%", reason: "客観的外部データを中央に。" },
+        { id: "c7", text: "セキュリティ体制は強化が必要か？", type: "argument", tier: 1, phrase: "セキュリティ強化は必要か？", reason: "重要だがDX投資領域の優先順位を決める核ではない。実行時に並行検討する横断論点。" },
         { id: "d1", text: "経済産業省はDX推進ガイドラインを2024年に改訂した", type: "distractor", tier: -1, phrase: "経産省ガイドライン", reason: "背景情報。固有の判断根拠にならない。" },
         { id: "d2", text: "ChatGPTの登場以降、AI関連の投資が世界的に急増している", type: "distractor", tier: -1, phrase: "世界的AI投資急増", reason: "トレンドであり固有の優先順位とは無関係。" },
       ],
@@ -81,6 +85,7 @@ export const LEVEL1_QUESTIONS: Question[] = [
   },
   {
     id: "f3",
+    level: 1,
     title: "新卒採用チャネルの見直し",
     situation:
       "従業員300名のIT企業。ナビサイト経由の採用コストが年々上昇し、人事部からダイレクトリクルーティングへの全面移行案が提出された。",
@@ -112,6 +117,7 @@ export const LEVEL1_QUESTIONS: Question[] = [
         { id: "c4", text: "ダイレクト経由の1年後定着率92%、ナビ経由は76%", type: "evidence", tier: 2, phrase: "定着率92%vs76%", reason: "品質差を中央に。" },
         { id: "c5", text: "運用負荷の増大は許容範囲か？", type: "argument", tier: 1, phrase: "運用負荷は許容範囲か？", reason: "制約条件を右に。このサブイシューに根拠が答えることで、結論「ダイレクトへ移行」を支える。" },
         { id: "c6", text: "スカウト文面作成に人事1名あたり月40時間追加が必要（同規模企業調査）", type: "evidence", tier: 2, phrase: "月40時間の追加工数", reason: "負荷の定量化を右端。" },
+        { id: "c7", text: "スカウト文面のテンプレートは整備できるか？", type: "argument", tier: 1, phrase: "文面テンプレは整備できるか？", reason: "実行段階の運用課題。チャネル切替の意思決定そのものを左右しない。" },
         { id: "d1", text: "2025年の大卒求人倍率は1.75倍で売り手市場が継続", type: "distractor", tier: -1, phrase: "求人倍率1.75倍", reason: "市場全体の話。チャネル選択に無関係。" },
         { id: "d2", text: "採用ブランディングにはSNS運用が不可欠と言われている", type: "distractor", tier: -1, phrase: "SNSブランディング", reason: "一般論でチャネル判断材料にならない。" },
       ],
@@ -120,6 +126,7 @@ export const LEVEL1_QUESTIONS: Question[] = [
   },
   {
     id: "f4",
+    level: 1,
     title: "飲食チェーンの値上げ判断",
     situation:
       "全国150店舗の定食チェーン。原材料費が前年比23%上昇し、利益率が急激に悪化。経営会議で値上げの是非が議題に上がった。",
@@ -151,6 +158,7 @@ export const LEVEL1_QUESTIONS: Question[] = [
         { id: "c4", text: "競合の松屋は10%値上げ後もリピート率を維持(品質訴求戦略)", type: "evidence", tier: 2, phrase: "松屋は値上げでもリピート維持", reason: "競合事例を中央に。" },
         { id: "c5", text: "値上げしても顧客離反は制御できるか？", type: "argument", tier: 1, phrase: "顧客離反は制御できるか？", reason: "対策面を右に。このサブイシューに根拠が答えることで、結論「8%値上げ＋緩和策」を支える。" },
         { id: "c6", text: "自社アンケート：5%値上げなら許容83%、10%なら許容52%、15%なら許容21%", type: "evidence", tier: 2, phrase: "許容度：8%圏内なら過半数OK", reason: "自社データを右端。" },
+        { id: "c7", text: "値上げの告知タイミングはいつにすべきか？", type: "argument", tier: 1, phrase: "告知タイミングはいつか？", reason: "実行設計の論点。値上げ実施そのものの是非を判断する核ではない。決定後に詰めるべき実装課題。" },
         { id: "d1", text: "ドル円レートは150円台で推移し、輸入食材価格に影響を与えている", type: "distractor", tier: -1, phrase: "ドル円150円台", reason: "マクロ背景。値上げ幅の根拠にならない。" },
         { id: "d2", text: "食品ロス削減推進法により、外食産業全体で廃棄量削減が求められている", type: "distractor", tier: -1, phrase: "食品ロス削減法", reason: "規制動向であり値上げとは別論点。" },
       ],
@@ -159,6 +167,7 @@ export const LEVEL1_QUESTIONS: Question[] = [
   },
   {
     id: "f5",
+    level: 1,
     title: "リモートワーク制度の再設計",
     situation:
       "従業員1,200名のSaaS企業。コロナ禍で完全リモートに移行したが、部門間連携の遅延が顕在化し、経営陣から出社回帰の声が出ている。",
@@ -190,6 +199,7 @@ export const LEVEL1_QUESTIONS: Question[] = [
         { id: "c4", text: "社内サーベイ：「週3以上の出社義務なら転職検討」が38%", type: "evidence", tier: 2, phrase: "38%が転職検討", reason: "離反リスクを中央に。" },
         { id: "c5", text: "従業員の離反リスクは抑えられるか？", type: "argument", tier: 1, phrase: "離反リスクは抑えられるか？", reason: "How論点を右に。このサブイシューに根拠が答えることで、結論「職種別に段階移行」を支える。" },
         { id: "c6", text: "Salesforceは職種別ハイブリッド制で離職率を移行前水準に維持", type: "evidence", tier: 2, phrase: "Salesforceが職種別で成功", reason: "解決事例を右端に。" },
+        { id: "c7", text: "オフィス面積の追加確保は必要か？", type: "argument", tier: 1, phrase: "オフィス面積は足りるか？", reason: "実行手段の論点。制度設計の方向性を決める核ではなく、移行決定後に検討する実装課題。" },
         { id: "d1", text: "都心のオフィス空室率は2024年に6.2%まで上昇した", type: "distractor", tier: -1, phrase: "空室率6.2%", reason: "不動産市況。制度設計に無関係。" },
         { id: "d2", text: "Z世代は柔軟な働き方を重視する傾向が強い", type: "distractor", tier: -1, phrase: "Z世代の傾向", reason: "世代論一般。固有の根拠にならない。" },
       ],

@@ -46,6 +46,10 @@ export function buildNarrative(phase1: Phase1Data, slots: Slots): NarrativePart[
   }
 
   if (argLeft && argRight) {
+    const correctArgIds = new Set([
+      phase1.correctSlots["t1-0"],
+      phase1.correctSlots["t1-1"],
+    ]);
     const swapped =
       argLeft.id === phase1.correctSlots["t1-1"] && argRight.id === phase1.correctSlots["t1-0"];
     if (swapped) {
@@ -80,10 +84,19 @@ export function buildNarrative(phase1: Phase1Data, slots: Slots): NarrativePart[
             issues.join("、") + "が配置されています。論点層には「結論を支える判断軸」を置きます。",
         });
       } else {
-        parts.push({
-          kind: "p",
-          message: `論点は正しい層ですが配置が異なります。「${argLeft.phrase}」→「${argRight.phrase}」と読めます。`,
-        });
+        // どちらも tier=1 だが正解スロットの組み合わせと違う = c7（核心でないサブイシュー）が混入
+        const offCore = [argLeft, argRight].filter((c) => !correctArgIds.has(c.id));
+        if (offCore.length) {
+          parts.push({
+            kind: "p",
+            message: `「${offCore[0].phrase}」は関連しますが、このイシューの核心サブイシューではありません。論点層は「結論を直接支える問い」だけに絞ります。`,
+          });
+        } else {
+          parts.push({
+            kind: "p",
+            message: `論点は正しい層ですが配置が異なります。「${argLeft.phrase}」→「${argRight.phrase}」と読めます。`,
+          });
+        }
       }
     }
   } else {

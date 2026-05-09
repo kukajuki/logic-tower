@@ -65,7 +65,6 @@ export default function Game() {
         questionId: question.id,
         questionTitle: question.title,
         level,
-        isBasic: level === 1,
         scores: {
           phase1: {
             score: result.score,
