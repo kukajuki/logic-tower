@@ -4,6 +4,7 @@ export const LV2_QUESTIONS: Question[] = [
   {
     id: "lv2-01",
     level: 2,
+    pattern: "新規参入・拡大型",
     title: "フィンテックの海外進出",
     situation: "国内シェア3位の決済アプリ企業。国内市場の成長が鈍化する中、東南アジア進出の提案が事業開発部から上がっている。",
     issue: "東南アジア市場に進出すべきか？",
@@ -49,6 +50,7 @@ export const LV2_QUESTIONS: Question[] = [
   {
     id: "lv2-02",
     level: 2,
+    pattern: "テクノロジー導入型",
     title: "物流会社のAI配車",
     situation: "トラック500台を保有する中堅物流会社。ドライバー不足が深刻化する中、AI配車システムの導入提案が情報システム部から出ている。",
     issue: "AI配車システムを導入すべきか？",
@@ -94,6 +96,7 @@ export const LV2_QUESTIONS: Question[] = [
   {
     id: "lv2-03",
     level: 2,
+    pattern: "制度変更型",
     title: "自治体のデジタル窓口",
     situation: "人口30万人の地方都市。窓口業務の待ち時間が平均45分に達し住民満足度が低下。DX推進課がオンライン申請システムの全面導入を提案。",
     issue: "窓口業務をオンライン申請に全面移行すべきか？",
@@ -139,6 +142,7 @@ export const LV2_QUESTIONS: Question[] = [
   {
     id: "lv2-04",
     level: 2,
+    pattern: "チャネル転換型",
     title: "食品メーカーのD2C転換",
     situation: "年商200億円の調味料メーカー。売上の95%がスーパー経由だが、卸マージン圧迫で利益率が年々低下。EC直販（D2C）への転換を検討中。",
     issue: "自社EC（D2C）を主力チャネルにすべきか？",
@@ -184,6 +188,7 @@ export const LV2_QUESTIONS: Question[] = [
   {
     id: "lv2-05",
     level: 2,
+    pattern: "チャネル転換型",
     title: "保険会社のオンライン完結",
     situation: "中堅生命保険会社。営業職員3,000人体制だが、若年層の契約率が5年で30%低下。オンライン完結型の保険販売への転換を検討中。",
     issue: "保険販売をオンライン完結型に転換すべきか？",
@@ -229,6 +234,7 @@ export const LV2_QUESTIONS: Question[] = [
   {
     id: "lv2-06",
     level: 2,
+    pattern: "投資判断型",
     title: "アパレルのサステナブル転換",
     situation: "年商500億円のファストファッション企業。ESG投資家からの圧力と消費者意識の変化を受け、サステナブル素材への全面切替を検討中。",
     issue: "サステナブル素材に全面切替すべきか？",
@@ -274,6 +280,7 @@ export const LV2_QUESTIONS: Question[] = [
   {
     id: "lv2-07",
     level: 2,
+    pattern: "投資判断型",
     title: "出版社のサブスク化",
     situation: "老舗ビジネス書出版社。紙の書籍売上が5年で40%減少。編集部が月額制の電子書籍サブスクリプションサービスの立ち上げを提案。",
     issue: "電子書籍サブスクリプションを始めるべきか？",
@@ -319,6 +326,7 @@ export const LV2_QUESTIONS: Question[] = [
   {
     id: "lv2-08",
     level: 2,
+    pattern: "組織変革型",
     title: "建設会社の週休3日制",
     situation: "従業員2,000人の中堅ゼネコン。若手離職率が28%に達し採用も困難。人事部が週休3日制の導入を提案したが、現場からは工期遅延を懸念する声。",
     issue: "週休3日制を導入すべきか？",
@@ -364,6 +372,7 @@ export const LV2_QUESTIONS: Question[] = [
   {
     id: "lv2-09",
     level: 2,
+    pattern: "テクノロジー導入型",
     title: "介護事業のロボット導入",
     situation: "特別養護老人ホーム10施設を運営する社会福祉法人。介護職員の腰痛離職が年間15%に達し、介護ロボットの本格導入が理事会で議題に。",
     issue: "介護ロボットを本格導入すべきか？",
@@ -409,6 +418,7 @@ export const LV2_QUESTIONS: Question[] = [
   {
     id: "lv2-10",
     level: 2,
+    pattern: "新規参入・拡大型",
     title: "広告代理店の自社プロダクト",
     situation: "従業員400人の中堅デジタル広告代理店。クライアントワーク依存で利益率が低迷。開発チームが自社SaaSプロダクトの立ち上げを提案。",
     issue: "自社SaaSプロダクトを立ち上げるべきか？",
@@ -454,6 +464,7 @@ export const LV2_QUESTIONS: Question[] = [
   {
     id: "lv2-11",
     level: 2,
+    pattern: "チャネル転換型",
     title: "農業法人の直販EC",
     situation: "年商3億円の農業法人。高品質な有機野菜を生産するが、JAへの出荷が90%で価格決定権がない。直販ECサイトの立ち上げを検討中。",
     issue: "自社の直販ECサイトを始めるべきか？",
@@ -499,6 +510,7 @@ export const LV2_QUESTIONS: Question[] = [
   {
     id: "lv2-12",
     level: 2,
+    pattern: "制度変更型",
     title: "コンサルの新卒大量採用",
     situation: "従業員150人の戦略コンサルファーム。案件増加に人員が追いつかず、年間5人の中途採用を新卒30人の大量採用に切り替える提案がパートナーから出ている。",
     issue: "新卒大量採用に切り替えるべきか？",
@@ -544,6 +556,7 @@ export const LV2_QUESTIONS: Question[] = [
   {
     id: "lv2-13",
     level: 2,
+    pattern: "新規参入・拡大型",
     title: "自動車部品のEVシフト",
     situation: "年商800億円のエンジン部品メーカー。EV化の加速でエンジン部品の需要減が予想される中、EV向けモーター部品への事業転換を検討中。",
     issue: "EV向けモーター部品に事業転換すべきか？",
@@ -589,6 +602,7 @@ export const LV2_QUESTIONS: Question[] = [
   {
     id: "lv2-14",
     level: 2,
+    pattern: "投資判断型",
     title: "EC事業者の実店舗出店",
     situation: "年商50億円のインテリアEC企業。売上成長率が鈍化し、顧客から「実物を見たい」の声が増加。都心に旗艦店を出す提案が出ている。",
     issue: "都心に旗艦店を出店すべきか？",
@@ -634,6 +648,7 @@ export const LV2_QUESTIONS: Question[] = [
   {
     id: "lv2-15",
     level: 2,
+    pattern: "テクノロジー導入型",
     title: "医療法人の遠隔診療",
     situation: "都市部に3院を展開するクリニック。コロナ後もオンライン診療の需要が継続しており、遠隔診療の本格拡大を院長が検討中。",
     issue: "遠隔診療を本格拡大すべきか？",
@@ -679,6 +694,7 @@ export const LV2_QUESTIONS: Question[] = [
   {
     id: "lv2-16",
     level: 2,
+    pattern: "チャネル転換型",
     title: "旅行代理店のBtoB転換",
     situation: "従業員200人の旅行代理店。個人旅行のOTA化で売上が5年で50%減少。法人向け出張手配・MICE事業への転換を検討中。",
     issue: "法人向け事業を主力に転換すべきか？",
@@ -724,6 +740,7 @@ export const LV2_QUESTIONS: Question[] = [
   {
     id: "lv2-17",
     level: 2,
+    pattern: "テクノロジー導入型",
     title: "不動産テックの賃貸AI",
     situation: "賃貸仲介チェーン80店舗を展開する不動産会社。物件提案の属人化と内見の手間が課題。AIマッチング＋VR内見の導入を検討中。",
     issue: "AIマッチングとVR内見を導入すべきか？",
@@ -769,6 +786,7 @@ export const LV2_QUESTIONS: Question[] = [
   {
     id: "lv2-18",
     level: 2,
+    pattern: "新規参入・拡大型",
     title: "EdTechの法人研修参入",
     situation: "個人向けプログラミング学習アプリを運営するEdTech企業。DAU10万人だが個人課金の単価が頭打ち。法人向け社員研修サービスへの参入を検討中。",
     issue: "法人向け研修サービスに参入すべきか？",
@@ -814,6 +832,7 @@ export const LV2_QUESTIONS: Question[] = [
   {
     id: "lv2-19",
     level: 2,
+    pattern: "投資判断型",
     title: "小売チェーンのPB拡大",
     situation: "全国300店舗のドラッグストアチェーン。NB商品の価格競争が激化し利益率が低下。PB（プライベートブランド）商品の拡大を商品部が提案。",
     issue: "PB商品の品目数を大幅に拡大すべきか？",
@@ -859,6 +878,7 @@ export const LV2_QUESTIONS: Question[] = [
   {
     id: "lv2-20",
     level: 2,
+    pattern: "テクノロジー導入型",
     title: "人材紹介のAIマッチング",
     situation: "年間紹介件数3,000件の人材紹介会社。コンサルタントの属人的なマッチングが業務のボトルネック。AIマッチングシステムの導入を検討中。",
     issue: "AIマッチングシステムを導入すべきか？",
