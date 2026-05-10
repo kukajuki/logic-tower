@@ -19,8 +19,8 @@ export const LV2_QUESTIONS: Question[] = [
     phase1: {
       cards: [
         { id: "c1", text: "まずベトナム1国に絞り、現地パートナーとの合弁で参入すべき。ただし初年度投資は5億円以内に限定", type: "conclusion", tier: 0, phrase: "ベトナム1国に絞り合弁参入", reason: "市場・方法・条件を一文で明示した結論。" },
-        { id: "c5", text: "東南アジアの決済市場に十分な需要はあるか？", type: "argument", tier: 1, phrase: "需要は十分か？", reason: "新規参入・拡大型の左：市場・需要のサブイシュー。" },
-        { id: "c3", text: "自社の体制で進出を実現できるか？", type: "argument", tier: 1, phrase: "自社で実現できるか？", reason: "新規参入・拡大型の右：自社の実現性のサブイシュー。" },
+        { id: "c5", text: "東南アジアの決済市場に十分な需要はあるか？", type: "argument", tier: 1, phrase: "決済市場に十分な需要はあるか？", reason: "新規参入・拡大型の左：市場・需要のサブイシュー。" },
+        { id: "c3", text: "自社の体制で進出を実現できるか？", type: "argument", tier: 1, phrase: "自社の体制で進出を実現できるか？", reason: "新規参入・拡大型の右：自社の実現性のサブイシュー。" },
         { id: "c7", text: "現地の規制対応に自社で対処できるか？", type: "argument", tier: 1, phrase: "規制対応は可能か？", reason: "関連はあるが合弁パートナーに委ねる領域。今の判断の核心ではない。" },
         { id: "c2", text: "ベトナムのモバイル決済市場は年25%成長、未参入の日系企業向けニーズが顕在化", type: "evidence", tier: 2, phrase: "年25%成長・日系ニーズあり", reason: "参入余地を支える最重要データ。左端に配置。" },
         { id: "c4", text: "同業のPayPayは東南アジア3カ国に進出し、2年目で単月黒字化を達成", type: "evidence", tier: 2, phrase: "PayPayが2年目で黒字化", reason: "参入の実現可能性を示す競合事例。中央で補強。" },
@@ -65,8 +65,8 @@ export const LV2_QUESTIONS: Question[] = [
     phase1: {
       cards: [
         { id: "c1", text: "段階的にAI配車を導入すべき。まず東京拠点で3ヶ月のPoCを実施し、効果検証後に全国展開", type: "conclusion", tier: 0, phrase: "東京拠点でPoC→全国展開", reason: "段階的アプローチで実行リスクを管理する結論。" },
-        { id: "c5", text: "AI配車で配送効率の課題は解決できるか？", type: "argument", tier: 1, phrase: "技術で課題は解決するか？", reason: "テクノロジー導入型の左：技術で課題が解決できるかのサブイシュー。" },
-        { id: "c3", text: "現場の人・組織は対応できるか？", type: "argument", tier: 1, phrase: "人・組織は対応できるか？", reason: "テクノロジー導入型の右：人・組織が対応できるかのサブイシュー。" },
+        { id: "c5", text: "AI配車で配送効率の課題は解決できるか？", type: "argument", tier: 1, phrase: "配送効率の課題は解決できるか？", reason: "テクノロジー導入型の左：技術で課題が解決できるかのサブイシュー。" },
+        { id: "c3", text: "現場の人・組織は対応できるか？", type: "argument", tier: 1, phrase: "現場の人・組織は対応できるか？", reason: "テクノロジー導入型の右：人・組織が対応できるかのサブイシュー。" },
         { id: "c7", text: "AI配車データを営業提案に活用できるか？", type: "argument", tier: 1, phrase: "データの営業活用は可能か？", reason: "将来の可能性としては面白いが、導入判断の核心ではない。" },
         { id: "c2", text: "AI配車を導入した同規模の物流会社3社で平均18%の配送効率改善を達成", type: "evidence", tier: 2, phrase: "同業3社で18%効率改善", reason: "価値を裏付ける最重要データ。左端に。" },
         { id: "c4", text: "初期導入コスト8,000万円、月額ランニング200万円。投資回収期間は14ヶ月の見込み", type: "evidence", tier: 2, phrase: "投資回収14ヶ月", reason: "コスト面の定量データ。中央で補強。" },
@@ -111,8 +111,8 @@ export const LV2_QUESTIONS: Question[] = [
     phase1: {
       cards: [
         { id: "c1", text: "段階的に移行すべき。まず転入届・税証明など定型業務から開始し、対面窓口も並行維持", type: "conclusion", tier: 0, phrase: "定型業務から段階移行・対面並行", reason: "移行対象と条件を具体的に示した結論。" },
-        { id: "c5", text: "オンライン化への変更は必要性が高いか？", type: "argument", tier: 1, phrase: "変更の必要性は高いか？", reason: "制度変更型の左：変更の必要性のサブイシュー。" },
-        { id: "c3", text: "デジタル弱者にも受け入れられる移行ができるか？", type: "argument", tier: 1, phrase: "受け入れられる移行か？", reason: "制度変更型の右：どう変えれば受け入れられるかのサブイシュー。" },
+        { id: "c5", text: "オンライン化への変更は必要性が高いか？", type: "argument", tier: 1, phrase: "変更は必要性が高いか？", reason: "制度変更型の左：変更の必要性のサブイシュー。" },
+        { id: "c3", text: "デジタル弱者にも受け入れられる移行ができるか？", type: "argument", tier: 1, phrase: "受け入れられる移行ができるか？", reason: "制度変更型の右：どう変えれば受け入れられるかのサブイシュー。" },
         { id: "c7", text: "職員のリスキリングは間に合うか？", type: "argument", tier: 1, phrase: "職員の対応力は十分か？", reason: "実行面の課題だが、段階移行なら並行対応できる。核心ではない。" },
         { id: "c2", text: "先行導入した渋谷区では窓口待ち時間が45分→8分に短縮、住民満足度が32pt向上", type: "evidence", tier: 2, phrase: "渋谷区で待ち時間45→8分", reason: "利便性向上の先行事例。最重要根拠を左端に。" },
         { id: "c4", text: "オンライン申請の利用率は20-40代で87%、70代以上では23%（総務省調査）", type: "evidence", tier: 2, phrase: "70代以上の利用率は23%", reason: "世代間格差のデータ。中央でリスクを可視化。" },
@@ -157,8 +157,8 @@ export const LV2_QUESTIONS: Question[] = [
     phase1: {
       cards: [
         { id: "c1", text: "D2Cを第2の柱として育てるべき。ただし既存スーパーチャネルは維持し、3年で売上比率20%を目指す", type: "conclusion", tier: 0, phrase: "D2Cを第2の柱に、3年で20%", reason: "チャネルの位置づけと数値目標を明示。" },
-        { id: "c5", text: "D2Cに既存卸チャネル比の優位性はあるか？", type: "argument", tier: 1, phrase: "新チャネルに優位性はあるか？", reason: "チャネル転換型の左：新チャネルの優位性のサブイシュー。" },
-        { id: "c3", text: "既存卸チャネルへの影響は許容範囲か？", type: "argument", tier: 1, phrase: "既存影響は許容範囲か？", reason: "チャネル転換型の右：既存チャネルへの影響のサブイシュー。" },
+        { id: "c5", text: "D2Cに既存卸チャネル比の優位性はあるか？", type: "argument", tier: 1, phrase: "既存卸チャネル比の優位性はあるか？", reason: "チャネル転換型の左：新チャネルの優位性のサブイシュー。" },
+        { id: "c3", text: "既存卸チャネルへの影響は許容範囲か？", type: "argument", tier: 1, phrase: "影響は許容範囲か？", reason: "チャネル転換型の右：既存チャネルへの影響のサブイシュー。" },
         { id: "c7", text: "D2Cで得た顧客データを商品開発に活かせるか？", type: "argument", tier: 1, phrase: "顧客データの活用は可能か？", reason: "長期的な価値だが、転換の可否判断の核心ではない。" },
         { id: "c2", text: "D2Cの粗利率62%に対し、スーパー経由は28%。1件あたりの利益が3.4倍", type: "evidence", tier: 2, phrase: "D2C粗利率62%vsスーパー28%", reason: "収益性の比較データ。最重要根拠を左端に。" },
         { id: "c4", text: "味の素のD2Cは3年で売上50億円に成長、既存チャネルとの共食いは限定的", type: "evidence", tier: 2, phrase: "味の素D2Cが3年で50億円", reason: "先行企業の成功事例。中央で補強。" },
@@ -203,8 +203,8 @@ export const LV2_QUESTIONS: Question[] = [
     phase1: {
       cards: [
         { id: "c1", text: "若年層向けにオンライン完結型商品を新設すべき。ただし対面チャネルは中高年層向けに維持", type: "conclusion", tier: 0, phrase: "若年層はオンライン、中高年は対面維持", reason: "ターゲット別のチャネル戦略を明示。" },
-        { id: "c5", text: "オンライン完結に既存対面比の優位性はあるか？", type: "argument", tier: 1, phrase: "新チャネルに優位性はあるか？", reason: "チャネル転換型の左：新チャネルの優位性のサブイシュー。" },
-        { id: "c3", text: "既存営業職員チャネルへの影響は許容範囲か？", type: "argument", tier: 1, phrase: "既存チャネル影響は許容範囲か？", reason: "チャネル転換型の右：既存チャネルへの影響のサブイシュー。" },
+        { id: "c5", text: "オンライン完結に既存対面比の優位性はあるか？", type: "argument", tier: 1, phrase: "既存対面比の優位性はあるか？", reason: "チャネル転換型の左：新チャネルの優位性のサブイシュー。" },
+        { id: "c3", text: "既存営業職員チャネルへの影響は許容範囲か？", type: "argument", tier: 1, phrase: "影響は許容範囲か？", reason: "チャネル転換型の右：既存チャネルへの影響のサブイシュー。" },
         { id: "c7", text: "オンライン保険の不正請求リスクは許容範囲か？", type: "argument", tier: 1, phrase: "不正請求リスクは大丈夫か？", reason: "重要だがシステム対策で対処可能。判断の核心ではない。" },
         { id: "c2", text: "ライフネット生命のオンライン完結型は20-30代契約率が対面比2.3倍、解約率も15%低い", type: "evidence", tier: 2, phrase: "ライフネットは契約率2.3倍", reason: "先行事例の成功データ。最重要根拠。" },
         { id: "c4", text: "自社調査で20-30代の78%が「対面での説明は不要」と回答", type: "evidence", tier: 2, phrase: "78%が対面不要と回答", reason: "自社顧客のニーズデータ。中央で補強。" },
@@ -249,7 +249,7 @@ export const LV2_QUESTIONS: Question[] = [
     phase1: {
       cards: [
         { id: "c1", text: "主力商品の30%をサステナブル素材に切替。3年計画で段階実施し、価格転嫁は5%以内に抑制", type: "conclusion", tier: 0, phrase: "30%を3年で切替、値上げ5%以内", reason: "範囲・期間・価格条件を明示した結論。" },
-        { id: "c5", text: "サステナブル切替のROIは投資に見合うか？", type: "argument", tier: 1, phrase: "ROIは見合うか？", reason: "投資判断型の左：ROI・価値のサブイシュー。" },
+        { id: "c5", text: "サステナブル切替のROIは投資に見合うか？", type: "argument", tier: 1, phrase: "ROIは投資に見合うか？", reason: "投資判断型の左：ROI・価値のサブイシュー。" },
         { id: "c3", text: "切替のコスト・リスクは許容範囲か？", type: "argument", tier: 1, phrase: "コスト・リスクは許容範囲か？", reason: "投資判断型の右：コスト・リスクのサブイシュー。" },
         { id: "c7", text: "サプライチェーン全体の切替は技術的に可能か？", type: "argument", tier: 1, phrase: "サプライチェーン対応は可能か？", reason: "実行面の課題だが段階実施で対応可能。核心ではない。" },
         { id: "c2", text: "サステナブル商品の購買意向調査で「価格5%増なら購入」が67%、Z世代では82%", type: "evidence", tier: 2, phrase: "Z世代82%が5%増でも購入", reason: "需要の裏付けデータ。最重要根拠。" },
@@ -295,8 +295,8 @@ export const LV2_QUESTIONS: Question[] = [
     phase1: {
       cards: [
         { id: "c1", text: "サブスクを開始すべき。既刊3,000冊を月額1,980円で提供し、新刊は発売後6ヶ月で追加", type: "conclusion", tier: 0, phrase: "月額1,980円・新刊は6ヶ月後追加", reason: "価格・コンテンツ・条件を具体的に。" },
-        { id: "c5", text: "現行の単発販売だけで財務的に成立するか？", type: "argument", tier: 1, phrase: "現状維持で成立するか？", reason: "価格変更型の左：変更しないと財務的に成立するかのサブイシュー。" },
-        { id: "c3", text: "サブスク化しても紙の読者は離れないか？", type: "argument", tier: 1, phrase: "顧客は離れないか？", reason: "価格変更型の右：変更しても顧客が離れないかのサブイシュー。" },
+        { id: "c5", text: "現行の単発販売だけで財務的に成立するか？", type: "argument", tier: 1, phrase: "単発販売だけで財務的に成立するか？", reason: "価格変更型の左：変更しないと財務的に成立するかのサブイシュー。" },
+        { id: "c3", text: "サブスク化しても紙の読者は離れないか？", type: "argument", tier: 1, phrase: "読者は離れないか？", reason: "価格変更型の右：変更しても顧客が離れないかのサブイシュー。" },
         { id: "c7", text: "コンテンツの品質管理体制は維持できるか？", type: "argument", tier: 1, phrase: "品質管理は維持できるか？", reason: "運営面の課題だが、既存編集体制で対応可能。" },
         { id: "c2", text: "日経BP系サブスクは月額2,000円で会員12万人、年間収益28億円で紙の減収をカバー", type: "evidence", tier: 2, phrase: "日経BP系が年28億円", reason: "先行事例の収益データ。最重要根拠。" },
         { id: "c4", text: "自社読者調査で「月1,500-2,000円なら利用したい」が54%、年3冊以上購入者では72%", type: "evidence", tier: 2, phrase: "54%が1,500-2,000円で利用意向", reason: "自社読者のニーズデータ。中央で補強。" },
@@ -341,8 +341,8 @@ export const LV2_QUESTIONS: Question[] = [
     phase1: {
       cards: [
         { id: "c1", text: "選択制の週休3日を導入すべき。まず本社・設計部門から開始し、現場は工期に応じた柔軟シフトで対応", type: "conclusion", tier: 0, phrase: "選択制で本社から、現場は柔軟シフト", reason: "適用範囲と段階を具体的に示した結論。" },
-        { id: "c5", text: "週休3日への変革は必要性が高いか？", type: "argument", tier: 1, phrase: "変革の必要性は高いか？", reason: "組織変革型の左：変革の必要性のサブイシュー。" },
-        { id: "c3", text: "現場組織は週休3日を受け入れられるか？", type: "argument", tier: 1, phrase: "組織は受け入れられるか？", reason: "組織変革型の右：組織受容性のサブイシュー。" },
+        { id: "c5", text: "週休3日への変革は必要性が高いか？", type: "argument", tier: 1, phrase: "変革は必要性が高いか？", reason: "組織変革型の左：変革の必要性のサブイシュー。" },
+        { id: "c3", text: "現場組織は週休3日を受け入れられるか？", type: "argument", tier: 1, phrase: "週休3日を受け入れられるか？", reason: "組織変革型の右：組織受容性のサブイシュー。" },
         { id: "c7", text: "給与水準の調整は必要か？", type: "argument", tier: 1, phrase: "給与への影響はどうか？", reason: "重要だが、選択制なら個人判断に委ねられる。核心ではない。" },
         { id: "c2", text: "週休3日を導入した鹿島建設で新卒応募が2.4倍に増加、若手離職率が28%→12%に改善", type: "evidence", tier: 2, phrase: "鹿島で応募2.4倍・離職率12%に", reason: "最も重要な先行事例。左端に。" },
         { id: "c4", text: "自社の設計部門で試験導入した結果、生産性が8%向上（集中時間の増加が要因）", type: "evidence", tier: 2, phrase: "試験導入で生産性8%向上", reason: "自社の実験データ。中央で補強。" },
@@ -387,8 +387,8 @@ export const LV2_QUESTIONS: Question[] = [
     phase1: {
       cards: [
         { id: "c1", text: "移乗介助ロボットを3施設で先行導入すべき。6ヶ月の効果検証後、残り7施設への展開を判断", type: "conclusion", tier: 0, phrase: "3施設で先行導入→効果検証", reason: "対象・期間・次のステップを明示した結論。" },
-        { id: "c5", text: "ロボットで身体負担と離職の課題は解決できるか？", type: "argument", tier: 1, phrase: "技術で課題は解決するか？", reason: "テクノロジー導入型の左：技術で課題が解決できるかのサブイシュー。" },
-        { id: "c3", text: "職員と利用者は受け入れて使いこなせるか？", type: "argument", tier: 1, phrase: "人・組織は対応できるか？", reason: "テクノロジー導入型の右：人・組織が対応できるかのサブイシュー。" },
+        { id: "c5", text: "ロボットで身体負担と離職の課題は解決できるか？", type: "argument", tier: 1, phrase: "離職の課題は解決できるか？", reason: "テクノロジー導入型の左：技術で課題が解決できるかのサブイシュー。" },
+        { id: "c3", text: "職員と利用者は受け入れて使いこなせるか？", type: "argument", tier: 1, phrase: "利用者は受け入れて使いこなせるか？", reason: "テクノロジー導入型の右：人・組織が対応できるかのサブイシュー。" },
         { id: "c7", text: "導入コストは補助金で賄えるか？", type: "argument", tier: 1, phrase: "補助金で賄えるか？", reason: "資金面の課題だが、効果が確認されれば予算確保は可能。" },
         { id: "c2", text: "先行導入施設での移乗介助ロボット使用後、腰痛発症率が42%→11%に改善", type: "evidence", tier: 2, phrase: "腰痛発症率42%→11%", reason: "身体負担軽減の定量データ。最重要根拠。" },
         { id: "c4", text: "ロボット導入施設の離職率が22%→9%に低下（介護労働安定センター調査）", type: "evidence", tier: 2, phrase: "離職率22%→9%に低下", reason: "離職改善の外部データ。中央で補強。" },
@@ -433,8 +433,8 @@ export const LV2_QUESTIONS: Question[] = [
     phase1: {
       cards: [
         { id: "c1", text: "既存クライアント向けの広告効果測定SaaSを開発すべき。MVP開発3ヶ月、初年度10社導入が目標", type: "conclusion", tier: 0, phrase: "広告効果測定SaaS、MVP3ヶ月", reason: "ターゲット・プロダクト・スケジュールを具体化。" },
-        { id: "c5", text: "プロダクト投資のROI・収益性は高いか？", type: "argument", tier: 1, phrase: "ROIは高いか？", reason: "投資判断型の左：ROI・価値のサブイシュー。" },
-        { id: "c3", text: "投資コストと既存事業への影響は許容範囲か？", type: "argument", tier: 1, phrase: "コスト・影響は許容範囲か？", reason: "投資判断型の右：コスト・リスクのサブイシュー。" },
+        { id: "c5", text: "プロダクト投資のROI・収益性は高いか？", type: "argument", tier: 1, phrase: "ROI・収益性は高いか？", reason: "投資判断型の左：ROI・価値のサブイシュー。" },
+        { id: "c3", text: "投資コストと既存事業への影響は許容範囲か？", type: "argument", tier: 1, phrase: "既存事業への影響は許容範囲か？", reason: "投資判断型の右：コスト・リスクのサブイシュー。" },
         { id: "c7", text: "SaaSの技術スタックに対応できるエンジニアは確保できるか？", type: "argument", tier: 1, phrase: "エンジニアは確保できるか？", reason: "重要だが外部採用・業務委託で対応可能。核心ではない。" },
         { id: "c2", text: "自社が持つ広告運用データ800社分は、競合SaaSにない独自の強み。同様のピボットで成功したSepteni社はARR15億円を達成", type: "evidence", tier: 2, phrase: "800社データが強み、Septeni ARR15億", reason: "競争優位とベンチマーク。最重要根拠。" },
         { id: "c4", text: "既存クライアント30社にヒアリングし、68%が「効果測定の自動化に月5-10万円払う」と回答", type: "evidence", tier: 2, phrase: "68%が月5-10万円の支払意向", reason: "需要の定量検証。中央で補強。" },
@@ -479,8 +479,8 @@ export const LV2_QUESTIONS: Question[] = [
     phase1: {
       cards: [
         { id: "c1", text: "直販ECを始めるべき。まず定期便サブスクリプション（月額4,980円）から開始し、年間会員500人を目指す", type: "conclusion", tier: 0, phrase: "定期便月額4,980円・年500人", reason: "販売形態・価格・目標を具体的に。" },
-        { id: "c5", text: "直販ECに既存卸比の優位性はあるか？", type: "argument", tier: 1, phrase: "新チャネルに優位性はあるか？", reason: "チャネル転換型の左：新チャネルの優位性のサブイシュー。" },
-        { id: "c3", text: "既存卸チャネルへの影響は許容範囲か？", type: "argument", tier: 1, phrase: "既存影響は許容範囲か？", reason: "チャネル転換型の右：既存チャネルへの影響のサブイシュー。" },
+        { id: "c5", text: "直販ECに既存卸比の優位性はあるか？", type: "argument", tier: 1, phrase: "既存卸比の優位性はあるか？", reason: "チャネル転換型の左：新チャネルの優位性のサブイシュー。" },
+        { id: "c3", text: "既存卸チャネルへの影響は許容範囲か？", type: "argument", tier: 1, phrase: "影響は許容範囲か？", reason: "チャネル転換型の右：既存チャネルへの影響のサブイシュー。" },
         { id: "c7", text: "ブランド認知をどう広げるか？", type: "argument", tier: 1, phrase: "認知拡大はできるか？", reason: "マーケティング課題だが、まずは既存顧客と口コミから始められる。" },
         { id: "c2", text: "JA出荷の粗利率18%に対し、直販ECは粗利率58%。同規模の農業法人「坂ノ途中」は直販で年商12億円", type: "evidence", tier: 2, phrase: "直販粗利率58%・坂ノ途中が12億", reason: "利益率改善の根拠。最重要データ。" },
         { id: "c4", text: "ふるさと納税の返礼品で累計8,000件の注文実績あり、顧客リスト活用が可能", type: "evidence", tier: 2, phrase: "ふるさと納税8,000件の顧客基盤", reason: "既存顧客基盤のデータ。中央で補強。" },
@@ -525,8 +525,8 @@ export const LV2_QUESTIONS: Question[] = [
     phase1: {
       cards: [
         { id: "c1", text: "新卒20人の採用に拡大すべき。ただし中途5人も維持し、メンター制度の整備を前提条件とする", type: "conclusion", tier: 0, phrase: "新卒20人＋中途5人維持・メンター必須", reason: "採用数・既存維持・前提条件を明示。" },
-        { id: "c5", text: "中途中心からの採用方針変更は必要性が高いか？", type: "argument", tier: 1, phrase: "変更の必要性は高いか？", reason: "制度変更型の左：変更の必要性のサブイシュー。" },
-        { id: "c3", text: "新卒大量採用を組織が品質維持しつつ受け入れられるか？", type: "argument", tier: 1, phrase: "受け入れられる移行か？", reason: "制度変更型の右：どう変えれば受け入れられるかのサブイシュー。" },
+        { id: "c5", text: "中途中心からの採用方針変更は必要性が高いか？", type: "argument", tier: 1, phrase: "採用方針変更は必要性が高いか？", reason: "制度変更型の左：変更の必要性のサブイシュー。" },
+        { id: "c3", text: "新卒大量採用を組織が品質維持しつつ受け入れられるか？", type: "argument", tier: 1, phrase: "品質維持しつつ受け入れられるか？", reason: "制度変更型の右：どう変えれば受け入れられるかのサブイシュー。" },
         { id: "c7", text: "新卒のカルチャーフィットは確保できるか？", type: "argument", tier: 1, phrase: "カルチャーフィットは大丈夫か？", reason: "重要だが採用プロセスで管理可能。核心ではない。" },
         { id: "c2", text: "中途採用の年間コストは1人1,200万円（紹介料含む）、新卒は1人350万円。3年後の定着率は新卒78%vs中途52%", type: "evidence", tier: 2, phrase: "新卒350万vs中途1,200万・定着率も上", reason: "コスト比較の定量データ。最重要根拠。" },
         { id: "c4", text: "BCGは2015年に新卒比率を50%に引き上げ、5年後の戦力化率で中途と同等を達成", type: "evidence", tier: 2, phrase: "BCGが新卒50%で戦力化達成", reason: "先行事例。中央で補強。" },
@@ -571,7 +571,7 @@ export const LV2_QUESTIONS: Question[] = [
     phase1: {
       cards: [
         { id: "c1", text: "EV向けモーター部品に段階転換すべき。3年でR&D投資50億円、エンジン部品は既存顧客向けに5年間維持", type: "conclusion", tier: 0, phrase: "3年でR&D50億、エンジンは5年維持", reason: "投資額・移行期間・既存事業の扱いを明示。" },
-        { id: "c5", text: "エンジン部品継続だと事業継続性に危機があるか？", type: "argument", tier: 1, phrase: "やらないとどうなるか？", reason: "危機対応型の左：やらないとどうなるかのサブイシュー。" },
+        { id: "c5", text: "エンジン部品継続だと事業継続性に危機があるか？", type: "argument", tier: 1, phrase: "事業継続性に危機があるか？", reason: "危機対応型の左：やらないとどうなるかのサブイシュー。" },
         { id: "c3", text: "EV転換でどう対処すれば実行できるか？", type: "argument", tier: 1, phrase: "どう対処すれば実行できるか？", reason: "危機対応型の右：やるならどう対処するかのサブイシュー。" },
         { id: "c7", text: "EV向け部品の品質認証を取得できるか？", type: "argument", tier: 1, phrase: "品質認証は取得できるか？", reason: "重要だが時間をかければ取得可能。転換判断の核心ではない。" },
         { id: "c2", text: "自社の精密加工技術はEVモーターコアの製造に転用可能。既に試作で純正品比95%の性能を達成", type: "evidence", tier: 2, phrase: "試作で純正品比95%達成", reason: "技術転用の実証データ。最重要根拠。" },
@@ -617,8 +617,8 @@ export const LV2_QUESTIONS: Question[] = [
     phase1: {
       cards: [
         { id: "c1", text: "表参道に体験型旗艦店を1店舗出すべき。ただしショールーム型（在庫なし・ECで受注）で固定費を抑制", type: "conclusion", tier: 0, phrase: "表参道にショールーム型1店舗", reason: "立地・形態・コスト条件を明示。" },
-        { id: "c5", text: "実店舗出店のROI・売上押上効果は高いか？", type: "argument", tier: 1, phrase: "ROIは高いか？", reason: "投資判断型の左：ROI・価値のサブイシュー。" },
-        { id: "c3", text: "出店コストとリスクは許容範囲か？", type: "argument", tier: 1, phrase: "コスト・リスクは許容範囲か？", reason: "投資判断型の右：コスト・リスクのサブイシュー。" },
+        { id: "c5", text: "実店舗出店のROI・売上押上効果は高いか？", type: "argument", tier: 1, phrase: "ROI・売上押上効果は高いか？", reason: "投資判断型の左：ROI・価値のサブイシュー。" },
+        { id: "c3", text: "出店コストとリスクは許容範囲か？", type: "argument", tier: 1, phrase: "出店コストとリスクは許容範囲か？", reason: "投資判断型の右：コスト・リスクのサブイシュー。" },
         { id: "c7", text: "店舗スタッフの採用・育成は間に合うか？", type: "argument", tier: 1, phrase: "スタッフ確保はできるか？", reason: "運営面の課題だが、1店舗なら対応可能。" },
         { id: "c2", text: "Warby Parkerは旗艦店来店者のEC購入額が非来店者の2.8倍。来店→EC転換率は38%", type: "evidence", tier: 2, phrase: "来店者のEC購入額が2.8倍", reason: "ショールーム効果の先行事例。最重要根拠。" },
         { id: "c4", text: "自社アンケートで「実物を見てからECで購入したい」が61%、平均客単価は実物確認後に24%増", type: "evidence", tier: 2, phrase: "61%が実物確認後に購入希望", reason: "自社顧客の行動データ。中央で補強。" },
@@ -663,8 +663,8 @@ export const LV2_QUESTIONS: Question[] = [
     phase1: {
       cards: [
         { id: "c1", text: "再診・慢性疾患のフォローアップに限定して遠隔診療を拡大すべき。初診は対面を維持", type: "conclusion", tier: 0, phrase: "再診・慢性疾患に限定して拡大", reason: "適用範囲と条件を明示した結論。" },
-        { id: "c5", text: "遠隔技術で通院負担と利便性の課題は解決できるか？", type: "argument", tier: 1, phrase: "技術で課題は解決するか？", reason: "テクノロジー導入型の左：技術で課題が解決できるかのサブイシュー。" },
-        { id: "c3", text: "医師と患者は遠隔診療を運用品質で受け入れられるか？", type: "argument", tier: 1, phrase: "人・組織は対応できるか？", reason: "テクノロジー導入型の右：人・組織が対応できるかのサブイシュー。" },
+        { id: "c5", text: "遠隔技術で通院負担と利便性の課題は解決できるか？", type: "argument", tier: 1, phrase: "利便性の課題は解決できるか？", reason: "テクノロジー導入型の左：技術で課題が解決できるかのサブイシュー。" },
+        { id: "c3", text: "医師と患者は遠隔診療を運用品質で受け入れられるか？", type: "argument", tier: 1, phrase: "運用品質で受け入れられるか？", reason: "テクノロジー導入型の右：人・組織が対応できるかのサブイシュー。" },
         { id: "c7", text: "遠隔診療の保険適用範囲は十分か？", type: "argument", tier: 1, phrase: "保険適用は十分か？", reason: "制度面の課題だが再診なら適用済み。核心ではない。" },
         { id: "c2", text: "遠隔診療導入クリニックで通院中断率が35%→12%に改善、患者満足度も18pt向上", type: "evidence", tier: 2, phrase: "通院中断率35%→12%に改善", reason: "患者メリットの定量データ。最重要根拠。" },
         { id: "c4", text: "自院パイロットで遠隔再診200件実施、対面と診断一致率98%、処方変更率は差なし", type: "evidence", tier: 2, phrase: "診断一致率98%", reason: "品質維持の実証データ。中央で補強。" },
@@ -709,8 +709,8 @@ export const LV2_QUESTIONS: Question[] = [
     phase1: {
       cards: [
         { id: "c1", text: "法人出張手配を主力事業にすべき。既存法人顧客50社をベースに、3年で200社・売上比率60%を目指す", type: "conclusion", tier: 0, phrase: "法人主力化、3年で200社", reason: "ターゲット・基盤・数値目標を明示。" },
-        { id: "c5", text: "法人チャネルに既存個人比の優位性はあるか？", type: "argument", tier: 1, phrase: "新チャネルに優位性はあるか？", reason: "チャネル転換型の左：新チャネルの優位性のサブイシュー。" },
-        { id: "c3", text: "既存個人事業の縮小影響は許容範囲か？", type: "argument", tier: 1, phrase: "既存影響は許容範囲か？", reason: "チャネル転換型の右：既存チャネルへの影響のサブイシュー。" },
+        { id: "c5", text: "法人チャネルに既存個人比の優位性はあるか？", type: "argument", tier: 1, phrase: "既存個人比の優位性はあるか？", reason: "チャネル転換型の左：新チャネルの優位性のサブイシュー。" },
+        { id: "c3", text: "既存個人事業の縮小影響は許容範囲か？", type: "argument", tier: 1, phrase: "縮小影響は許容範囲か？", reason: "チャネル転換型の右：既存チャネルへの影響のサブイシュー。" },
         { id: "c7", text: "法人営業のスキルは現メンバーで対応できるか？", type: "argument", tier: 1, phrase: "法人営業スキルは足りるか？", reason: "人材面の課題だが研修と中途採用で対応可能。" },
         { id: "c2", text: "法人出張管理市場は年8%成長。1社あたり年間取引額は個人の22倍、解約率は3%と低い", type: "evidence", tier: 2, phrase: "法人取引額は個人の22倍", reason: "法人市場の魅力度データ。最重要根拠。" },
         { id: "c4", text: "既存法人50社の担当者ヒアリングで「出張手配の一括管理を依頼したい」が74%", type: "evidence", tier: 2, phrase: "74%が一括管理を希望", reason: "既存顧客のニーズデータ。中央で補強。" },
@@ -755,8 +755,8 @@ export const LV2_QUESTIONS: Question[] = [
     phase1: {
       cards: [
         { id: "c1", text: "まず10店舗でAIマッチングを先行導入し、VR内見は物件の30%から開始。6ヶ月後に効果検証", type: "conclusion", tier: 0, phrase: "10店舗でAI先行、VRは30%から", reason: "導入範囲と段階を具体的に。" },
-        { id: "c5", text: "AI/VRで成約率と内見効率の課題は解決できるか？", type: "argument", tier: 1, phrase: "技術で課題は解決するか？", reason: "テクノロジー導入型の左：技術で課題が解決できるかのサブイシュー。" },
-        { id: "c3", text: "営業スタッフと顧客は受け入れて使いこなせるか？", type: "argument", tier: 1, phrase: "人・組織は対応できるか？", reason: "テクノロジー導入型の右：人・組織が対応できるかのサブイシュー。" },
+        { id: "c5", text: "AI/VRで成約率と内見効率の課題は解決できるか？", type: "argument", tier: 1, phrase: "内見効率の課題は解決できるか？", reason: "テクノロジー導入型の左：技術で課題が解決できるかのサブイシュー。" },
+        { id: "c3", text: "営業スタッフと顧客は受け入れて使いこなせるか？", type: "argument", tier: 1, phrase: "顧客は受け入れて使いこなせるか？", reason: "テクノロジー導入型の右：人・組織が対応できるかのサブイシュー。" },
         { id: "c7", text: "営業スタッフのITリテラシーは十分か？", type: "argument", tier: 1, phrase: "スタッフは使いこなせるか？", reason: "運用面の課題だが研修で対応可能。" },
         { id: "c2", text: "AI提案導入済みのいい部屋ネットで成約率が28%→42%に向上、顧客1人あたりの提案時間が65%削減", type: "evidence", tier: 2, phrase: "成約率28%→42%、提案時間65%減", reason: "先行事例の効果データ。最重要根拠。" },
         { id: "c4", text: "自社の試験運用で、VR内見後に実際に内見した物件の契約率が従来比1.8倍", type: "evidence", tier: 2, phrase: "VR後の契約率が1.8倍", reason: "自社の実験データ。中央で補強。" },
@@ -801,8 +801,8 @@ export const LV2_QUESTIONS: Question[] = [
     phase1: {
       cards: [
         { id: "c1", text: "法人研修に参入すべき。既存アプリをカスタマイズした「チーム学習版」を開発し、初年度50社導入を目標", type: "conclusion", tier: 0, phrase: "チーム学習版で初年度50社", reason: "プロダクト戦略と目標を明示。" },
-        { id: "c5", text: "法人チャネルに既存個人比の優位性はあるか？", type: "argument", tier: 1, phrase: "新チャネルに優位性はあるか？", reason: "チャネル転換型の左：新チャネルの優位性のサブイシュー。" },
-        { id: "c3", text: "既存個人事業との両立で影響は許容範囲か？", type: "argument", tier: 1, phrase: "既存影響は許容範囲か？", reason: "チャネル転換型の右：既存チャネルへの影響のサブイシュー。" },
+        { id: "c5", text: "法人チャネルに既存個人比の優位性はあるか？", type: "argument", tier: 1, phrase: "既存個人比の優位性はあるか？", reason: "チャネル転換型の左：新チャネルの優位性のサブイシュー。" },
+        { id: "c3", text: "既存個人事業との両立で影響は許容範囲か？", type: "argument", tier: 1, phrase: "両立で影響は許容範囲か？", reason: "チャネル転換型の右：既存チャネルへの影響のサブイシュー。" },
         { id: "c7", text: "法人向けのセキュリティ要件に対応できるか？", type: "argument", tier: 1, phrase: "セキュリティ要件は満たせるか？", reason: "技術面の課題だが、段階的に対応可能。核心ではない。" },
         { id: "c2", text: "法人1社あたりの年間契約額は平均480万円。個人ユーザー400人分に相当し、LTVは個人の12倍", type: "evidence", tier: 2, phrase: "法人LTVは個人の12倍", reason: "法人の収益性データ。最重要根拠。" },
         { id: "c4", text: "既存個人ユーザーの勤務先にヒアリングし、38社が「社内研修として導入を検討する」と回答", type: "evidence", tier: 2, phrase: "38社が導入検討と回答", reason: "既存基盤からのリードデータ。中央で補強。" },
@@ -847,8 +847,8 @@ export const LV2_QUESTIONS: Question[] = [
     phase1: {
       cards: [
         { id: "c1", text: "日用品カテゴリのPBを現在の50品目から150品目に拡大すべき。ただし医薬品カテゴリは信頼性重視でNB維持", type: "conclusion", tier: 0, phrase: "日用品PBを150品目に、医薬品はNB維持", reason: "拡大範囲と除外カテゴリを明示。" },
-        { id: "c5", text: "PB拡大投資のROI・利益率は高いか？", type: "argument", tier: 1, phrase: "ROIは高いか？", reason: "投資判断型の左：ROI・価値のサブイシュー。" },
-        { id: "c3", text: "PB拡大のコストと顧客離反リスクは許容範囲か？", type: "argument", tier: 1, phrase: "コスト・リスクは許容範囲か？", reason: "投資判断型の右：コスト・リスクのサブイシュー。" },
+        { id: "c5", text: "PB拡大投資のROI・利益率は高いか？", type: "argument", tier: 1, phrase: "ROI・利益率は高いか？", reason: "投資判断型の左：ROI・価値のサブイシュー。" },
+        { id: "c3", text: "PB拡大のコストと顧客離反リスクは許容範囲か？", type: "argument", tier: 1, phrase: "顧客離反リスクは許容範囲か？", reason: "投資判断型の右：コスト・リスクのサブイシュー。" },
         { id: "c7", text: "PBの品質管理体制は対応できるか？", type: "argument", tier: 1, phrase: "品質管理は対応できるか？", reason: "運営面の課題だが既存体制の拡張で対応可能。" },
         { id: "c2", text: "PB商品の粗利率42%に対し、NB商品は22%。PB比率を15%→35%にすると全体利益率が8pt改善の試算", type: "evidence", tier: 2, phrase: "PB粗利率42%、利益率8pt改善", reason: "利益率改善の定量データ。最重要根拠。" },
         { id: "c4", text: "ウエルシアはPB比率30%で売上成長と利益率改善を両立。顧客満足度も維持", type: "evidence", tier: 2, phrase: "ウエルシアがPB30%で成功", reason: "先行事例。中央で補強。" },
@@ -893,8 +893,8 @@ export const LV2_QUESTIONS: Question[] = [
     phase1: {
       cards: [
         { id: "c1", text: "IT人材領域でAIマッチングを先行導入すべき。コンサルタントの推薦業務を補助する形式で、最終判断は人間が維持", type: "conclusion", tier: 0, phrase: "IT領域でAI補助、最終判断は人間", reason: "適用範囲と人間の役割を明示した結論。" },
-        { id: "c5", text: "AIで精度と速度の課題は解決できるか？", type: "argument", tier: 1, phrase: "技術で課題は解決するか？", reason: "テクノロジー導入型の左：技術で課題が解決できるかのサブイシュー。" },
-        { id: "c3", text: "コンサルタント・組織は対応して使いこなせるか？", type: "argument", tier: 1, phrase: "人・組織は対応できるか？", reason: "テクノロジー導入型の右：人・組織が対応できるかのサブイシュー。" },
+        { id: "c5", text: "AIで精度と速度の課題は解決できるか？", type: "argument", tier: 1, phrase: "精度と速度の課題は解決できるか？", reason: "テクノロジー導入型の左：技術で課題が解決できるかのサブイシュー。" },
+        { id: "c3", text: "コンサルタント・組織は対応して使いこなせるか？", type: "argument", tier: 1, phrase: "組織は対応して使いこなせるか？", reason: "テクノロジー導入型の右：人・組織が対応できるかのサブイシュー。" },
         { id: "c7", text: "候補者のプライバシーと公平性は担保されるか？", type: "argument", tier: 1, phrase: "プライバシーは大丈夫か？", reason: "コンプライアンスの課題だが、運用ルールで管理可能。" },
         { id: "c2", text: "AIマッチング導入済みのビズリーチで推薦精度が34%向上、1件あたりのマッチング所要時間が72時間→18時間に短縮", type: "evidence", tier: 2, phrase: "精度34%向上、時間72→18時間", reason: "先行事例の効果データ。最重要根拠。" },
         { id: "c4", text: "自社の過去データ10万件の分析で、成約に至るマッチングパターンに明確な法則性を確認", type: "evidence", tier: 2, phrase: "10万件に法則性を確認", reason: "自社データの分析結果。中央で補強。" },
