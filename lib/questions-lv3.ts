@@ -22,8 +22,8 @@ export const LV3_QUESTIONS: Question[] = [
     phase1: {
       cards: [
         { id: "c1", text: "自社の処方薬成分を活用したOTC商品で参入すべき。まず3品目、ドラッグストア上位5社との販路開拓から", type: "conclusion", tier: 0, phrase: "処方薬成分活用で3品目から", reason: "強み・規模・チャネルを具体化。" },
-        { id: "c5", text: "OTC市場に十分な需要・参入余地はあるか？", type: "argument", tier: 1, phrase: "需要は十分か？", reason: "新規参入・拡大型の左：市場・需要のサブイシュー。" },
-        { id: "c3", text: "自社の体制でOTC事業を実現できるか？", type: "argument", tier: 1, phrase: "自社で実現できるか？", reason: "新規参入・拡大型の右：自社の実現性のサブイシュー。" },
+        { id: "c5", text: "OTC市場で自社の技術優位性は活かせるか？", type: "argument", tier: 1, phrase: "需要は十分か？", reason: "新規参入・拡大型の左：市場・需要のサブイシュー。" },
+        { id: "c3", text: "OTCの販売チャネル構築コストは許容範囲か？", type: "argument", tier: 1, phrase: "自社で実現できるか？", reason: "新規参入・拡大型の右：自社の実現性のサブイシュー。" },
         { id: "c7", text: "OTCのブランド認知を消費者にどう浸透させるか？", type: "argument", tier: 1, phrase: "ブランド認知は浸透するか？", reason: "マーケ課題だが、処方薬の信頼が転用可能。核心ではない。" },
         { id: "c2", text: "自社の特許切れ成分3つがOTC転用可能。処方薬実績による信頼性で他社OTCと差別化でき、開発コストは新薬の1/20", type: "evidence", tier: 2, phrase: "開発コスト新薬の1/20", reason: "技術優位の定量根拠。左端に。" },
         { id: "c4", text: "大正製薬がOTC転換で処方薬減収の70%を補填、転換後3年で営業利益率2pt改善", type: "evidence", tier: 2, phrase: "大正製薬がOTC転換で利益改善", reason: "先行事例。中央で補強。" },
@@ -55,8 +55,8 @@ export const LV3_QUESTIONS: Question[] = [
     phase1: {
       cards: [
         { id: "c1", text: "500万円以下の小口融資からAI審査を導入すべき。3ヶ月のパイロットで貸倒率を検証し、段階拡大", type: "conclusion", tier: 0, phrase: "500万以下でパイロット→段階拡大", reason: "適用範囲・検証期間を明示。" },
-        { id: "c5", text: "AI技術で審査スピードと顧客流出の課題は解決できるか？", type: "argument", tier: 1, phrase: "技術で課題は解決するか？", reason: "テクノロジー導入型の左：技術で課題が解決できるかのサブイシュー。" },
-        { id: "c3", text: "行員と組織はAI審査を運用品質で対応できるか？", type: "argument", tier: 1, phrase: "人・組織は対応できるか？", reason: "テクノロジー導入型の右：人・組織が対応できるかのサブイシュー。" },
+        { id: "c5", text: "AI審査で融資の質（貸倒率）は維持できるか？", type: "argument", tier: 1, phrase: "技術で課題は解決するか？", reason: "テクノロジー導入型の左：技術で課題が解決できるかのサブイシュー。" },
+        { id: "c3", text: "スピード改善で中小企業の流出を止められるか？", type: "argument", tier: 1, phrase: "人・組織は対応できるか？", reason: "テクノロジー導入型の右：人・組織が対応できるかのサブイシュー。" },
         { id: "c7", text: "対面での関係性構築は不要になるか？", type: "argument", tier: 1, phrase: "対面の価値はなくなるか？", reason: "重要だが小口融資なら影響は限定的。核心ではない。" },
         { id: "c2", text: "フィンテック企業への流出件数が年間1,200件（前年比+45%）、流出先の平均融資実行時間は2日", type: "evidence", tier: 2, phrase: "年1,200件流出、競合は2日で融資", reason: "流出の深刻度データ。最重要根拠。" },
         { id: "c4", text: "住信SBI銀行のAI融資で審査時間が3週間→最短即日に短縮、貸倒率は従来比0.3pt増に留まった", type: "evidence", tier: 2, phrase: "住信SBIで即日化、貸倒+0.3pt", reason: "先行事例。中央で補強。" },
@@ -88,8 +88,8 @@ export const LV3_QUESTIONS: Question[] = [
     phase1: {
       cards: [
         { id: "c1", text: "自社プラットフォームでライドシェアに参入すべき。既存配車アプリを活用し、自社タクシーとの併用型で展開", type: "conclusion", tier: 0, phrase: "自社アプリで併用型ライドシェア", reason: "インフラ活用と共食い回避を両立。" },
-        { id: "c5", text: "ライドシェア市場に十分な需要はあるか？", type: "argument", tier: 1, phrase: "需要は十分か？", reason: "新規参入・拡大型の左：市場・需要のサブイシュー。" },
-        { id: "c3", text: "自社の体制でライドシェアを実現できるか？", type: "argument", tier: 1, phrase: "自社で実現できるか？", reason: "新規参入・拡大型の右：自社の実現性のサブイシュー。" },
+        { id: "c5", text: "自社のインフラはライドシェアに転用できるか？", type: "argument", tier: 1, phrase: "需要は十分か？", reason: "新規参入・拡大型の左：市場・需要のサブイシュー。" },
+        { id: "c3", text: "既存タクシー事業との共食いは許容範囲か？", type: "argument", tier: 1, phrase: "自社で実現できるか？", reason: "新規参入・拡大型の右：自社の実現性のサブイシュー。" },
         { id: "c7", text: "ライドシェアの保険制度は整備されているか？", type: "argument", tier: 1, phrase: "保険制度は整っているか？", reason: "規制面の課題だが法整備済み。核心ではない。" },
         { id: "c2", text: "自社配車アプリのユーザー85万人・配車AIシステム・24時間コールセンターが転用可能。新規構築比で初期投資を70%削減", type: "evidence", tier: 2, phrase: "既存インフラで投資70%削減", reason: "インフラ転用の定量根拠。最重要。" },
         { id: "c4", text: "韓国のKakaoタクシーはライドシェア併用型で参入後、全体売上が38%増加。タクシー稼働率も維持", type: "evidence", tier: 2, phrase: "Kakaoは併用型で売上38%増", reason: "先行事例。中央で補強。" },
@@ -121,8 +121,8 @@ export const LV3_QUESTIONS: Question[] = [
     phase1: {
       cards: [
         { id: "c1", text: "平日限定のワーケーションプランを導入すべき。コワーキングスペース併設、月額15万円の定額プラン", type: "conclusion", tier: 0, phrase: "平日限定・月額15万の定額プラン", reason: "対象・設備・価格を明示。" },
-        { id: "c5", text: "ワーケーション導入なしで平日稼働35%の危機は続くか？", type: "argument", tier: 1, phrase: "やらないとどうなるか？", reason: "危機対応型の左：やらないとどうなるかのサブイシュー。" },
-        { id: "c3", text: "ワーケーション導入でどう対処すれば実行できるか？", type: "argument", tier: 1, phrase: "どう対処すれば実行できるか？", reason: "危機対応型の右：やるならどう対処するかのサブイシュー。" },
+        { id: "c5", text: "ワーケーション利用者の需要は自館の立地・設備で取り込めるか？", type: "argument", tier: 1, phrase: "やらないとどうなるか？", reason: "危機対応型の左：やらないとどうなるかのサブイシュー。" },
+        { id: "c3", text: "既存の宿泊客の体験を損なわないか？", type: "argument", tier: 1, phrase: "どう対処すれば実行できるか？", reason: "危機対応型の右：やるならどう対処するかのサブイシュー。" },
         { id: "c7", text: "長期滞在者の食事対応は可能か？", type: "argument", tier: 1, phrase: "食事対応は可能か？", reason: "運営面の課題だが外部提携で対応可能。" },
         { id: "c2", text: "企業のワーケーション制度導入率が32%（前年比+15pt）。月額10-20万円の需要が最多で、温泉地への希望が68%", type: "evidence", tier: 2, phrase: "導入率32%、温泉地希望68%", reason: "需要の定量データ。最重要根拠。" },
         { id: "c4", text: "星野リゾートBEB5のワーケーションプランで平日稼働率が35%→72%に改善", type: "evidence", tier: 2, phrase: "星野リゾートで稼働率72%に", reason: "先行事例。中央で補強。" },
@@ -154,8 +154,8 @@ export const LV3_QUESTIONS: Question[] = [
     phase1: {
       cards: [
         { id: "c1", text: "段階的に24時間化すべき。まず3店舗で無人運営（23-7時）を試行し、セキュリティはICカード＋AI監視カメラで対応", type: "conclusion", tier: 0, phrase: "3店舗で無人24時間試行", reason: "段階・方法・セキュリティを具体化。" },
-        { id: "c5", text: "24時間化投資のROI・収益性は高いか？", type: "argument", tier: 1, phrase: "ROIは高いか？", reason: "投資判断型の左：ROI・価値のサブイシュー。" },
-        { id: "c3", text: "投資コストと無人運営の安全リスクは許容範囲か？", type: "argument", tier: 1, phrase: "コスト・リスクは許容範囲か？", reason: "投資判断型の右：コスト・リスクのサブイシュー。" },
+        { id: "c5", text: "深夜・早朝帯に十分な利用需要はあるか？", type: "argument", tier: 1, phrase: "ROIは高いか？", reason: "投資判断型の左：ROI・価値のサブイシュー。" },
+        { id: "c3", text: "無人運営時の安全管理体制は構築できるか？", type: "argument", tier: 1, phrase: "コスト・リスクは許容範囲か？", reason: "投資判断型の右：コスト・リスクのサブイシュー。" },
         { id: "c7", text: "24時間化で既存会員の満足度は上がるか？", type: "argument", tier: 1, phrase: "既存会員の満足度は上がるか？", reason: "重要だが需要データで間接的に回答可能。核心ではない。" },
         { id: "c2", text: "会員アンケートで「5-7時に利用したい」32%、「23-1時に利用したい」28%。24時間ジムへの乗り換え検討者が15%", type: "evidence", tier: 2, phrase: "早朝32%・深夜28%が利用希望", reason: "需要の定量データ。最重要根拠。" },
         { id: "c4", text: "エニタイムフィットネスは24時間化で店舗あたり会員数が平均35%増加、月額500円の値上げも受容された", type: "evidence", tier: 2, phrase: "エニタイムで会員35%増加", reason: "先行事例。中央で補強。" },
@@ -187,8 +187,8 @@ export const LV3_QUESTIONS: Question[] = [
     phase1: {
       cards: [
         { id: "c1", text: "山間部・離島の限定路線でドローン配送網を構築すべき。3年50路線・既存物流との併用設計", type: "conclusion", tier: 0, phrase: "限定路線で50路線まで段階展開", reason: "範囲・期間を明示。" },
-        { id: "c5", text: "ドローン技術で配送効率の課題は解決できるか？", type: "argument", tier: 1, phrase: "技術で課題は解決するか？", reason: "テクノロジー導入型の左：技術で課題が解決できるかのサブイシュー。" },
-        { id: "c3", text: "操縦員と組織は規制対応も含めて運用できるか？", type: "argument", tier: 1, phrase: "人・組織は対応できるか？", reason: "テクノロジー導入型の右：人・組織が対応できるかのサブイシュー。" },
+        { id: "c5", text: "ドローン配送で配送効率は劇的に改善するか？", type: "argument", tier: 1, phrase: "技術で課題は解決するか？", reason: "テクノロジー導入型の左：技術で課題が解決できるかのサブイシュー。" },
+        { id: "c3", text: "規制対応と安全管理は許容範囲か？", type: "argument", tier: 1, phrase: "人・組織は対応できるか？", reason: "テクノロジー導入型の右：人・組織が対応できるかのサブイシュー。" },
         { id: "c7", text: "ドローン操縦員の社内育成は可能か？", type: "argument", tier: 1, phrase: "操縦員育成は可能か？", reason: "外部委託で代替可。核心ではない。" },
         { id: "c2", text: "山間部の現行配送コストは1便5,800円、ドローンなら2,200円。年20億円の削減見込み", type: "evidence", tier: 2, phrase: "1便5,800円→2,200円", reason: "効率改善の定量根拠。最重要。" },
         { id: "c4", text: "Amazon Prime Airは米ケンタッキーで実用化、配送時間50%短縮・事故率0.01%維持", type: "evidence", tier: 2, phrase: "Amazonで時間50%短縮", reason: "先行事例。中央で補強。" },
@@ -220,8 +220,8 @@ export const LV3_QUESTIONS: Question[] = [
     phase1: {
       cards: [
         { id: "c1", text: "段階的に夜間無人化すべき。都市部500店舗から23-5時試行、AI無人レジ＋遠隔監視併用で展開", type: "conclusion", tier: 0, phrase: "都市部500店舗で段階試行", reason: "範囲と方式を具体化。" },
-        { id: "c5", text: "AI技術で深夜オペレーションの課題は解決できるか？", type: "argument", tier: 1, phrase: "技術で課題は解決するか？", reason: "テクノロジー導入型の左：技術で課題が解決できるかのサブイシュー。" },
-        { id: "c3", text: "店舗運営組織は無人化を防犯含め対応できるか？", type: "argument", tier: 1, phrase: "人・組織は対応できるか？", reason: "テクノロジー導入型の右：人・組織が対応できるかのサブイシュー。" },
+        { id: "c5", text: "AI無人レジで深夜のオペレーションは回せるか？", type: "argument", tier: 1, phrase: "技術で課題は解決するか？", reason: "テクノロジー導入型の左：技術で課題が解決できるかのサブイシュー。" },
+        { id: "c3", text: "防犯リスクは抑えられるか？", type: "argument", tier: 1, phrase: "人・組織は対応できるか？", reason: "テクノロジー導入型の右：人・組織が対応できるかのサブイシュー。" },
         { id: "c7", text: "深夜の品出しは誰が担うか？", type: "argument", tier: 1, phrase: "品出しは誰が担うか？", reason: "配送便と早朝バイトで対応可能。核心ではない。" },
         { id: "c2", text: "深夜帯人件費は時給1,800円超、無人化で1店舗あたり月150万円削減（年18億円規模）", type: "evidence", tier: 2, phrase: "1店舗月150万円削減", reason: "コスト改善の定量根拠。" },
         { id: "c4", text: "ローソンの夜間無人試行で売上影響-3%、人件費削減効果が大きく営業利益+15%", type: "evidence", tier: 2, phrase: "ローソンで営業利益+15%", reason: "競合先行事例。中央で補強。" },
@@ -253,8 +253,8 @@ export const LV3_QUESTIONS: Question[] = [
     phase1: {
       cards: [
         { id: "c1", text: "電子主軸への段階転換を実施すべき。新刊から電子先行・紙限定特装版で離反防止、3年で電子比率60%目標", type: "conclusion", tier: 0, phrase: "電子先行＋紙特装版で60%目標", reason: "方向と数値目標を明示。" },
-        { id: "c5", text: "電子主軸に転換しないとどうなるか？", type: "argument", tier: 1, phrase: "やらないとどうなるか？", reason: "危機対応型の左：放置時の損失を問うサブイシュー。" },
-        { id: "c3", text: "転換するならどう紙ファン離反を抑えて実行するか？", type: "argument", tier: 1, phrase: "どう対処すれば実行できるか？", reason: "危機対応型の右：実行時の対処設計を問うサブイシュー。" },
+        { id: "c5", text: "電子主軸で利益率は改善するか？", type: "argument", tier: 1, phrase: "やらないとどうなるか？", reason: "危機対応型の左：放置時の損失を問うサブイシュー。" },
+        { id: "c3", text: "紙書籍ファンの離反は許容範囲か？", type: "argument", tier: 1, phrase: "どう対処すれば実行できるか？", reason: "危機対応型の右：実行時の対処設計を問うサブイシュー。" },
         { id: "c7", text: "電子書店との価格交渉力は確保できるか？", type: "argument", tier: 1, phrase: "価格交渉力は確保できるか？", reason: "既存シェアで対応可能。核心ではない。" },
         { id: "c2", text: "紙の利益率は8%、電子は印刷・倉庫・返本コスト不要で28%。年4億円の利益増見込み", type: "evidence", tier: 2, phrase: "利益率8%→28%", reason: "経済性の定量根拠。最重要。" },
         { id: "c4", text: "講談社・小学館は電子先行戦略で利益率を10pt改善、紙ファン施策で離反率5%以下に抑制", type: "evidence", tier: 2, phrase: "他社で利益率+10pt", reason: "先行事例。中央で補強。" },
@@ -286,8 +286,8 @@ export const LV3_QUESTIONS: Question[] = [
     phase1: {
       cards: [
         { id: "c1", text: "スカウト型を主軸に段階移行すべき。1年で売上比率を50%まで引き上げ、コンサルタント30%を再教育", type: "conclusion", tier: 0, phrase: "1年で売上50%・30%再教育", reason: "数値目標と人員施策を具体化。" },
-        { id: "c5", text: "スカウト型に移行しないとどうなるか？", type: "argument", tier: 1, phrase: "やらないとどうなるか？", reason: "危機対応型の左：放置時の損失を問うサブイシュー。" },
-        { id: "c3", text: "移行するならコンサルのスキル転換をどう実行するか？", type: "argument", tier: 1, phrase: "どう対処すれば実行できるか？", reason: "危機対応型の右：実行時の対処設計を問うサブイシュー。" },
+        { id: "c5", text: "スカウト型で受注の質と量は確保できるか？", type: "argument", tier: 1, phrase: "やらないとどうなるか？", reason: "危機対応型の左：放置時の損失を問うサブイシュー。" },
+        { id: "c3", text: "コンサルタントのスキル転換は実現可能か？", type: "argument", tier: 1, phrase: "どう対処すれば実行できるか？", reason: "危機対応型の右：実行時の対処設計を問うサブイシュー。" },
         { id: "c7", text: "求職者データベースの構築コストは妥当か？", type: "argument", tier: 1, phrase: "DBコストは妥当か？", reason: "外部活用で代替可。核心ではない。" },
         { id: "c2", text: "業界のスカウト型比率が65%に到達、登録型のみ企業の受注額は3年で22%減", type: "evidence", tier: 2, phrase: "登録型のみ22%減", reason: "市場転換の定量根拠。最重要。" },
         { id: "c4", text: "ビズリーチ系列はスカウト主軸で年商を5年で3倍、コンサル1人あたり粗利を1.8倍に改善", type: "evidence", tier: 2, phrase: "ビズリーチで粗利1.8倍", reason: "先行事例。中央で補強。" },
@@ -319,8 +319,8 @@ export const LV3_QUESTIONS: Question[] = [
     phase1: {
       cards: [
         { id: "c1", text: "スマートシティ事業を全市規模で進めるべき。3年計画・補助金最大活用・市民代表参画型で推進", type: "conclusion", tier: 0, phrase: "3年計画・補助金活用・市民参画", reason: "期間・原資・進め方を具体化。" },
-        { id: "c5", text: "スマートシティ投資のROI（行政コスト削減）は高いか？", type: "argument", tier: 1, phrase: "ROIは高いか？", reason: "投資判断型の左：投資価値を問うサブイシュー。" },
-        { id: "c3", text: "投資コスト・市民反発リスクは許容範囲か？", type: "argument", tier: 1, phrase: "コスト・リスクは許容範囲か？", reason: "投資判断型の右：コスト・リスク許容性を問うサブイシュー。" },
+        { id: "c5", text: "スマートシティ化で行政コストは大幅削減できるか？", type: "argument", tier: 1, phrase: "ROIは高いか？", reason: "投資判断型の左：投資価値を問うサブイシュー。" },
+        { id: "c3", text: "市民の理解と協力は得られるか？", type: "argument", tier: 1, phrase: "コスト・リスクは許容範囲か？", reason: "投資判断型の右：コスト・リスク許容性を問うサブイシュー。" },
         { id: "c7", text: "技術ベンダーの選定基準はどう作るか？", type: "argument", tier: 1, phrase: "ベンダー基準はどう作るか？", reason: "調達段階の課題で、判断の核心ではない。" },
         { id: "c2", text: "事務電子化と窓口AI化で年間人件費20%削減（試算8.5億円）、5年で投資回収可能", type: "evidence", tier: 2, phrase: "年8.5億円削減", reason: "経済性の定量根拠。最重要。" },
         { id: "c4", text: "前橋市のスマートシティ事業で申請業務時間65%短縮、市民満足度+18pt", type: "evidence", tier: 2, phrase: "前橋で時間-65%・満足+18pt", reason: "先行事例。中央で補強。" },
@@ -352,8 +352,8 @@ export const LV3_QUESTIONS: Question[] = [
     phase1: {
       cards: [
         { id: "c1", text: "代替肉事業に参入すべき。専用ブランドで2年以内に5SKU、既存事業と並行展開しブランド分離", type: "conclusion", tier: 0, phrase: "専用ブランドで2年・5SKU", reason: "範囲・期間・ブランド戦略を具体化。" },
-        { id: "c5", text: "代替肉市場に十分な機会があるか？", type: "argument", tier: 1, phrase: "市場に十分な機会があるか？", reason: "市場開拓型の左：市場機会を問うサブイシュー。" },
-        { id: "c3", text: "自社固有の勝ち筋（開発力＋共食い管理）はあるか？", type: "argument", tier: 1, phrase: "自社固有の勝ち筋があるか？", reason: "市場開拓型の右：自社の独自勝ち筋を問うサブイシュー。" },
+        { id: "c5", text: "代替肉市場で自社の食品開発力は活かせるか？", type: "argument", tier: 1, phrase: "市場に十分な機会があるか？", reason: "市場開拓型の左：市場機会を問うサブイシュー。" },
+        { id: "c3", text: "既存の動物性たんぱく事業との共食いは管理できるか？", type: "argument", tier: 1, phrase: "自社固有の勝ち筋があるか？", reason: "市場開拓型の右：自社の独自勝ち筋を問うサブイシュー。" },
         { id: "c7", text: "代替肉の原料調達は安定するか？", type: "argument", tier: 1, phrase: "原料調達は安定するか？", reason: "複数調達先で対応可能。核心ではない。" },
         { id: "c2", text: "国内代替肉市場は年率35%成長、2030年に2,400億円規模見込み。日系プレイヤーは現在3社のみ", type: "evidence", tier: 2, phrase: "年率35%成長・2,400億円", reason: "市場機会の定量根拠。最重要。" },
         { id: "c4", text: "ネスレ・伊藤ハムは代替肉事業で参入後3年で売上規模化、利益率も既存比+5pt", type: "evidence", tier: 2, phrase: "他社で利益率+5pt", reason: "先行事例。中央で補強。" },
@@ -385,8 +385,8 @@ export const LV3_QUESTIONS: Question[] = [
     phase1: {
       cards: [
         { id: "c1", text: "越境ECに本格参入すべき。アジア5カ国を初期ターゲット、自社サイト＋現地モール併用で3年で海外売上比率20%目標", type: "conclusion", tier: 0, phrase: "アジア5カ国・3年で20%", reason: "対象国・方式・数値目標を明示。" },
-        { id: "c5", text: "越境EC（新チャネル）に優位性はあるか？", type: "argument", tier: 1, phrase: "新チャネルに優位性はあるか？", reason: "チャネル転換型の左：新チャネルの優位性を問うサブイシュー。" },
-        { id: "c3", text: "既存の国内チャネル・オペへの影響は許容範囲か？", type: "argument", tier: 1, phrase: "既存影響は許容範囲か？", reason: "チャネル転換型の右：既存影響の許容性を問うサブイシュー。" },
+        { id: "c5", text: "海外ECで自社ブランドの売上機会は十分か？", type: "argument", tier: 1, phrase: "新チャネルに優位性はあるか？", reason: "チャネル転換型の左：新チャネルの優位性を問うサブイシュー。" },
+        { id: "c3", text: "海外配送と決済のオペレーションは構築可能か？", type: "argument", tier: 1, phrase: "既存影響は許容範囲か？", reason: "チャネル転換型の右：既存影響の許容性を問うサブイシュー。" },
         { id: "c7", text: "海外向けカスタマーサービスはどう体制化するか？", type: "argument", tier: 1, phrase: "CS体制はどう作るか？", reason: "外部委託で代替可。核心ではない。" },
         { id: "c2", text: "海外SNSフォロワーが過去2年で5万→58万に拡大、日本アパレルの越境EC伸び率は年率40%", type: "evidence", tier: 2, phrase: "海外フォロワー58万・年率40%", reason: "需要の定量根拠。最重要。" },
         { id: "c4", text: "BEAMSは越境EC本格化で4年で海外売上比率を5%→22%、利益率も維持", type: "evidence", tier: 2, phrase: "BEAMSで4年22%化", reason: "先行事例。中央で補強。" },
@@ -418,8 +418,8 @@ export const LV3_QUESTIONS: Question[] = [
     phase1: {
       cards: [
         { id: "c1", text: "InsurTech連携を本格化すべき。3社と資本提携・ネット商品共同開発、既存代理店には新商品の販売委託権付与で摩擦緩和", type: "conclusion", tier: 0, phrase: "3社提携＋代理店委託権", reason: "提携範囲と摩擦緩和策を具体化。" },
-        { id: "c5", text: "InsurTech各社と組む価値（若年層獲得加速）はあるか？", type: "argument", tier: 1, phrase: "相手と組む価値はあるか？", reason: "アライアンス型の左：連携価値を問うサブイシュー。" },
-        { id: "c3", text: "提携による自社リスク（代理店摩擦）は管理できるか？", type: "argument", tier: 1, phrase: "自社のリスクは管理できるか？", reason: "アライアンス型の右：自社リスク管理を問うサブイシュー。" },
+        { id: "c5", text: "InsurTech連携で若年層の獲得は加速するか？", type: "argument", tier: 1, phrase: "相手と組む価値はあるか？", reason: "アライアンス型の左：連携価値を問うサブイシュー。" },
+        { id: "c3", text: "既存代理店ネットワークとの摩擦は許容範囲か？", type: "argument", tier: 1, phrase: "自社のリスクは管理できるか？", reason: "アライアンス型の右：自社リスク管理を問うサブイシュー。" },
         { id: "c7", text: "提携先のシステム統合コストは許容範囲か？", type: "argument", tier: 1, phrase: "統合コストは許容範囲か？", reason: "API連携で対応可能。核心ではない。" },
         { id: "c2", text: "20-30代の保険新規契約に占めるネット経由比率は48%、自社シェアは僅か3%にとどまる", type: "evidence", tier: 2, phrase: "若年層ネット48%・自社3%", reason: "機会喪失の定量根拠。最重要。" },
         { id: "c4", text: "アクサ生命はInsurTech提携で若年層契約数を3年で2.4倍化、収益貢献も顕在化", type: "evidence", tier: 2, phrase: "アクサで3年2.4倍", reason: "先行事例。中央で補強。" },
@@ -451,8 +451,8 @@ export const LV3_QUESTIONS: Question[] = [
     phase1: {
       cards: [
         { id: "c1", text: "中大規模木造を主軸の一角にすべき。専門部門新設、3年で木造案件比率15%、CLTサプライヤー2社と長期契約", type: "conclusion", tier: 0, phrase: "専門部門新設・3年で15%", reason: "組織と数値目標を具体化。" },
-        { id: "c5", text: "中大規模木造市場に十分な機会があるか？", type: "argument", tier: 1, phrase: "市場に十分な機会があるか？", reason: "市場開拓型の左：市場機会を問うサブイシュー。" },
-        { id: "c3", text: "自社固有の勝ち筋（精密技術＋技術者育成）はあるか？", type: "argument", tier: 1, phrase: "自社固有の勝ち筋があるか？", reason: "市場開拓型の右：自社の独自勝ち筋を問うサブイシュー。" },
+        { id: "c5", text: "中大規模木造で自社の差別化は可能か？", type: "argument", tier: 1, phrase: "市場に十分な機会があるか？", reason: "市場開拓型の左：市場機会を問うサブイシュー。" },
+        { id: "c3", text: "技術者育成は計画通り進められるか？", type: "argument", tier: 1, phrase: "自社固有の勝ち筋があるか？", reason: "市場開拓型の右：自社の独自勝ち筋を問うサブイシュー。" },
         { id: "c7", text: "木材調達のサプライチェーンは安定するか？", type: "argument", tier: 1, phrase: "木材調達は安定するか？", reason: "長期契約で対応可能。核心ではない。" },
         { id: "c2", text: "中大規模木造市場は政府方針もあり年率30%成長、競合プレイヤーは現在3社のみ", type: "evidence", tier: 2, phrase: "年率30%成長・競合3社", reason: "市場機会の定量根拠。最重要。" },
         { id: "c4", text: "竹中工務店は木造事業で5年で売上を6倍、利益率も他工法と同水準を確保", type: "evidence", tier: 2, phrase: "竹中で5年6倍化", reason: "先行事例。中央で補強。" },
@@ -484,8 +484,8 @@ export const LV3_QUESTIONS: Question[] = [
     phase1: {
       cards: [
         { id: "c1", text: "段階的に物流を内製化すべき。首都圏に1拠点、年商比率の40%を内製カバー、3PLは郊外用に併用", type: "conclusion", tier: 0, phrase: "首都圏1拠点・年商40%内製", reason: "範囲と方式を具体化。" },
-        { id: "c5", text: "物流内製化投資のROI（コスト改善・スピード）は高いか？", type: "argument", tier: 1, phrase: "ROIは高いか？", reason: "投資判断型の左：投資価値を問うサブイシュー。" },
-        { id: "c3", text: "倉庫立ち上げの投資コスト・実行リスクは許容範囲か？", type: "argument", tier: 1, phrase: "コスト・リスクは許容範囲か？", reason: "投資判断型の右：コスト・リスク許容性を問うサブイシュー。" },
+        { id: "c5", text: "内製化でコストとスピードは改善するか？", type: "argument", tier: 1, phrase: "ROIは高いか？", reason: "投資判断型の左：投資価値を問うサブイシュー。" },
+        { id: "c3", text: "倉庫立ち上げと運営の実行リスクは管理可能か？", type: "argument", tier: 1, phrase: "コスト・リスクは許容範囲か？", reason: "投資判断型の右：コスト・リスク許容性を問うサブイシュー。" },
         { id: "c7", text: "物流人材は確保できるか？", type: "argument", tier: 1, phrase: "物流人材は確保できるか？", reason: "外部支援で代替可。核心ではない。" },
         { id: "c2", text: "現行3PL費用は年商の14%、内製化試算では9%へ低減（年5億円改善）見込み", type: "evidence", tier: 2, phrase: "コスト14%→9%", reason: "経済性の定量根拠。最重要。" },
         { id: "c4", text: "ZOZOは物流内製化で配送リードタイムを2日→翌日に短縮、リピート購入率+12pt", type: "evidence", tier: 2, phrase: "ZOZOで翌日化・+12pt", reason: "先行事例。中央で補強。" },
@@ -517,8 +517,8 @@ export const LV3_QUESTIONS: Question[] = [
     phase1: {
       cards: [
         { id: "c1", text: "EV専用部品に主軸を段階移行すべき。5年でEV部品売上比率60%、エンジン部品は補修向けに縮小維持", type: "conclusion", tier: 0, phrase: "5年でEV60%・エンジンは補修向け", reason: "期間と双方の位置付けを明示。" },
-        { id: "c5", text: "EV部品事業に主軸を移さないとどうなるか？", type: "argument", tier: 1, phrase: "やらないとどうなるか？", reason: "危機対応型の左：放置時の損失を問うサブイシュー。" },
-        { id: "c3", text: "転換するならエンジン部品事業の縮小をどう段階管理して実行するか？", type: "argument", tier: 1, phrase: "どう対処すれば実行できるか？", reason: "危機対応型の右：実行時の対処設計を問うサブイシュー。" },
+        { id: "c5", text: "EV部品市場で自社の技術蓄積は活かせるか？", type: "argument", tier: 1, phrase: "やらないとどうなるか？", reason: "危機対応型の左：放置時の損失を問うサブイシュー。" },
+        { id: "c3", text: "既存エンジン部品事業の縮小は段階管理できるか？", type: "argument", tier: 1, phrase: "どう対処すれば実行できるか？", reason: "危機対応型の右：実行時の対処設計を問うサブイシュー。" },
         { id: "c7", text: "工場ラインの転換投資は何年で回収できるか？", type: "argument", tier: 1, phrase: "投資回収は何年か？", reason: "投資詳細で、転換是非の核心ではない。" },
         { id: "c2", text: "EV部品市場は2030年に8兆円規模見込み、年率24%成長。エンジン部品市場は同期間に40%縮小予測", type: "evidence", tier: 2, phrase: "EV市場8兆円・エンジン-40%", reason: "市場転換の定量根拠。最重要。" },
         { id: "c4", text: "デンソーは早期にEV部品強化に転じ、5年で全社売上に占めるEV関連を15%→48%に拡大", type: "evidence", tier: 2, phrase: "デンソーで15%→48%", reason: "先行事例。中央で補強。" },
@@ -550,8 +550,8 @@ export const LV3_QUESTIONS: Question[] = [
     phase1: {
       cards: [
         { id: "c1", text: "在宅介護を主軸事業に据え替えるべき。3年で売上比率を在宅60%へ、既存施設は重度ケア特化で稼働維持", type: "conclusion", tier: 0, phrase: "在宅60%・施設は重度特化", reason: "ポートフォリオを明示。" },
-        { id: "c5", text: "在宅介護（新チャネル）に優位性はあるか？", type: "argument", tier: 1, phrase: "新チャネルに優位性はあるか？", reason: "チャネル転換型の左：新チャネルの優位性を問うサブイシュー。" },
-        { id: "c3", text: "既存施設チャネルへの影響は許容範囲か？", type: "argument", tier: 1, phrase: "既存影響は許容範囲か？", reason: "チャネル転換型の右：既存影響の許容性を問うサブイシュー。" },
+        { id: "c5", text: "在宅介護市場で自社の介護スキルは活かせるか？", type: "argument", tier: 1, phrase: "新チャネルに優位性はあるか？", reason: "チャネル転換型の左：新チャネルの優位性を問うサブイシュー。" },
+        { id: "c3", text: "既存施設の稼働維持と転換のバランスは取れるか？", type: "argument", tier: 1, phrase: "既存影響は許容範囲か？", reason: "チャネル転換型の右：既存影響の許容性を問うサブイシュー。" },
         { id: "c7", text: "訪問用車両は何台必要か？", type: "argument", tier: 1, phrase: "車両は何台必要か？", reason: "数値詳細で、判断後に詰める。核心ではない。" },
         { id: "c2", text: "在宅介護市場は年率8%成長、施設介護市場は2%成長にとどまる。利益率も在宅12%vs施設7%", type: "evidence", tier: 2, phrase: "在宅12%vs施設7%・成長差6pt", reason: "経済性の定量根拠。最重要。" },
         { id: "c4", text: "ニチイ学館は在宅シフト戦略で5年で在宅売上比率を20%→55%、営業利益率も+3pt改善", type: "evidence", tier: 2, phrase: "ニチイで5年55%化", reason: "先行事例。中央で補強。" },
@@ -583,8 +583,8 @@ export const LV3_QUESTIONS: Question[] = [
     phase1: {
       cards: [
         { id: "c1", text: "オンライン診療を本格事業化すべき。慢性疾患フォローを主軸に、3拠点で先行展開、医師1人1日10件まで運用上限設定", type: "conclusion", tier: 0, phrase: "慢性疾患・3拠点・医師上限制", reason: "対象・範囲・運用設計を具体化。" },
-        { id: "c5", text: "オンライン技術で診療アクセスの課題は解決できるか？", type: "argument", tier: 1, phrase: "技術で課題は解決するか？", reason: "テクノロジー導入型の左：技術で課題が解決できるかを問うサブイシュー。" },
-        { id: "c3", text: "医師（人・組織）は運用負荷と質を維持して対応できるか？", type: "argument", tier: 1, phrase: "人・組織は対応できるか？", reason: "テクノロジー導入型の右：人・組織が対応できるかを問うサブイシュー。" },
+        { id: "c5", text: "オンライン診療で患者数とアクセスは増加するか？", type: "argument", tier: 1, phrase: "技術で課題は解決するか？", reason: "テクノロジー導入型の左：技術で課題が解決できるかを問うサブイシュー。" },
+        { id: "c3", text: "医師の運用負荷と質は確保できるか？", type: "argument", tier: 1, phrase: "人・組織は対応できるか？", reason: "テクノロジー導入型の右：人・組織が対応できるかを問うサブイシュー。" },
         { id: "c7", text: "オンライン診療プラットフォームはどれを採用するか？", type: "argument", tier: 1, phrase: "プラットフォームはどれか？", reason: "ベンダー選定で核心ではない。" },
         { id: "c2", text: "国内オンライン診療利用者数は3年で4.2倍、慢性疾患層では月1回再診の継続率が対面比+18pt", type: "evidence", tier: 2, phrase: "利用4.2倍・継続+18pt", reason: "需要の定量根拠。最重要。" },
         { id: "c4", text: "MICINと提携した医療法人グループは2年で慢性疾患患者数+30%、診療報酬収入+12%を実現", type: "evidence", tier: 2, phrase: "他法人で患者+30%・報酬+12%", reason: "先行事例。中央で補強。" },
@@ -616,8 +616,8 @@ export const LV3_QUESTIONS: Question[] = [
     phase1: {
       cards: [
         { id: "c1", text: "法人特化への転換を実施すべき。個人旅行は2年で段階撤退、MICE・出張・研修旅行に経営資源を集中", type: "conclusion", tier: 0, phrase: "個人2年撤退・法人3領域集中", reason: "撤退期間と集中領域を明示。" },
-        { id: "c5", text: "個人旅行から撤退しないとどんな損失が出るか？", type: "argument", tier: 1, phrase: "撤退しないとどんな損失が出るか？", reason: "撤退・縮小型の左：継続コストを問うサブイシュー。" },
-        { id: "c3", text: "個人旅行から撤退することで失うもの（顧客・人材）は何か？", type: "argument", tier: 1, phrase: "撤退で失うものは何か？", reason: "撤退・縮小型の右：撤退コストを問うサブイシュー。" },
+        { id: "c5", text: "法人特化で利益率は大幅改善するか？", type: "argument", tier: 1, phrase: "撤退しないとどんな損失が出るか？", reason: "撤退・縮小型の左：継続コストを問うサブイシュー。" },
+        { id: "c3", text: "法人案件獲得力は組織として担保できるか？", type: "argument", tier: 1, phrase: "撤退で失うものは何か？", reason: "撤退・縮小型の右：撤退コストを問うサブイシュー。" },
         { id: "c7", text: "個人旅行担当者の再配置はどう設計するか？", type: "argument", tier: 1, phrase: "再配置はどう設計するか？", reason: "人事段階の課題で、核心ではない。" },
         { id: "c2", text: "個人旅行の利益率は4%、法人MICEは18%。OTAシェア拡大で個人売上は3年で35%減", type: "evidence", tier: 2, phrase: "個人4%vs法人18%", reason: "経済性の定量根拠。最重要。" },
         { id: "c4", text: "JTBは中堅企業向けMICE特化で5年で対象事業の売上を1.7倍化、利益率も+8pt改善", type: "evidence", tier: 2, phrase: "JTBで売上1.7倍", reason: "先行事例。中央で補強。" },
@@ -649,8 +649,8 @@ export const LV3_QUESTIONS: Question[] = [
     phase1: {
       cards: [
         { id: "c1", text: "クリエイティブAIを本格導入すべき。3部門先行・1案件あたり初稿生成にAI必須化、最終チェックは人間が担保", type: "conclusion", tier: 0, phrase: "3部門先行・初稿AI＋人間最終", reason: "範囲と役割分担を明示。" },
-        { id: "c5", text: "生成AIで制作工数の課題は解決できるか？", type: "argument", tier: 1, phrase: "技術で課題は解決するか？", reason: "テクノロジー導入型の左：技術で課題が解決できるかを問うサブイシュー。" },
-        { id: "c3", text: "クリエイター・組織は品質を維持して対応できるか？", type: "argument", tier: 1, phrase: "人・組織は対応できるか？", reason: "テクノロジー導入型の右：人・組織が対応できるかを問うサブイシュー。" },
+        { id: "c5", text: "AI導入で制作スピードと利益率は改善するか？", type: "argument", tier: 1, phrase: "技術で課題は解決するか？", reason: "テクノロジー導入型の左：技術で課題が解決できるかを問うサブイシュー。" },
+        { id: "c3", text: "クライアントが求める品質は維持できるか？", type: "argument", tier: 1, phrase: "人・組織は対応できるか？", reason: "テクノロジー導入型の右：人・組織が対応できるかを問うサブイシュー。" },
         { id: "c7", text: "AIツールのライセンス費用はいくらか？", type: "argument", tier: 1, phrase: "ライセンス費はいくらか？", reason: "コスト詳細で、核心ではない。" },
         { id: "c2", text: "1案件あたり初稿制作時間が平均40時間→8時間、利益率は8%→18%への改善見込み", type: "evidence", tier: 2, phrase: "時間40h→8h・利益率倍", reason: "経済性の定量根拠。最重要。" },
         { id: "c4", text: "電通DXは生成AI導入で初稿提案数を5倍化、クライアント決定リードタイムを30%短縮", type: "evidence", tier: 2, phrase: "電通で提案5倍化", reason: "先行事例。中央で補強。" },
@@ -682,8 +682,8 @@ export const LV3_QUESTIONS: Question[] = [
     phase1: {
       cards: [
         { id: "c1", text: "製造・小売・金融の3業界特化に転換すべき。2年で対象3業界の売上比率を80%まで集中、対象外案件は段階縮小", type: "conclusion", tier: 0, phrase: "3業界80%集中・対象外縮小", reason: "業界・比率・期間を具体化。" },
-        { id: "c5", text: "対象外業界から撤退しないとどんな損失が出るか？", type: "argument", tier: 1, phrase: "撤退しないとどんな損失が出るか？", reason: "撤退・縮小型の左：継続コストを問うサブイシュー。" },
-        { id: "c3", text: "対象外業界から撤退することで失うもの（顧客・売上）は何か？", type: "argument", tier: 1, phrase: "撤退で失うものは何か？", reason: "撤退・縮小型の右：撤退コストを問うサブイシュー。" },
+        { id: "c5", text: "業界特化で受注単価とリピートは向上するか？", type: "argument", tier: 1, phrase: "撤退しないとどんな損失が出るか？", reason: "撤退・縮小型の左：継続コストを問うサブイシュー。" },
+        { id: "c3", text: "対象外業界の既存クライアントの離反は許容範囲か？", type: "argument", tier: 1, phrase: "撤退で失うものは何か？", reason: "撤退・縮小型の右：撤退コストを問うサブイシュー。" },
         { id: "c7", text: "業界エキスパートの中途採用は可能か？", type: "argument", tier: 1, phrase: "中途採用は可能か？", reason: "外部採用市場で対応可。核心ではない。" },
         { id: "c2", text: "業界特化型ファームの平均受注単価は汎用比1.6倍、リピート率も+25pt高い（業界調査）", type: "evidence", tier: 2, phrase: "単価1.6倍・リピート+25pt", reason: "経済性の定量根拠。最重要。" },
         { id: "c4", text: "アクセンチュアは業界特化部門を強化し、5年で当該部門の利益率を全社平均比+8pt", type: "evidence", tier: 2, phrase: "アクセンチュアで+8pt", reason: "先行事例。中央で補強。" },
@@ -715,8 +715,8 @@ export const LV3_QUESTIONS: Question[] = [
     phase1: {
       cards: [
         { id: "c1", text: "サブスク住宅事業を立ち上げるべき。都心3エリアで300戸の自社保有物件を転用、月額25万円・家具込みで提供", type: "conclusion", tier: 0, phrase: "都心3エリア300戸・25万", reason: "範囲と提供条件を具体化。" },
-        { id: "c5", text: "サブスク住宅市場に十分な機会があるか？", type: "argument", tier: 1, phrase: "市場に十分な機会があるか？", reason: "市場開拓型の左：市場機会を問うサブイシュー。" },
-        { id: "c3", text: "自社固有の勝ち筋（自社保有物件＋運営オペ）はあるか？", type: "argument", tier: 1, phrase: "自社固有の勝ち筋があるか？", reason: "市場開拓型の右：自社の独自勝ち筋を問うサブイシュー。" },
+        { id: "c5", text: "サブスク住宅で安定収益と高い稼働率は確保できるか？", type: "argument", tier: 1, phrase: "市場に十分な機会があるか？", reason: "市場開拓型の左：市場機会を問うサブイシュー。" },
+        { id: "c3", text: "家具・サービス調達のオペレーションは構築可能か？", type: "argument", tier: 1, phrase: "自社固有の勝ち筋があるか？", reason: "市場開拓型の右：自社の独自勝ち筋を問うサブイシュー。" },
         { id: "c7", text: "提供する家具のデザインはどう選ぶか？", type: "argument", tier: 1, phrase: "家具デザインはどう選ぶか？", reason: "実行段階で、核心ではない。" },
         { id: "c2", text: "サブスク住宅市場は5年で6倍の伸び、稼働率は通常賃貸比+15pt、月額単価は1.4倍", type: "evidence", tier: 2, phrase: "稼働+15pt・単価1.4倍", reason: "事業性の定量根拠。最重要。" },
         { id: "c4", text: "三井不動産は同モデルで5年で1500戸まで拡大、ROIは通常賃貸の1.8倍を達成", type: "evidence", tier: 2, phrase: "三井で1500戸・ROI1.8倍", reason: "先行事例。中央で補強。" },
@@ -748,8 +748,8 @@ export const LV3_QUESTIONS: Question[] = [
     phase1: {
       cards: [
         { id: "c1", text: "法人研修事業に主軸転換すべき。営業組織の60%を法人担当に再編、2年で売上比率を法人60%まで拡大", type: "conclusion", tier: 0, phrase: "営業60%再編・売上60%法人", reason: "組織と数値目標を具体化。" },
-        { id: "c5", text: "法人研修（新チャネル）に優位性はあるか？", type: "argument", tier: 1, phrase: "新チャネルに優位性はあるか？", reason: "チャネル転換型の左：新チャネルの優位性を問うサブイシュー。" },
-        { id: "c3", text: "既存個人サブスクチャネルへの影響と営業転換は許容範囲か？", type: "argument", tier: 1, phrase: "既存影響は許容範囲か？", reason: "チャネル転換型の右：既存影響の許容性を問うサブイシュー。" },
+        { id: "c5", text: "法人研修市場で自社プラットフォームは差別化できるか？", type: "argument", tier: 1, phrase: "新チャネルに優位性はあるか？", reason: "チャネル転換型の左：新チャネルの優位性を問うサブイシュー。" },
+        { id: "c3", text: "営業組織は法人向けに転換可能か？", type: "argument", tier: 1, phrase: "既存影響は許容範囲か？", reason: "チャネル転換型の右：既存影響の許容性を問うサブイシュー。" },
         { id: "c7", text: "法人向け課金システムはどう設計するか？", type: "argument", tier: 1, phrase: "課金設計はどうするか？", reason: "実行詳細で、核心ではない。" },
         { id: "c2", text: "個人サブスク売上は伸び率年8%・解約率18%、法人研修は年率28%成長・1社単価500万円超", type: "evidence", tier: 2, phrase: "個人8%vs法人28%・単価500万", reason: "経済性の定量根拠。最重要。" },
         { id: "c4", text: "Schooは法人主軸転換で3年で売上を3倍、利益率を-5%→+12%に改善", type: "evidence", tier: 2, phrase: "Schooで3年3倍・利益+12pt", reason: "先行事例。中央で補強。" },
@@ -781,8 +781,8 @@ export const LV3_QUESTIONS: Question[] = [
     phase1: {
       cards: [
         { id: "c1", text: "M&Aによる段階的な規模拡大を進めるべき。3年で農地面積を1.5倍化、買収後は中央集約管理＋既存農家を雇用形態で残す", type: "conclusion", tier: 0, phrase: "3年で1.5倍・既存雇用維持", reason: "目標と統合方針を明示。" },
-        { id: "c5", text: "近隣農家とM&Aで組む価値（効率・交渉力）はあるか？", type: "argument", tier: 1, phrase: "相手と組む価値はあるか？", reason: "アライアンス型の左：連携価値を問うサブイシュー。" },
-        { id: "c3", text: "統合後の自社リスク（経営統合・人員再配置）は管理できるか？", type: "argument", tier: 1, phrase: "自社のリスクは管理できるか？", reason: "アライアンス型の右：自社リスク管理を問うサブイシュー。" },
+        { id: "c5", text: "規模拡大で生産効率と単価交渉力は改善するか？", type: "argument", tier: 1, phrase: "相手と組む価値はあるか？", reason: "アライアンス型の左：連携価値を問うサブイシュー。" },
+        { id: "c3", text: "M&A後の経営統合と人員再配置は管理可能か？", type: "argument", tier: 1, phrase: "自社のリスクは管理できるか？", reason: "アライアンス型の右：自社リスク管理を問うサブイシュー。" },
         { id: "c7", text: "M&A対象農地の優先順位はどう決めるか？", type: "argument", tier: 1, phrase: "優先順位はどう決めるか？", reason: "選定段階で、核心ではない。" },
         { id: "c2", text: "規模拡大により単位面積当たり生産コスト30%減、JA・小売との取引単価が10%向上見込み", type: "evidence", tier: 2, phrase: "コスト-30%・単価+10%", reason: "経済性の定量根拠。最重要。" },
         { id: "c4", text: "サラダボウルは10年で農地15倍化、売上は20倍化、規模化による交渉力向上で利益率を二桁台に押し上げ", type: "evidence", tier: 2, phrase: "サラダボウルで売上20倍化", reason: "先行事例。中央で補強。" },
@@ -814,8 +814,8 @@ export const LV3_QUESTIONS: Question[] = [
     phase1: {
       cards: [
         { id: "c1", text: "銀行ライセンスを取得すべき。既存ユーザーの預金・少額融資から開始、3年で残高3兆円目標、リスク管理は専門人材を年内30名採用", type: "conclusion", tier: 0, phrase: "3年で残高3兆・人材30名", reason: "目標と人員計画を具体化。" },
-        { id: "c5", text: "銀行業（預金・融資）市場に十分な機会があるか？", type: "argument", tier: 1, phrase: "市場に十分な機会があるか？", reason: "市場開拓型の左：市場機会を問うサブイシュー。" },
-        { id: "c3", text: "自社固有の勝ち筋（2,000万人ユーザー＋規制対応）はあるか？", type: "argument", tier: 1, phrase: "自社固有の勝ち筋があるか？", reason: "市場開拓型の右：自社の独自勝ち筋を問うサブイシュー。" },
+        { id: "c5", text: "銀行ライセンスで自社のサービス価値は飛躍するか？", type: "argument", tier: 1, phrase: "市場に十分な機会があるか？", reason: "市場開拓型の左：市場機会を問うサブイシュー。" },
+        { id: "c3", text: "規制対応とコンプライアンス体制は構築可能か？", type: "argument", tier: 1, phrase: "自社固有の勝ち筋があるか？", reason: "市場開拓型の右：自社の独自勝ち筋を問うサブイシュー。" },
         { id: "c7", text: "ATMネットワークはどう確保するか？", type: "argument", tier: 1, phrase: "ATMはどう確保するか？", reason: "提携で対応可。核心ではない。" },
         { id: "c2", text: "既存ユーザー2000万人の決済データから推計される潜在預金残高は8兆円、貸付市場機会は年5,000億円", type: "evidence", tier: 2, phrase: "預金潜在8兆・貸付5,000億", reason: "事業機会の定量根拠。最重要。" },
         { id: "c4", text: "PayPay銀行は3年で預金残高1.5兆円、決済アプリとの相互送客で口座数を5倍化", type: "evidence", tier: 2, phrase: "PayPay銀行で5倍化", reason: "先行事例。中央で補強。" },
@@ -847,8 +847,8 @@ export const LV3_QUESTIONS: Question[] = [
     phase1: {
       cards: [
         { id: "c1", text: "M&A仲介を本格事業化すべき。専門部門新設・25名体制、3年で年間40件・手数料売上10億円目標", type: "conclusion", tier: 0, phrase: "25名体制・3年で40件10億", reason: "組織と数値目標を明示。" },
-        { id: "c5", text: "外部ブティック・取引先と組んでM&A仲介を行う価値はあるか？", type: "argument", tier: 1, phrase: "相手と組む価値はあるか？", reason: "アライアンス型の左：連携価値を問うサブイシュー。" },
-        { id: "c3", text: "自社のリスク（人材・体制）は管理できるか？", type: "argument", tier: 1, phrase: "自社のリスクは管理できるか？", reason: "アライアンス型の右：自社リスク管理を問うサブイシュー。" },
+        { id: "c5", text: "M&A仲介で手数料収益は安定的に拡大するか？", type: "argument", tier: 1, phrase: "相手と組む価値はあるか？", reason: "アライアンス型の左：連携価値を問うサブイシュー。" },
+        { id: "c3", text: "M&Aアドバイザリー人材は社内で育成できるか？", type: "argument", tier: 1, phrase: "自社のリスクは管理できるか？", reason: "アライアンス型の右：自社リスク管理を問うサブイシュー。" },
         { id: "c7", text: "外部M&Aブティックとの提携形式はどうするか？", type: "argument", tier: 1, phrase: "外部提携はどうするか？", reason: "実行段階の提携設計。核心ではない。" },
         { id: "c2", text: "自行取引中小企業3,200社のうち事業承継対象が28%、潜在M&A手数料は年間15億円規模", type: "evidence", tier: 2, phrase: "対象28%・潜在15億", reason: "事業機会の定量根拠。最重要。" },
         { id: "c4", text: "千葉銀行・常陽銀行はM&A仲介を強化、3年で関連手数料収益を3倍化、利益貢献10%超", type: "evidence", tier: 2, phrase: "他地銀で手数料3倍化", reason: "先行事例。中央で補強。" },
@@ -880,8 +880,8 @@ export const LV3_QUESTIONS: Question[] = [
     phase1: {
       cards: [
         { id: "c1", text: "主要工場をタイに段階移転すべき。3年でタイ生産比率を60%へ、国内工場は高付加価値品の試作拠点として残す", type: "conclusion", tier: 0, phrase: "3年でタイ60%・国内は試作", reason: "規模と国内位置付けを明示。" },
-        { id: "c5", text: "海外移転投資のROI（コスト改善・輸出競争力）は高いか？", type: "argument", tier: 1, phrase: "ROIは高いか？", reason: "投資判断型の左：投資価値を問うサブイシュー。" },
-        { id: "c3", text: "投資コスト・国内雇用と技術移転リスクは許容範囲か？", type: "argument", tier: 1, phrase: "コスト・リスクは許容範囲か？", reason: "投資判断型の右：コスト・リスク許容性を問うサブイシュー。" },
+        { id: "c5", text: "海外移転で製造コストと輸出競争力は改善するか？", type: "argument", tier: 1, phrase: "ROIは高いか？", reason: "投資判断型の左：投資価値を問うサブイシュー。" },
+        { id: "c3", text: "国内雇用と技術移転リスクは管理可能か？", type: "argument", tier: 1, phrase: "コスト・リスクは許容範囲か？", reason: "投資判断型の右：コスト・リスク許容性を問うサブイシュー。" },
         { id: "c7", text: "現地スタッフの福利厚生はどう設計するか？", type: "argument", tier: 1, phrase: "福利厚生はどう設計するか？", reason: "実行段階の人事課題で、核心ではない。" },
         { id: "c2", text: "タイ生産での製造コストは国内比45%減、輸出競争力で受注を年20%増やせる試算", type: "evidence", tier: 2, phrase: "コスト-45%・受注+20%", reason: "経済性の定量根拠。最重要。" },
         { id: "c4", text: "同業A社はタイ移転で営業利益率を5%→14%に改善、国内雇用は試作拠点で維持", type: "evidence", tier: 2, phrase: "他社で利益率+9pt", reason: "先行事例。中央で補強。" },
@@ -913,8 +913,8 @@ export const LV3_QUESTIONS: Question[] = [
     phase1: {
       cards: [
         { id: "c1", text: "アジア4カ国にFC本格展開すべき。3年で50店舗・現地マスターFC方式・本社からのスーパーバイザー駐在で品質統制", type: "conclusion", tier: 0, phrase: "アジア4カ国・50店舗・MFC方式", reason: "対象・規模・方式を具体化。" },
-        { id: "c5", text: "海外で和食FCの市場・需要はあるか？", type: "argument", tier: 1, phrase: "市場・需要はあるか？", reason: "新規参入・拡大型の左：市場機会を問うサブイシュー。" },
-        { id: "c3", text: "自社で品質統制を含めFC展開を実現できるか？", type: "argument", tier: 1, phrase: "自社で実現できるか？", reason: "新規参入・拡大型の右：自社の実現性を問うサブイシュー。" },
+        { id: "c5", text: "海外FCで自社ブランド価値は持続的に伸びるか？", type: "argument", tier: 1, phrase: "市場・需要はあるか？", reason: "新規参入・拡大型の左：市場機会を問うサブイシュー。" },
+        { id: "c3", text: "現地FC加盟店の品質統制は可能か？", type: "argument", tier: 1, phrase: "自社で実現できるか？", reason: "新規参入・拡大型の右：自社の実現性を問うサブイシュー。" },
         { id: "c7", text: "現地メニューのローカライズはどう設計するか？", type: "argument", tier: 1, phrase: "ローカライズはどう設計するか？", reason: "実行段階で、核心ではない。" },
         { id: "c2", text: "アジアの和食市場は年率15%成長、訪日経験者が現地で和食店利用する確率は63%", type: "evidence", tier: 2, phrase: "アジア和食15%成長", reason: "需要の定量根拠。最重要。" },
         { id: "c4", text: "丸亀製麺はアジア展開で5年で海外売上比率を5%→28%、利益率も国内比+4pt", type: "evidence", tier: 2, phrase: "丸亀で5年28%化", reason: "先行事例。中央で補強。" },
@@ -946,8 +946,8 @@ export const LV3_QUESTIONS: Question[] = [
     phase1: {
       cards: [
         { id: "c1", text: "SaaSプロダクト事業に主軸転換すべき。3年で売上比率SaaS50%、既存受託は重要顧客向けに縮小維持、開発人員の40%をプロダクト側へ移管", type: "conclusion", tier: 0, phrase: "3年で50%・人員40%移管", reason: "数値目標と人員計画を具体化。" },
-        { id: "c5", text: "SaaS（新提供モデル）に優位性はあるか？", type: "argument", tier: 1, phrase: "新チャネルに優位性はあるか？", reason: "チャネル転換型の左：新チャネル（提供モデル）の優位性を問うサブイシュー。" },
-        { id: "c3", text: "既存受託チャネルへの影響は許容範囲か？", type: "argument", tier: 1, phrase: "既存影響は許容範囲か？", reason: "チャネル転換型の右：既存影響の許容性を問うサブイシュー。" },
+        { id: "c5", text: "SaaS事業で利益率と収益安定性は改善するか？", type: "argument", tier: 1, phrase: "新チャネルに優位性はあるか？", reason: "チャネル転換型の左：新チャネル（提供モデル）の優位性を問うサブイシュー。" },
+        { id: "c3", text: "受託案件の蓄積をプロダクト化できるか？", type: "argument", tier: 1, phrase: "既存影響は許容範囲か？", reason: "チャネル転換型の右：既存影響の許容性を問うサブイシュー。" },
         { id: "c7", text: "プロダクト名のネーミング戦略はどうするか？", type: "argument", tier: 1, phrase: "ネーミングはどうするか？", reason: "枝葉のマーケで、核心ではない。" },
         { id: "c2", text: "受託の利益率は7%、SaaSの利益率は40%超。MRR積み上げで収益も安定化", type: "evidence", tier: 2, phrase: "利益率7%→40%超", reason: "経済性の定量根拠。最重要。" },
         { id: "c4", text: "ラクスは受託からSaaS主軸に転換、5年で売上を3倍・利益率を10%→25%に改善", type: "evidence", tier: 2, phrase: "ラクスで利益率+15pt", reason: "先行事例。中央で補強。" },
@@ -979,8 +979,8 @@ export const LV3_QUESTIONS: Question[] = [
     phase1: {
       cards: [
         { id: "c1", text: "通信制学部を新設すべき。社会人向けビジネス・教育系2学科で初年度定員800名、3年以内に2,400名規模目標", type: "conclusion", tier: 0, phrase: "2学科800名・3年で2,400名", reason: "規模と期間を具体化。" },
-        { id: "c5", text: "通信制（社会人向け）市場に十分な機会があるか？", type: "argument", tier: 1, phrase: "市場に十分な機会があるか？", reason: "市場開拓型の左：市場機会を問うサブイシュー。" },
-        { id: "c3", text: "自社固有の勝ち筋（教員資源＋運営体制）はあるか？", type: "argument", tier: 1, phrase: "自社固有の勝ち筋があるか？", reason: "市場開拓型の右：自社の独自勝ち筋を問うサブイシュー。" },
+        { id: "c5", text: "通信制で社会人需要を取り込み定員を確保できるか？", type: "argument", tier: 1, phrase: "市場に十分な機会があるか？", reason: "市場開拓型の左：市場機会を問うサブイシュー。" },
+        { id: "c3", text: "教員と運営体制は新設に対応可能か？", type: "argument", tier: 1, phrase: "自社固有の勝ち筋があるか？", reason: "市場開拓型の右：自社の独自勝ち筋を問うサブイシュー。" },
         { id: "c7", text: "オンライン学習システムは何を採用するか？", type: "argument", tier: 1, phrase: "学習システムはどれか？", reason: "実行段階のシステム選定で、核心ではない。" },
         { id: "c2", text: "国内通信制大学の入学者は5年で1.6倍、社会人比率は78%、平均年齢38歳", type: "evidence", tier: 2, phrase: "入学者1.6倍・社会人78%", reason: "需要の定量根拠。最重要。" },
         { id: "c4", text: "中央大法学部通信制は社会人特化で5年で定員充足率を110%維持、財務貢献+12億", type: "evidence", tier: 2, phrase: "中央大で充足110%", reason: "先行事例。中央で補強。" },
@@ -1012,8 +1012,8 @@ export const LV3_QUESTIONS: Question[] = [
     phase1: {
       cards: [
         { id: "c1", text: "レベル4自動運転を自社開発すべき。コア技術は内製・周辺は協業、5年で年5,000億円投資、商用車から先行投入", type: "conclusion", tier: 0, phrase: "コア内製・年5,000億・商用先行", reason: "範囲・規模・順序を具体化。" },
-        { id: "c5", text: "自社開発投資のROI（技術リーダーシップ・粗利）は高いか？", type: "argument", tier: 1, phrase: "ROIは高いか？", reason: "投資判断型の左：投資価値を問うサブイシュー。" },
-        { id: "c3", text: "巨額投資コスト・回収期間リスクは許容範囲か？", type: "argument", tier: 1, phrase: "コスト・リスクは許容範囲か？", reason: "投資判断型の右：コスト・リスク許容性を問うサブイシュー。" },
+        { id: "c5", text: "自社開発で技術リーダーシップは確立できるか？", type: "argument", tier: 1, phrase: "ROIは高いか？", reason: "投資判断型の左：投資価値を問うサブイシュー。" },
+        { id: "c3", text: "投資規模と回収期間は許容範囲か？", type: "argument", tier: 1, phrase: "コスト・リスクは許容範囲か？", reason: "投資判断型の右：コスト・リスク許容性を問うサブイシュー。" },
         { id: "c7", text: "サプライヤー再編はどう行うか？", type: "argument", tier: 1, phrase: "サプライヤー再編はどう行うか？", reason: "実行段階の組織再編で、核心ではない。" },
         { id: "c2", text: "自動運転市場は2030年に世界5兆円規模、内製化したテスラの粗利率は28%（業界平均比+10pt）", type: "evidence", tier: 2, phrase: "市場5兆・テスラ粗利+10pt", reason: "事業性の定量根拠。最重要。" },
         { id: "c4", text: "BMWは自社+ボッシュ協業の混合戦略でレベル3を実用化、研究開発投資効率は全外注比1.4倍", type: "evidence", tier: 2, phrase: "BMW混合戦略で1.4倍効率", reason: "先行事例。中央で補強。" },
@@ -1045,8 +1045,8 @@ export const LV3_QUESTIONS: Question[] = [
     phase1: {
       cards: [
         { id: "c1", text: "MaaSを主軸事業に据えるべき。鉄道＋バス＋シェアモビリティを統合、5年でMaaS関連売上を全社の30%まで引き上げ", type: "conclusion", tier: 0, phrase: "5年でMaaS売上30%", reason: "数値目標を具体化。" },
-        { id: "c5", text: "MaaS（新提供モデル）に優位性はあるか？", type: "argument", tier: 1, phrase: "新チャネルに優位性はあるか？", reason: "チャネル転換型の左：新チャネル（提供モデル）の優位性を問うサブイシュー。" },
-        { id: "c3", text: "既存鉄道チャネル（連携・データ共有含む）への影響は許容範囲か？", type: "argument", tier: 1, phrase: "既存影響は許容範囲か？", reason: "チャネル転換型の右：既存影響の許容性を問うサブイシュー。" },
+        { id: "c5", text: "MaaSで利用者数と運賃外収益は安定的に伸びるか？", type: "argument", tier: 1, phrase: "新チャネルに優位性はあるか？", reason: "チャネル転換型の左：新チャネル（提供モデル）の優位性を問うサブイシュー。" },
+        { id: "c3", text: "他モード事業者との連携・データ共有は実現可能か？", type: "argument", tier: 1, phrase: "既存影響は許容範囲か？", reason: "チャネル転換型の右：既存影響の許容性を問うサブイシュー。" },
         { id: "c7", text: "MaaSアプリのUI設計はどうすべきか？", type: "argument", tier: 1, phrase: "UI設計はどうするか？", reason: "実行段階のUI課題で、核心ではない。" },
         { id: "c2", text: "MaaS統合アプリの先行事例で利用者の月平均利用回数+38%、運賃外サービス利用が新収益源で年30億円", type: "evidence", tier: 2, phrase: "利用+38%・運賃外30億", reason: "事業性の定量根拠。最重要。" },
         { id: "c4", text: "JR東日本MaaS事業はバス・タクシー連携で5年で関連売上を150億→650億に拡大", type: "evidence", tier: 2, phrase: "JR東で売上4倍化", reason: "先行事例。中央で補強。" },
@@ -1078,8 +1078,8 @@ export const LV3_QUESTIONS: Question[] = [
     phase1: {
       cards: [
         { id: "c1", text: "暗号資産関連商品を本格取扱いすべき。BTC・ETH連動投信から開始、専門デスク10名・コンプライアンス強化と並行で展開", type: "conclusion", tier: 0, phrase: "投信先行・専門10名体制", reason: "範囲と体制を具体化。" },
-        { id: "c5", text: "暗号資産関連商品市場に十分な機会があるか？", type: "argument", tier: 1, phrase: "市場に十分な機会があるか？", reason: "市場開拓型の左：市場機会を問うサブイシュー。" },
-        { id: "c3", text: "自社固有の勝ち筋（既存顧客基盤＋コンプラ体制）はあるか？", type: "argument", tier: 1, phrase: "自社固有の勝ち筋があるか？", reason: "市場開拓型の右：自社の独自勝ち筋を問うサブイシュー。" },
+        { id: "c5", text: "暗号資産取扱いで顧客獲得と手数料収益は伸びるか？", type: "argument", tier: 1, phrase: "市場に十分な機会があるか？", reason: "市場開拓型の左：市場機会を問うサブイシュー。" },
+        { id: "c3", text: "コンプライアンスとリスク管理体制は構築可能か？", type: "argument", tier: 1, phrase: "自社固有の勝ち筋があるか？", reason: "市場開拓型の右：自社の独自勝ち筋を問うサブイシュー。" },
         { id: "c7", text: "顧客向けセミナーはどう実施するか？", type: "argument", tier: 1, phrase: "セミナーはどう実施するか？", reason: "実行段階のマーケで、核心ではない。" },
         { id: "c2", text: "若年富裕層の暗号資産関心は68%、自社既存顧客のうち28%が取扱要望、潜在手数料は年30億円規模", type: "evidence", tier: 2, phrase: "顧客28%が要望・潜在30億", reason: "需要の定量根拠。最重要。" },
         { id: "c4", text: "野村證券は暗号資産関連商品で2年で関連手数料を15億→55億に拡大、若年口座開設+45%", type: "evidence", tier: 2, phrase: "野村で手数料3.7倍化", reason: "先行事例。中央で補強。" },
@@ -1111,8 +1111,8 @@ export const LV3_QUESTIONS: Question[] = [
     phase1: {
       cards: [
         { id: "c1", text: "国内製造拠点を新設し段階回帰すべき。先端品比率の50%を国内化、国の補助金最大活用、5年で1兆円投資", type: "conclusion", tier: 0, phrase: "先端50%国内・5年1兆", reason: "規模と財源を明示。" },
-        { id: "c5", text: "国内回帰投資のROI（供給安定・顧客信頼）は高いか？", type: "argument", tier: 1, phrase: "ROIは高いか？", reason: "投資判断型の左：投資価値を問うサブイシュー。" },
-        { id: "c3", text: "投資コスト・人材確保リスクは許容範囲か？", type: "argument", tier: 1, phrase: "コスト・リスクは許容範囲か？", reason: "投資判断型の右：コスト・リスク許容性を問うサブイシュー。" },
+        { id: "c5", text: "国内回帰で供給安定性と顧客信頼は強化されるか？", type: "argument", tier: 1, phrase: "ROIは高いか？", reason: "投資判断型の左：投資価値を問うサブイシュー。" },
+        { id: "c3", text: "巨額投資の回収と人材確保は可能か？", type: "argument", tier: 1, phrase: "コスト・リスクは許容範囲か？", reason: "投資判断型の右：コスト・リスク許容性を問うサブイシュー。" },
         { id: "c7", text: "新工場の立地はどこにすべきか？", type: "argument", tier: 1, phrase: "立地はどこか？", reason: "実行段階の選定で、核心ではない。" },
         { id: "c2", text: "顧客企業の国内製造調達意向は58%（前年比+18pt）、地政学リスクで海外品の納期変動が常態化", type: "evidence", tier: 2, phrase: "国内意向58%・前年+18pt", reason: "需要の定量根拠。最重要。" },
         { id: "c4", text: "ソニーは熊本工場新設で受注を3年で2.4倍化、TSMC連携でリスク分散と顧客拡大を両立", type: "evidence", tier: 2, phrase: "ソニーで受注2.4倍化", reason: "先行事例。中央で補強。" },
@@ -1144,8 +1144,8 @@ export const LV3_QUESTIONS: Question[] = [
     phase1: {
       cards: [
         { id: "c1", text: "配信を主軸事業に据え替えるべき。地上波・配信を統合した編成本部新設、5年で配信売上比率を15%→55%まで拡大", type: "conclusion", tier: 0, phrase: "編成統合・5年で配信55%", reason: "組織と数値目標を具体化。" },
-        { id: "c5", text: "配信（新チャネル）に優位性はあるか？", type: "argument", tier: 1, phrase: "新チャネルに優位性はあるか？", reason: "チャネル転換型の左：新チャネルの優位性を問うサブイシュー。" },
-        { id: "c3", text: "既存地上波チャネルへの影響（離反・社内意識）は許容範囲か？", type: "argument", tier: 1, phrase: "既存影響は許容範囲か？", reason: "チャネル転換型の右：既存影響の許容性を問うサブイシュー。" },
+        { id: "c5", text: "配信主軸で広告収入の構造転換は実現するか？", type: "argument", tier: 1, phrase: "新チャネルに優位性はあるか？", reason: "チャネル転換型の左：新チャネルの優位性を問うサブイシュー。" },
+        { id: "c3", text: "地上波視聴者の離反と社内の意識転換は管理可能か？", type: "argument", tier: 1, phrase: "既存影響は許容範囲か？", reason: "チャネル転換型の右：既存影響の許容性を問うサブイシュー。" },
         { id: "c7", text: "配信プラットフォームのアプリUIはどう刷新するか？", type: "argument", tier: 1, phrase: "アプリUIはどう刷新するか？", reason: "実行段階のUI課題で、核心ではない。" },
         { id: "c2", text: "地上波広告売上は10年で30%減、自社配信売上は年率28%増・若年層リーチは地上波の3倍", type: "evidence", tier: 2, phrase: "地上波-30%vs配信+28%", reason: "経済性の定量根拠。最重要。" },
         { id: "c4", text: "TBSは配信主軸戦略で5年で配信関連売上を5倍化、デジタル広告単価が地上波比1.4倍", type: "evidence", tier: 2, phrase: "TBSで配信5倍化", reason: "先行事例。中央で補強。" },
@@ -1177,8 +1177,8 @@ export const LV3_QUESTIONS: Question[] = [
     phase1: {
       cards: [
         { id: "c1", text: "海外受注を主軸化すべき。東南アジア・中東に集中、5年で海外受注比率を10%→40%、JV方式で現地リスク分担", type: "conclusion", tier: 0, phrase: "10%→40%・JV方式", reason: "対象・比率・方式を具体化。" },
-        { id: "c5", text: "東南アジア・中東インフラ市場に十分な需要はあるか？", type: "argument", tier: 1, phrase: "市場・需要はあるか？", reason: "新規参入・拡大型の左：市場機会を問うサブイシュー。" },
-        { id: "c3", text: "JV方式含めて自社で海外案件を実現できるか？", type: "argument", tier: 1, phrase: "自社で実現できるか？", reason: "新規参入・拡大型の右：自社の実現性を問うサブイシュー。" },
+        { id: "c5", text: "海外受注で売上と利益率は持続的に伸びるか？", type: "argument", tier: 1, phrase: "市場・需要はあるか？", reason: "新規参入・拡大型の左：市場機会を問うサブイシュー。" },
+        { id: "c3", text: "海外案件のリスク管理体制は構築可能か？", type: "argument", tier: 1, phrase: "自社で実現できるか？", reason: "新規参入・拡大型の右：自社の実現性を問うサブイシュー。" },
         { id: "c7", text: "現地スタッフの研修体系はどう作るか？", type: "argument", tier: 1, phrase: "研修体系はどう作るか？", reason: "実行段階の人材育成で、核心ではない。" },
         { id: "c2", text: "国内建設市場は年率1%成長、東南アジアと中東のインフラ市場は年率8-12%成長", type: "evidence", tier: 2, phrase: "国内1%vs海外8-12%", reason: "市場機会の定量根拠。最重要。" },
         { id: "c4", text: "鹿島建設は海外受注強化で5年で海外売上比率を12%→32%、利益率も国内比+2pt", type: "evidence", tier: 2, phrase: "鹿島で5年20pt伸長", reason: "先行事例。中央で補強。" },
@@ -1210,8 +1210,8 @@ export const LV3_QUESTIONS: Question[] = [
     phase1: {
       cards: [
         { id: "c1", text: "グリーン素材事業を本格立ち上げすべき。バイオPLA・植物由来ナイロン2軸、5年で売上500億円規模目標、既存工場の20%を転用", type: "conclusion", tier: 0, phrase: "2軸・5年500億・既存20%転用", reason: "領域・規模・転用率を明示。" },
-        { id: "c5", text: "グリーン素材市場に十分な機会があるか？", type: "argument", tier: 1, phrase: "市場に十分な機会があるか？", reason: "市場開拓型の左：市場機会を問うサブイシュー。" },
-        { id: "c3", text: "自社固有の勝ち筋（高分子技術＋既存工場転用）はあるか？", type: "argument", tier: 1, phrase: "自社固有の勝ち筋があるか？", reason: "市場開拓型の右：自社の独自勝ち筋を問うサブイシュー。" },
+        { id: "c5", text: "グリーン素材で自社の技術強みは活かせるか？", type: "argument", tier: 1, phrase: "市場に十分な機会があるか？", reason: "市場開拓型の左：市場機会を問うサブイシュー。" },
+        { id: "c3", text: "投資規模と収益化までの期間は許容範囲か？", type: "argument", tier: 1, phrase: "自社固有の勝ち筋があるか？", reason: "市場開拓型の右：自社の独自勝ち筋を問うサブイシュー。" },
         { id: "c7", text: "原料調達のサプライヤー候補はどこか？", type: "argument", tier: 1, phrase: "原料調達はどこか？", reason: "実行段階の調達で、核心ではない。" },
         { id: "c2", text: "グリーン素材世界市場は2030年に8兆円、年率18%成長。日本企業のシェアは10%以下で参入余地大", type: "evidence", tier: 2, phrase: "市場8兆・日本シェア10%以下", reason: "市場機会の定量根拠。最重要。" },
         { id: "c4", text: "三菱ケミカルはバイオ素材事業で5年で関連売上を80億→320億に拡大、利益率を本業比+5pt", type: "evidence", tier: 2, phrase: "三菱で5年4倍化", reason: "先行事例。中央で補強。" },
@@ -1243,8 +1243,8 @@ export const LV3_QUESTIONS: Question[] = [
     phase1: {
       cards: [
         { id: "c1", text: "法人5Gを主軸事業に据えるべき。製造・物流・医療を重点ターゲットに、3年で法人売上比率を30%→50%まで引き上げ", type: "conclusion", tier: 0, phrase: "重点3業界・3年で50%", reason: "ターゲットと数値目標を具体化。" },
-        { id: "c5", text: "法人5G（新チャネル）に優位性はあるか？", type: "argument", tier: 1, phrase: "新チャネルに優位性はあるか？", reason: "チャネル転換型の左：新チャネルの優位性を問うサブイシュー。" },
-        { id: "c3", text: "既存個人モバイルチャネル・営業組織への影響は許容範囲か？", type: "argument", tier: 1, phrase: "既存影響は許容範囲か？", reason: "チャネル転換型の右：既存影響の許容性を問うサブイシュー。" },
+        { id: "c5", text: "法人5Gで安定的な高収益事業を作れるか？", type: "argument", tier: 1, phrase: "新チャネルに優位性はあるか？", reason: "チャネル転換型の左：新チャネルの優位性を問うサブイシュー。" },
+        { id: "c3", text: "法人営業組織は新規領域に対応可能か？", type: "argument", tier: 1, phrase: "既存影響は許容範囲か？", reason: "チャネル転換型の右：既存影響の許容性を問うサブイシュー。" },
         { id: "c7", text: "法人向け5Gの料金プランはどう設計するか？", type: "argument", tier: 1, phrase: "料金設計はどうするか？", reason: "実行段階の価格設計で、核心ではない。" },
         { id: "c2", text: "法人プライベート5G市場は年率35%成長、個人向け契約利益率3%vs法人5G利益率18%", type: "evidence", tier: 2, phrase: "成長35%・利益率3%→18%", reason: "経済性の定量根拠。最重要。" },
         { id: "c4", text: "NTT東西は法人5G強化で5年で関連売上を200億→1,200億に拡大、利益貢献も顕在化", type: "evidence", tier: 2, phrase: "NTTで6倍化", reason: "先行事例。中央で補強。" },
@@ -1276,8 +1276,8 @@ export const LV3_QUESTIONS: Question[] = [
     phase1: {
       cards: [
         { id: "c1", text: "機能性食品市場に本格参入すべき。専用ブランド立ち上げ・3年で5SKU・売上150億円目標、研究所からの初期投入はトクホ機能", type: "conclusion", tier: 0, phrase: "専用ブランド・3年5SKU・150億", reason: "形態と目標を具体化。" },
-        { id: "c5", text: "機能性食品市場に十分な機会があるか？", type: "argument", tier: 1, phrase: "市場に十分な機会があるか？", reason: "市場開拓型の左：市場機会を問うサブイシュー。" },
-        { id: "c3", text: "自社固有の勝ち筋（特許＋認可対応力）はあるか？", type: "argument", tier: 1, phrase: "自社固有の勝ち筋があるか？", reason: "市場開拓型の右：自社の独自勝ち筋を問うサブイシュー。" },
+        { id: "c5", text: "機能性食品で自社の研究力は活かせるか？", type: "argument", tier: 1, phrase: "市場に十分な機会があるか？", reason: "市場開拓型の左：市場機会を問うサブイシュー。" },
+        { id: "c3", text: "機能性表示の認可取得・規制対応は可能か？", type: "argument", tier: 1, phrase: "自社固有の勝ち筋があるか？", reason: "市場開拓型の右：自社の独自勝ち筋を問うサブイシュー。" },
         { id: "c7", text: "商品ラインナップの数はいくつ揃えるか？", type: "argument", tier: 1, phrase: "SKU数はいくつか？", reason: "実行段階のSKU設計で、核心ではない。" },
         { id: "c2", text: "機能性食品市場は年率10%成長、ドリンクカテゴリ単独で2,500億円規模。同業飲料メーカーの参入は3社のみ", type: "evidence", tier: 2, phrase: "市場2,500億・年10%", reason: "市場機会の定量根拠。最重要。" },
         { id: "c4", text: "サントリーは機能性表示で「セサミン+E」「胡麻麦茶」を投入、3年で関連売上を年200億規模に育成", type: "evidence", tier: 2, phrase: "サントリーで200億化", reason: "先行事例。中央で補強。" },
@@ -1309,8 +1309,8 @@ export const LV3_QUESTIONS: Question[] = [
     phase1: {
       cards: [
         { id: "c1", text: "再エネ事業を主力の一つに据えるべき。10年で発電容量30GW、洋上風力・太陽光・蓄電池を3軸、投資総額3兆円", type: "conclusion", tier: 0, phrase: "10年30GW・3軸・3兆円", reason: "規模・領域・投資額を明示。" },
-        { id: "c5", text: "再エネ市場に十分な機会があるか？", type: "argument", tier: 1, phrase: "市場に十分な機会があるか？", reason: "市場開拓型の左：市場機会を問うサブイシュー。" },
-        { id: "c3", text: "自社固有の勝ち筋（投資余力＋商社ネットワーク）はあるか？", type: "argument", tier: 1, phrase: "自社固有の勝ち筋があるか？", reason: "市場開拓型の右：自社の独自勝ち筋を問うサブイシュー。" },
+        { id: "c5", text: "再エネ事業で長期安定収益を作れるか？", type: "argument", tier: 1, phrase: "市場に十分な機会があるか？", reason: "市場開拓型の左：市場機会を問うサブイシュー。" },
+        { id: "c3", text: "巨額投資を許容範囲で回収できるか？", type: "argument", tier: 1, phrase: "自社固有の勝ち筋があるか？", reason: "市場開拓型の右：自社の独自勝ち筋を問うサブイシュー。" },
         { id: "c7", text: "現地パートナーとの契約はどう設計するか？", type: "argument", tier: 1, phrase: "契約はどう設計するか？", reason: "実行段階の契約で、核心ではない。" },
         { id: "c2", text: "世界の再エネ投資は年率20%増、長期PPA契約による安定IRRは8-10%・契約期間20年超", type: "evidence", tier: 2, phrase: "IRR8-10%・20年契約", reason: "事業性の定量根拠。最重要。" },
         { id: "c4", text: "三菱商事は再エネ事業を強化し、5年で関連投資残高を5,000億→2.5兆に拡大、年間配当も増加", type: "evidence", tier: 2, phrase: "三菱で5倍化", reason: "先行事例。中央で補強。" },
@@ -1335,16 +1335,16 @@ export const LV3_QUESTIONS: Question[] = [
     subIssueSelection: { candidates: [
       { text: "生鮮宅配で売上と顧客LTVは持続的に伸びるか？", isCorrect: true, reason: "事業価値を問う核心的サブイシュー。" },
       { text: "ピッキング・配送オペレーションは黒字化可能か？", isCorrect: true, reason: "経済性を問う核心的サブイシュー。" },
-      { text: "宅配車両の保有か外注か？", isCorrect: false, reason: "実行段階の調達設計で、核心ではない。" },
+      { text: "宅配車両は自社保有と外注のどちらにすべきか？", isCorrect: false, reason: "実行段階の調達設計で、核心ではない。" },
       { text: "宅配サイトのロゴはどう刷新するか？", isCorrect: false, reason: "枝葉の問いで、主力化判断には影響しない。" },
       { text: "若年層の食生活はどう変わるか？", isCorrect: false, reason: "外部市場の予測で、自社で答えられない。" }
     ]},
     phase1: {
       cards: [
         { id: "c1", text: "生鮮宅配を主力チャネル化すべき。MFC（小型物流拠点）方式で都心10拠点、3年で売上比率宅配を10%→30%目標", type: "conclusion", tier: 0, phrase: "MFC方式・3年で30%", reason: "方式と数値目標を具体化。" },
-        { id: "c5", text: "生鮮宅配（新チャネル）に優位性はあるか？", type: "argument", tier: 1, phrase: "新チャネルに優位性はあるか？", reason: "チャネル転換型の左：新チャネルの優位性を問うサブイシュー。" },
-        { id: "c3", text: "既存店舗チャネルへの影響と運営両立は許容範囲か？", type: "argument", tier: 1, phrase: "既存影響は許容範囲か？", reason: "チャネル転換型の右：既存影響の許容性を問うサブイシュー。" },
-        { id: "c7", text: "宅配車両の保有か外注か？", type: "argument", tier: 1, phrase: "車両は保有か外注か？", reason: "実行段階の調達で、核心ではない。" },
+        { id: "c5", text: "生鮮宅配で売上と顧客LTVは持続的に伸びるか？", type: "argument", tier: 1, phrase: "新チャネルに優位性はあるか？", reason: "チャネル転換型の左：新チャネルの優位性を問うサブイシュー。" },
+        { id: "c3", text: "ピッキング・配送オペレーションは黒字化可能か？", type: "argument", tier: 1, phrase: "既存影響は許容範囲か？", reason: "チャネル転換型の右：既存影響の許容性を問うサブイシュー。" },
+        { id: "c7", text: "宅配車両は自社保有と外注のどちらにすべきか？", type: "argument", tier: 1, phrase: "車両は保有か外注か？", reason: "実行段階の調達で、核心ではない。" },
         { id: "c2", text: "国内生鮮ネット利用者は3年で2.4倍、自社既存顧客のうち28%が「定期宅配あれば利用したい」", type: "evidence", tier: 2, phrase: "ネット2.4倍・既存28%", reason: "需要の定量根拠。最重要。" },
         { id: "c4", text: "イオンはネットスーパー強化で5年で関連売上を400億→2,000億、店舗併用顧客の年間購入額が1.6倍に", type: "evidence", tier: 2, phrase: "イオンで5倍化", reason: "先行事例。中央で補強。" },
         { id: "c6", text: "MFC試算で1拠点あたり初期投資5億・月運用1.2億、月商3億超で黒字化（既存顧客10%取り込みで達成可）", type: "evidence", tier: 2, phrase: "月商3億で黒字化", reason: "経済性の自社試算。右端。" },
@@ -1375,8 +1375,8 @@ export const LV3_QUESTIONS: Question[] = [
     phase1: {
       cards: [
         { id: "c1", text: "富裕層特化に戦略転換すべき。基幹店舗5店を高級路線に集中、外商強化と限定VIPサロン新設、3年で富裕層売上比率55%目標", type: "conclusion", tier: 0, phrase: "基幹5店・外商・3年で55%", reason: "対象店舗・施策を具体化。" },
-        { id: "c5", text: "中間層から撤退しないとどんな損失が出るか？", type: "argument", tier: 1, phrase: "撤退しないとどんな損失が出るか？", reason: "撤退・縮小型の左：継続コストを問うサブイシュー。" },
-        { id: "c3", text: "中間層から撤退することで失うもの（売上・客層）は何か？", type: "argument", tier: 1, phrase: "撤退で失うものは何か？", reason: "撤退・縮小型の右：撤退コストを問うサブイシュー。" },
+        { id: "c5", text: "富裕層特化で利益率と顧客リピートは大幅改善するか？", type: "argument", tier: 1, phrase: "撤退しないとどんな損失が出るか？", reason: "撤退・縮小型の左：継続コストを問うサブイシュー。" },
+        { id: "c3", text: "中間層離反の影響は許容範囲に抑えられるか？", type: "argument", tier: 1, phrase: "撤退で失うものは何か？", reason: "撤退・縮小型の右：撤退コストを問うサブイシュー。" },
         { id: "c7", text: "店舗内のディスプレイはどう変えるか？", type: "argument", tier: 1, phrase: "ディスプレイはどう変えるか？", reason: "実行段階のVMDで、核心ではない。" },
         { id: "c2", text: "富裕層客の客単価は中間層比7倍、リピート率も40pt高い。富裕層売上が利益の62%を占める現状", type: "evidence", tier: 2, phrase: "客単価7倍・リピート+40pt", reason: "経済性の定量根拠。最重要。" },
         { id: "c4", text: "三越伊勢丹は富裕層強化で5年で営業利益率を3%→8%に改善、外商売上が全社の45%に到達", type: "evidence", tier: 2, phrase: "三越で利益率+5pt", reason: "先行事例。中央で補強。" },
@@ -1408,8 +1408,8 @@ export const LV3_QUESTIONS: Question[] = [
     phase1: {
       cards: [
         { id: "c1", text: "水素事業を主軸の一角に据えるべき。10年で水素売上を年商の20%まで、既存ガス供給網を水素混焼から段階転用", type: "conclusion", tier: 0, phrase: "10年で20%・既存網を転用", reason: "規模と既存資産活用を明示。" },
-        { id: "c5", text: "水素市場に十分な機会があるか？", type: "argument", tier: 1, phrase: "市場に十分な機会があるか？", reason: "市場開拓型の左：市場機会を問うサブイシュー。" },
-        { id: "c3", text: "自社固有の勝ち筋（既存ガス供給網＋投資余力）はあるか？", type: "argument", tier: 1, phrase: "自社固有の勝ち筋があるか？", reason: "市場開拓型の右：自社の独自勝ち筋を問うサブイシュー。" },
+        { id: "c5", text: "水素事業で長期的な収益基盤を作れるか？", type: "argument", tier: 1, phrase: "市場に十分な機会があるか？", reason: "市場開拓型の左：市場機会を問うサブイシュー。" },
+        { id: "c3", text: "巨額投資の回収と既存設備の活用は可能か？", type: "argument", tier: 1, phrase: "自社固有の勝ち筋があるか？", reason: "市場開拓型の右：自社の独自勝ち筋を問うサブイシュー。" },
         { id: "c7", text: "水素販売価格をどう決めるか？", type: "argument", tier: 1, phrase: "販売価格はどう決めるか？", reason: "実行段階の価格設計で、核心ではない。" },
         { id: "c2", text: "世界水素市場は2050年に200兆円規模、年率15%成長見込み。国内も政府の水素戦略で需要急拡大予測", type: "evidence", tier: 2, phrase: "市場200兆・年率15%", reason: "市場機会の定量根拠。最重要。" },
         { id: "c4", text: "東京ガスは水素事業に5年で2,000億投資、関連売上を年30億→200億まで拡大", type: "evidence", tier: 2, phrase: "東京ガスで6.7倍化", reason: "先行事例。中央で補強。" },
@@ -1441,8 +1441,8 @@ export const LV3_QUESTIONS: Question[] = [
     phase1: {
       cards: [
         { id: "c1", text: "系統用蓄電池事業に本格参入すべき。3年で総容量1GW、複数の電力市場で活用、初期投資1,500億円", type: "conclusion", tier: 0, phrase: "3年1GW・1,500億", reason: "規模と投資額を具体化。" },
-        { id: "c5", text: "系統用蓄電池市場に十分な機会があるか？", type: "argument", tier: 1, phrase: "市場に十分な機会があるか？", reason: "市場開拓型の左：市場機会を問うサブイシュー。" },
-        { id: "c3", text: "自社固有の勝ち筋（電力市場参加権＋運用ノウハウ）はあるか？", type: "argument", tier: 1, phrase: "自社固有の勝ち筋があるか？", reason: "市場開拓型の右：自社の独自勝ち筋を問うサブイシュー。" },
+        { id: "c5", text: "蓄電池事業で安定的な収益機会は確保できるか？", type: "argument", tier: 1, phrase: "市場に十分な機会があるか？", reason: "市場開拓型の左：市場機会を問うサブイシュー。" },
+        { id: "c3", text: "蓄電池の調達・運用コストは許容範囲か？", type: "argument", tier: 1, phrase: "自社固有の勝ち筋があるか？", reason: "市場開拓型の右：自社の独自勝ち筋を問うサブイシュー。" },
         { id: "c7", text: "蓄電池の運用ソフトはどれを採用するか？", type: "argument", tier: 1, phrase: "運用ソフトはどれか？", reason: "実行段階のシステム選定で、核心ではない。" },
         { id: "c2", text: "電力需給調整市場は3年で2.5倍、容量市場と合わせ1GWあたり年間収益40億円見込み", type: "evidence", tier: 2, phrase: "1GWで年40億収益", reason: "事業性の定量根拠。最重要。" },
         { id: "c4", text: "関西電力は系統用蓄電池に1,000億投資、3年で関連売上を年90億まで構築", type: "evidence", tier: 2, phrase: "関電で年90億化", reason: "先行事例。中央で補強。" },
@@ -1474,8 +1474,8 @@ export const LV3_QUESTIONS: Question[] = [
     phase1: {
       cards: [
         { id: "c1", text: "介護タクシーに段階主軸シフトすべき。3年で車両比率を一般70%→40%、介護30%→60%、ドライバー研修は月10名ペース", type: "conclusion", tier: 0, phrase: "3年で介護60%化", reason: "比率転換と育成ペースを具体化。" },
-        { id: "c5", text: "介護タクシー（新チャネル）に優位性はあるか？", type: "argument", tier: 1, phrase: "新チャネルに優位性はあるか？", reason: "チャネル転換型の左：新チャネルの優位性を問うサブイシュー。" },
-        { id: "c3", text: "既存一般タクシーチャネル・人員転換への影響は許容範囲か？", type: "argument", tier: 1, phrase: "既存影響は許容範囲か？", reason: "チャネル転換型の右：既存影響の許容性を問うサブイシュー。" },
+        { id: "c5", text: "介護タクシーで売上単価と稼働率は改善するか？", type: "argument", tier: 1, phrase: "新チャネルに優位性はあるか？", reason: "チャネル転換型の左：新チャネルの優位性を問うサブイシュー。" },
+        { id: "c3", text: "介護資格を持つドライバーは確保できるか？", type: "argument", tier: 1, phrase: "既存影響は許容範囲か？", reason: "チャネル転換型の右：既存影響の許容性を問うサブイシュー。" },
         { id: "c7", text: "ケアマネジャーへの営業頻度はどうするか？", type: "argument", tier: 1, phrase: "営業頻度はどうするか？", reason: "実行段階の営業で、核心ではない。" },
         { id: "c2", text: "一般タクシー単価は1走行2,500円vs介護タクシー6,500円、介護需要は5年で2.2倍に拡大", type: "evidence", tier: 2, phrase: "単価2,500→6,500円・需要2.2倍", reason: "経済性の定量根拠。最重要。" },
         { id: "c4", text: "ナショナルタクシーは介護シフトで5年で売上を1.4倍、稼働率も25%向上", type: "evidence", tier: 2, phrase: "ナショナルで稼働+25%", reason: "先行事例。中央で補強。" },
@@ -1507,8 +1507,8 @@ export const LV3_QUESTIONS: Question[] = [
     phase1: {
       cards: [
         { id: "c1", text: "完全パーソナルジムに業態転換すべき。月額単価を1.5万→6万、3年で全店舗をパーソナル特化、トレーナー資格者を倍増", type: "conclusion", tier: 0, phrase: "月額1.5万→6万・3年全店", reason: "価格・期間を具体化。" },
-        { id: "c5", text: "業態（料金体系・サービス制度）を変える必要性は高いか？", type: "argument", tier: 1, phrase: "なぜ変える必要があるか？", reason: "制度変更型の左：変更必要性を問うサブイシュー。" },
-        { id: "c3", text: "既存会員にどう変えれば受け入れられるか？", type: "argument", tier: 1, phrase: "どう変えれば受け入れられるか？", reason: "制度変更型の右：受容性を問うサブイシュー。" },
+        { id: "c5", text: "パーソナル特化で会員単価とリピートは改善するか？", type: "argument", tier: 1, phrase: "なぜ変える必要があるか？", reason: "制度変更型の左：変更必要性を問うサブイシュー。" },
+        { id: "c3", text: "既存会員の離反を許容範囲に抑えられるか？", type: "argument", tier: 1, phrase: "どう変えれば受け入れられるか？", reason: "制度変更型の右：受容性を問うサブイシュー。" },
         { id: "c7", text: "プロテイン販売はどう拡大するか？", type: "argument", tier: 1, phrase: "プロテイン販売はどうするか？", reason: "枝葉の付帯事業で、核心ではない。" },
         { id: "c2", text: "パーソナル特化店舗の月額単価は一般ジムの4倍、退会率は1/3、利益率も2倍以上", type: "evidence", tier: 2, phrase: "単価4倍・退会率1/3", reason: "経済性の定量根拠。最重要。" },
         { id: "c4", text: "ライザップは完全パーソナル特化で5年で会員単価を3倍、利益率を業界平均比+12pt", type: "evidence", tier: 2, phrase: "ライザップで単価3倍", reason: "先行事例。中央で補強。" },
@@ -1540,8 +1540,8 @@ export const LV3_QUESTIONS: Question[] = [
     phase1: {
       cards: [
         { id: "c1", text: "男性美容医療市場に本格参入すべき。専用フロア・専用予約枠を全院で新設、3年で男性顧客比率を5%→25%目標", type: "conclusion", tier: 0, phrase: "専用フロア・3年で25%", reason: "施設方式と数値目標を具体化。" },
-        { id: "c5", text: "男性美容医療市場に十分な機会があるか？", type: "argument", tier: 1, phrase: "市場に十分な機会があるか？", reason: "市場開拓型の左：市場機会を問うサブイシュー。" },
-        { id: "c3", text: "自社固有の勝ち筋（既存施術力＋空間分離設計）はあるか？", type: "argument", tier: 1, phrase: "自社固有の勝ち筋があるか？", reason: "市場開拓型の右：自社の独自勝ち筋を問うサブイシュー。" },
+        { id: "c5", text: "男性市場で集患と単価は確保できるか？", type: "argument", tier: 1, phrase: "市場に十分な機会があるか？", reason: "市場開拓型の左：市場機会を問うサブイシュー。" },
+        { id: "c3", text: "既存女性顧客の心理的影響は管理可能か？", type: "argument", tier: 1, phrase: "自社固有の勝ち筋があるか？", reason: "市場開拓型の右：自社の独自勝ち筋を問うサブイシュー。" },
         { id: "c7", text: "男性向けカウンセラーはどう確保するか？", type: "argument", tier: 1, phrase: "カウンセラーはどう確保するか？", reason: "実行段階の人材で、核心ではない。" },
         { id: "c2", text: "男性美容医療市場は3年で2.8倍に成長、平均施術単価は女性比1.4倍", type: "evidence", tier: 2, phrase: "3年で2.8倍・単価1.4倍", reason: "市場機会の定量根拠。最重要。" },
         { id: "c4", text: "湘南美容クリニックは男性向け強化で男性比率を5%→32%、全社売上を5年で1.7倍化", type: "evidence", tier: 2, phrase: "湘南で5年1.7倍化", reason: "先行事例。中央で補強。" },
@@ -1573,8 +1573,8 @@ export const LV3_QUESTIONS: Question[] = [
     phase1: {
       cards: [
         { id: "c1", text: "対面オンライン融合モデルに転換すべき。週3回対面・週2回オンライン、講師の指導動画を共有資産化、3年で生徒数1.5倍目標", type: "conclusion", tier: 0, phrase: "対面3+オンライン2・3年1.5倍", reason: "形態と数値目標を明示。" },
-        { id: "c5", text: "オンライン技術で学習効果と拡張性の課題は解決できるか？", type: "argument", tier: 1, phrase: "技術で課題は解決するか？", reason: "テクノロジー導入型の左：技術で課題が解決できるかを問うサブイシュー。" },
-        { id: "c3", text: "講師（人・組織）は品質を維持して対応できるか？", type: "argument", tier: 1, phrase: "人・組織は対応できるか？", reason: "テクノロジー導入型の右：人・組織が対応できるかを問うサブイシュー。" },
+        { id: "c5", text: "融合モデルで生徒数と合格実績は伸ばせるか？", type: "argument", tier: 1, phrase: "技術で課題は解決するか？", reason: "テクノロジー導入型の左：技術で課題が解決できるかを問うサブイシュー。" },
+        { id: "c3", text: "講師の指導品質と運営コストは両立できるか？", type: "argument", tier: 1, phrase: "人・組織は対応できるか？", reason: "テクノロジー導入型の右：人・組織が対応できるかを問うサブイシュー。" },
         { id: "c7", text: "オンライン授業の通信機材はどう揃えるか？", type: "argument", tier: 1, phrase: "通信機材はどう揃えるか？", reason: "実行段階の機材で、核心ではない。" },
         { id: "c2", text: "融合型塾の生徒数は3年で2.4倍、合格率は対面型より3pt高い（複数アクセスで反復学習可）", type: "evidence", tier: 2, phrase: "生徒2.4倍・合格率+3pt", reason: "事業性の定量根拠。最重要。" },
         { id: "c4", text: "栄光ゼミナールは融合型に転換、5年で生徒数を1.6倍・合格者数+38%、運営利益率も+5pt改善", type: "evidence", tier: 2, phrase: "栄光で1.6倍化", reason: "先行事例。中央で補強。" },
@@ -1606,8 +1606,8 @@ export const LV3_QUESTIONS: Question[] = [
     phase1: {
       cards: [
         { id: "c1", text: "シニア生活支援用品市場に参入すべき。別ブランドで立ち上げ、ベビーで培った安全設計を転用、3年で売上150億円目標", type: "conclusion", tier: 0, phrase: "別ブランド・3年150億", reason: "形態と目標を明示。" },
-        { id: "c5", text: "シニア生活支援用品市場に十分な機会があるか？", type: "argument", tier: 1, phrase: "市場に十分な機会があるか？", reason: "市場開拓型の左：市場機会を問うサブイシュー。" },
-        { id: "c3", text: "自社固有の勝ち筋（安全設計技術＋別ブランド戦略）はあるか？", type: "argument", tier: 1, phrase: "自社固有の勝ち筋があるか？", reason: "市場開拓型の右：自社の独自勝ち筋を問うサブイシュー。" },
+        { id: "c5", text: "シニア市場で自社の安全設計力は活かせるか？", type: "argument", tier: 1, phrase: "市場に十分な機会があるか？", reason: "市場開拓型の左：市場機会を問うサブイシュー。" },
+        { id: "c3", text: "ベビーブランドのイメージとの両立は可能か？", type: "argument", tier: 1, phrase: "自社固有の勝ち筋があるか？", reason: "市場開拓型の右：自社の独自勝ち筋を問うサブイシュー。" },
         { id: "c7", text: "シニア商品の販路はどう作るか？", type: "argument", tier: 1, phrase: "販路はどう作るか？", reason: "実行段階の販路で、核心ではない。" },
         { id: "c2", text: "シニア生活支援用品市場は年率12%成長、2030年に2兆円規模見込み。ベビー市場は年-3%", type: "evidence", tier: 2, phrase: "シニア2兆・年12%vsベビー-3%", reason: "市場転換の定量根拠。最重要。" },
         { id: "c4", text: "ピジョンはシニア事業を別ブランドで5年で年商150億規模に育成、本業利益率も維持", type: "evidence", tier: 2, phrase: "ピジョンで5年150億", reason: "先行事例。中央で補強。" },
@@ -1639,8 +1639,8 @@ export const LV3_QUESTIONS: Question[] = [
     phase1: {
       cards: [
         { id: "c1", text: "eスポーツ周辺事業に本格参入すべき。用品開発・大会スポンサー・施設運営の3軸、3年で関連売上150億目標", type: "conclusion", tier: 0, phrase: "3軸事業・3年150億", reason: "領域と目標を具体化。" },
-        { id: "c5", text: "eスポーツ周辺市場に十分な機会があるか？", type: "argument", tier: 1, phrase: "市場に十分な機会があるか？", reason: "市場開拓型の左：市場機会を問うサブイシュー。" },
-        { id: "c3", text: "自社固有の勝ち筋（既存スポーツ顧客＋3軸事業展開）はあるか？", type: "argument", tier: 1, phrase: "自社固有の勝ち筋があるか？", reason: "市場開拓型の右：自社の独自勝ち筋を問うサブイシュー。" },
+        { id: "c5", text: "eスポーツ事業で安定的な成長機会は確保できるか？", type: "argument", tier: 1, phrase: "市場に十分な機会があるか？", reason: "市場開拓型の左：市場機会を問うサブイシュー。" },
+        { id: "c3", text: "既存スポーツ事業との相乗効果かカニバリかを管理できるか？", type: "argument", tier: 1, phrase: "自社固有の勝ち筋があるか？", reason: "市場開拓型の右：自社の独自勝ち筋を問うサブイシュー。" },
         { id: "c7", text: "eスポーツ用品のサプライヤーはどう選ぶか？", type: "argument", tier: 1, phrase: "サプライヤーはどう選ぶか？", reason: "実行段階の調達で、核心ではない。" },
         { id: "c2", text: "国内eスポーツ市場は5年で4倍、関連グッズ・スポンサー・施設市場合計で年800億規模", type: "evidence", tier: 2, phrase: "5年で4倍・関連800億", reason: "市場機会の定量根拠。最重要。" },
         { id: "c4", text: "アシックスはeスポーツチームスポンサー＋専用ウェアで5年で関連売上を80億規模に育成", type: "evidence", tier: 2, phrase: "アシックスで80億化", reason: "先行事例。中央で補強。" },
@@ -1672,8 +1672,8 @@ export const LV3_QUESTIONS: Question[] = [
     phase1: {
       cards: [
         { id: "c1", text: "ペット介護サービス事業を立ち上げるべき。デイケア・訪問介護を主軸に、3年で売上80億・既存店舗の30%を介護対応店化", type: "conclusion", tier: 0, phrase: "デイケア＋訪問・3年80億", reason: "領域と目標を具体化。" },
-        { id: "c5", text: "ペット介護市場に十分な機会があるか？", type: "argument", tier: 1, phrase: "市場に十分な機会があるか？", reason: "市場開拓型の左：市場機会を問うサブイシュー。" },
-        { id: "c3", text: "自社固有の勝ち筋（既存店舗網＋人材育成）はあるか？", type: "argument", tier: 1, phrase: "自社固有の勝ち筋があるか？", reason: "市場開拓型の右：自社の独自勝ち筋を問うサブイシュー。" },
+        { id: "c5", text: "ペット介護で安定的な収益事業を作れるか？", type: "argument", tier: 1, phrase: "市場に十分な機会があるか？", reason: "市場開拓型の左：市場機会を問うサブイシュー。" },
+        { id: "c3", text: "介護対応のサービス品質と人材は確保できるか？", type: "argument", tier: 1, phrase: "自社固有の勝ち筋があるか？", reason: "市場開拓型の右：自社の独自勝ち筋を問うサブイシュー。" },
         { id: "c7", text: "介護専用フード・用品はどう仕入れるか？", type: "argument", tier: 1, phrase: "介護用品はどう仕入れるか？", reason: "実行段階の調達で、核心ではない。" },
         { id: "c2", text: "国内ペット介護市場は5年で3倍、犬猫の高齢化率（10歳以上）が38%に到達", type: "evidence", tier: 2, phrase: "市場5年3倍・高齢化38%", reason: "市場機会の定量根拠。最重要。" },
         { id: "c4", text: "AHB（アニマルホリスティックブランド）はペット介護専業で5年で年商80億、利益率18%維持", type: "evidence", tier: 2, phrase: "AHBで5年80億・利益18%", reason: "先行事例。中央で補強。" },
@@ -1705,8 +1705,8 @@ export const LV3_QUESTIONS: Question[] = [
     phase1: {
       cards: [
         { id: "c1", text: "店舗・在庫・EC統合DXを本格化すべき。3年で30億投資、店舗在庫リアルタイム可視化＋自社EC強化、店舗スタッフを在庫アドバイザーに転換", type: "conclusion", tier: 0, phrase: "3年30億・在庫EC統合", reason: "投資規模と方針を具体化。" },
-        { id: "c5", text: "DX投資のROI（在庫回転・粗利改善）は高いか？", type: "argument", tier: 1, phrase: "ROIは高いか？", reason: "投資判断型の左：投資価値を問うサブイシュー。" },
-        { id: "c3", text: "投資コスト・店舗統合と再教育リスクは許容範囲か？", type: "argument", tier: 1, phrase: "コスト・リスクは許容範囲か？", reason: "投資判断型の右：コスト・リスク許容性を問うサブイシュー。" },
+        { id: "c5", text: "DX投資で在庫回転と粗利は改善するか？", type: "argument", tier: 1, phrase: "ROIは高いか？", reason: "投資判断型の左：投資価値を問うサブイシュー。" },
+        { id: "c3", text: "店舗運営との統合とスタッフの再教育は実現可能か？", type: "argument", tier: 1, phrase: "コスト・リスクは許容範囲か？", reason: "投資判断型の右：コスト・リスク許容性を問うサブイシュー。" },
         { id: "c7", text: "DX担当部署の名称はどうするか？", type: "argument", tier: 1, phrase: "部署名はどうするか？", reason: "枝葉の組織で、核心ではない。" },
         { id: "c2", text: "在庫リアルタイム化で在庫回転率2.4倍、粗利率3pt改善見込み（年売上比+8%効果）", type: "evidence", tier: 2, phrase: "回転2.4倍・粗利+3pt", reason: "経済性の定量根拠。最重要。" },
         { id: "c4", text: "ブックオフはDX強化で店舗・ECシームレス連携、3年で全社売上を1.3倍化", type: "evidence", tier: 2, phrase: "ブックオフで1.3倍化", reason: "先行事例。中央で補強。" },
@@ -1738,8 +1738,8 @@ export const LV3_QUESTIONS: Question[] = [
     phase1: {
       cards: [
         { id: "c1", text: "包材印刷を主軸に転換すべき。3年で売上比率を商業60%→30%、包材30%→55%、商業印刷は段階縮小", type: "conclusion", tier: 0, phrase: "3年で包材55%・商業30%", reason: "事業構成シフトを明示。" },
-        { id: "c5", text: "包材印刷（新提供チャネル）に優位性はあるか？", type: "argument", tier: 1, phrase: "新チャネルに優位性はあるか？", reason: "チャネル転換型の左：新チャネルの優位性を問うサブイシュー。" },
-        { id: "c3", text: "既存商業印刷チャネルへの影響は許容範囲か？", type: "argument", tier: 1, phrase: "既存影響は許容範囲か？", reason: "チャネル転換型の右：既存影響の許容性を問うサブイシュー。" },
+        { id: "c5", text: "包材印刷で自社の技術蓄積は活かせるか？", type: "argument", tier: 1, phrase: "新チャネルに優位性はあるか？", reason: "チャネル転換型の左：新チャネルの優位性を問うサブイシュー。" },
+        { id: "c3", text: "既存設備の転用と顧客開拓は計画通り進むか？", type: "argument", tier: 1, phrase: "既存影響は許容範囲か？", reason: "チャネル転換型の右：既存影響の許容性を問うサブイシュー。" },
         { id: "c7", text: "包材デザインのトレンドはどう取り込むか？", type: "argument", tier: 1, phrase: "デザイントレンドはどう取り込むか？", reason: "創作段階で、核心ではない。" },
         { id: "c2", text: "国内包材印刷市場は年率6%成長、利益率は商業印刷比+8pt。商業印刷は年率-8%減", type: "evidence", tier: 2, phrase: "包材+6%vs商業-8%", reason: "市場転換の定量根拠。最重要。" },
         { id: "c4", text: "凸版印刷は包材主軸戦略で5年で全社利益率を3%→9%に改善、包材売上比率を4倍化", type: "evidence", tier: 2, phrase: "凸版で利益率+6pt", reason: "先行事例。中央で補強。" },
@@ -1771,8 +1771,8 @@ export const LV3_QUESTIONS: Question[] = [
     phase1: {
       cards: [
         { id: "c1", text: "LCC子会社を本格立ち上げすべき。アジア5都市路線で3年・15機体制、本体とは独立運営、本社路線とは時間帯・空港を分離", type: "conclusion", tier: 0, phrase: "3年15機・独立運営", reason: "規模と運営方式を具体化。" },
-        { id: "c5", text: "アジアLCC市場に十分な需要はあるか？", type: "argument", tier: 1, phrase: "市場・需要はあるか？", reason: "新規参入・拡大型の左：市場機会を問うサブイシュー。" },
-        { id: "c3", text: "独立子会社方式で自社が実現できるか？", type: "argument", tier: 1, phrase: "自社で実現できるか？", reason: "新規参入・拡大型の右：自社の実現性を問うサブイシュー。" },
+        { id: "c5", text: "LCC事業で新規旅客と新規収益は確保できるか？", type: "argument", tier: 1, phrase: "市場・需要はあるか？", reason: "新規参入・拡大型の左：市場機会を問うサブイシュー。" },
+        { id: "c3", text: "本社事業との共食いと運営独立性は管理可能か？", type: "argument", tier: 1, phrase: "自社で実現できるか？", reason: "新規参入・拡大型の右：自社の実現性を問うサブイシュー。" },
         { id: "c7", text: "LCC機材は何を選定するか？", type: "argument", tier: 1, phrase: "機材は何を選ぶか？", reason: "実行段階の選定で、核心ではない。" },
         { id: "c2", text: "アジアLCC市場は年率12%成長、レガシーキャリアからの新規旅客取り込みは年5%相当", type: "evidence", tier: 2, phrase: "アジア+12%・新規5%取込", reason: "市場機会の定量根拠。最重要。" },
         { id: "c4", text: "JALはZIPAIRをLCC独立子会社で5年で年商200億・営業黒字化、本社路線との共食いは2%以下", type: "evidence", tier: 2, phrase: "JALで5年200億・共食い2%", reason: "先行事例。中央で補強。" },
@@ -1804,8 +1804,8 @@ export const LV3_QUESTIONS: Question[] = [
     phase1: {
       cards: [
         { id: "c1", text: "駅ナカ商業を本格強化すべき。3年で対象30駅にエキナカモール展開、自社運営50%・テナント50%構成、運賃外収益+200億目標", type: "conclusion", tier: 0, phrase: "30駅・自社50%・3年+200億", reason: "対象・構成・目標を具体化。" },
-        { id: "c5", text: "駅ナカ強化投資のROI（運賃外収益・満足度）は高いか？", type: "argument", tier: 1, phrase: "ROIは高いか？", reason: "投資判断型の左：投資価値を問うサブイシュー。" },
-        { id: "c3", text: "投資コスト・運営構築リスクは許容範囲か？", type: "argument", tier: 1, phrase: "コスト・リスクは許容範囲か？", reason: "投資判断型の右：コスト・リスク許容性を問うサブイシュー。" },
+        { id: "c5", text: "駅ナカで運賃外収益と利用者満足は伸ばせるか？", type: "argument", tier: 1, phrase: "ROIは高いか？", reason: "投資判断型の左：投資価値を問うサブイシュー。" },
+        { id: "c3", text: "テナント誘致・自社運営の運営力は確保できるか？", type: "argument", tier: 1, phrase: "コスト・リスクは許容範囲か？", reason: "投資判断型の右：コスト・リスク許容性を問うサブイシュー。" },
         { id: "c7", text: "テナントの看板デザインはどう統一するか？", type: "argument", tier: 1, phrase: "看板デザインは統一するか？", reason: "枝葉の問いで、核心ではない。" },
         { id: "c2", text: "駅ナカ商業の坪単価は周辺商業地比1.8倍、利用者満足度も+12pt（駅利用者調査）", type: "evidence", tier: 2, phrase: "坪単価1.8倍・満足+12pt", reason: "事業性の定量根拠。最重要。" },
         { id: "c4", text: "JR東日本ルミネは5年で運賃外収益を1,500億→3,000億に拡大、駅利用者数も+8%", type: "evidence", tier: 2, phrase: "JR東で運賃外2倍化", reason: "先行事例。中央で補強。" },
@@ -1837,8 +1837,8 @@ export const LV3_QUESTIONS: Question[] = [
     phase1: {
       cards: [
         { id: "c1", text: "サイバー警備事業を本格立ち上げすべき。物理警備の既存顧客5万社へクロスセル、3年で売上200億円・専門人材150名体制", type: "conclusion", tier: 0, phrase: "クロスセル・3年200億・150名", reason: "顧客アプローチと目標を具体化。" },
-        { id: "c5", text: "サイバーセキュリティ市場に十分な機会があるか？", type: "argument", tier: 1, phrase: "市場に十分な機会があるか？", reason: "市場開拓型の左：市場機会を問うサブイシュー。" },
-        { id: "c3", text: "自社固有の勝ち筋（既存5万社顧客＋人材調達）はあるか？", type: "argument", tier: 1, phrase: "自社固有の勝ち筋があるか？", reason: "市場開拓型の右：自社の独自勝ち筋を問うサブイシュー。" },
+        { id: "c5", text: "サイバー警備で安定的な高収益事業を作れるか？", type: "argument", tier: 1, phrase: "市場に十分な機会があるか？", reason: "市場開拓型の左：市場機会を問うサブイシュー。" },
+        { id: "c3", text: "サイバーセキュリティ専門人材は確保できるか？", type: "argument", tier: 1, phrase: "自社固有の勝ち筋があるか？", reason: "市場開拓型の右：自社の独自勝ち筋を問うサブイシュー。" },
         { id: "c7", text: "顧客向け資料の構成はどう作るか？", type: "argument", tier: 1, phrase: "資料構成はどうするか？", reason: "実行段階のマーケで、核心ではない。" },
         { id: "c2", text: "国内サイバーセキュリティ市場は年率18%成長、物理警備の利益率5%vsサイバー警備25%", type: "evidence", tier: 2, phrase: "市場+18%・利益率5→25%", reason: "経済性の定量根拠。最重要。" },
         { id: "c4", text: "セコムはサイバー領域強化で5年で関連売上を100億→500億に拡大、利益貢献も顕在化", type: "evidence", tier: 2, phrase: "セコムで5年5倍化", reason: "先行事例。中央で補強。" },
@@ -1870,8 +1870,8 @@ export const LV3_QUESTIONS: Question[] = [
     phase1: {
       cards: [
         { id: "c1", text: "スマートビル清掃モデルに段階転換すべき。3年で対象大型ビル50棟をスマート化、人時生産性2倍・受注を1.5倍に拡大", type: "conclusion", tier: 0, phrase: "3年50棟・生産性2倍", reason: "対象規模と数値目標を具体化。" },
-        { id: "c5", text: "IoT・ロボット技術で人手不足の課題は解決できるか？", type: "argument", tier: 1, phrase: "技術で課題は解決するか？", reason: "テクノロジー導入型の左：技術で課題が解決できるかを問うサブイシュー。" },
-        { id: "c3", text: "清掃員（人・組織）はロボット運用に対応できるか？", type: "argument", tier: 1, phrase: "人・組織は対応できるか？", reason: "テクノロジー導入型の右：人・組織が対応できるかを問うサブイシュー。" },
+        { id: "c5", text: "スマート清掃モデルで人時生産性と単価は改善するか？", type: "argument", tier: 1, phrase: "技術で課題は解決するか？", reason: "テクノロジー導入型の左：技術で課題が解決できるかを問うサブイシュー。" },
+        { id: "c3", text: "ロボット導入と運用の実行体制は構築可能か？", type: "argument", tier: 1, phrase: "人・組織は対応できるか？", reason: "テクノロジー導入型の右：人・組織が対応できるかを問うサブイシュー。" },
         { id: "c7", text: "顧客向けデモ資料はどう作るか？", type: "argument", tier: 1, phrase: "デモ資料はどう作るか？", reason: "実行段階のマーケで、核心ではない。" },
         { id: "c2", text: "ロボット連携で1人あたり清掃面積2倍、清掃単価も1.3倍が交渉可能（事例ベース試算）", type: "evidence", tier: 2, phrase: "面積2倍・単価1.3倍", reason: "経済性の定量根拠。最重要。" },
         { id: "c4", text: "サンエス警備清掃（仮）はスマート清掃で3年で受注を1.6倍化、利益率を6%→11%に改善", type: "evidence", tier: 2, phrase: "他社で利益率+5pt", reason: "先行事例。中央で補強。" },
@@ -1903,8 +1903,8 @@ export const LV3_QUESTIONS: Question[] = [
     phase1: {
       cards: [
         { id: "c1", text: "サブスクメニューを段階導入すべき。月額9,800円・週3回上限、まず20店舗で試行、原価率45%以下を維持条件", type: "conclusion", tier: 0, phrase: "月額9,800円・週3回上限", reason: "価格と利用条件を具体化。" },
-        { id: "c5", text: "現状の単品料金体系のままで財務的に成立するか？", type: "argument", tier: 1, phrase: "現状維持で成立するか？", reason: "価格変更型の左：現状維持の財務必要性を問うサブイシュー。" },
-        { id: "c3", text: "サブスクに変更しても顧客は離れないか？", type: "argument", tier: 1, phrase: "顧客は離れないか？", reason: "価格変更型の右：顧客離反を問うサブイシュー。" },
+        { id: "c5", text: "サブスクで来店頻度とLTVは持続的に伸びるか？", type: "argument", tier: 1, phrase: "現状維持で成立するか？", reason: "価格変更型の左：現状維持の財務必要性を問うサブイシュー。" },
+        { id: "c3", text: "原価率と単店舗利益は許容範囲に収まるか？", type: "argument", tier: 1, phrase: "顧客は離れないか？", reason: "価格変更型の右：顧客離反を問うサブイシュー。" },
         { id: "c7", text: "予約アプリの機能はどう実装するか？", type: "argument", tier: 1, phrase: "予約機能はどう実装するか？", reason: "実行段階のシステム設計で、核心ではない。" },
         { id: "c2", text: "他外食サブスクの事例で会員の月平均来店4回→9回、年間客単価が1.6倍化", type: "evidence", tier: 2, phrase: "来店4→9回・単価1.6倍", reason: "事業性の定量根拠。最重要。" },
         { id: "c4", text: "ボーノは月額サブスクで客数を1.4倍・利益を1.2倍に改善、原価率は45%圏内維持", type: "evidence", tier: 2, phrase: "ボーノで客数1.4倍", reason: "先行事例。中央で補強。" },
@@ -1936,8 +1936,8 @@ export const LV3_QUESTIONS: Question[] = [
     phase1: {
       cards: [
         { id: "c1", text: "海外SI事業を本格化すべき。北米・欧州の大企業10社をパイロット顧客に、3年で海外SI売上比率を15%まで拡大", type: "conclusion", tier: 0, phrase: "北米欧州10社・3年で15%", reason: "対象とビジョンを具体化。" },
-        { id: "c5", text: "海外大企業向けSI市場に十分な需要はあるか？", type: "argument", tier: 1, phrase: "市場・需要はあるか？", reason: "新規参入・拡大型の左：市場機会を問うサブイシュー。" },
-        { id: "c3", text: "デリバリー体制を含め自社で実現できるか？", type: "argument", tier: 1, phrase: "自社で実現できるか？", reason: "新規参入・拡大型の右：自社の実現性を問うサブイシュー。" },
+        { id: "c5", text: "海外SI併用で売上規模と利益率は伸ばせるか？", type: "argument", tier: 1, phrase: "市場・需要はあるか？", reason: "新規参入・拡大型の左：市場機会を問うサブイシュー。" },
+        { id: "c3", text: "海外大企業向けデリバリー体制は構築可能か？", type: "argument", tier: 1, phrase: "自社で実現できるか？", reason: "新規参入・拡大型の右：自社の実現性を問うサブイシュー。" },
         { id: "c7", text: "現地法人か駐在員方式かをどう決めるか？", type: "argument", tier: 1, phrase: "現地法人か駐在員か？", reason: "実行段階の体制で、核心ではない。" },
         { id: "c2", text: "SaaS+SI併用モデルの平均単価はSaaS単独の3.5倍、年契約継続率は98%超", type: "evidence", tier: 2, phrase: "単価3.5倍・継続率98%", reason: "経済性の定量根拠。最重要。" },
         { id: "c4", text: "freeeはエンタープライズSI併用で5年で大企業比率を5%→32%、売上を3倍化", type: "evidence", tier: 2, phrase: "freeeで5年3倍", reason: "先行事例。中央で補強。" },
@@ -1969,8 +1969,8 @@ export const LV3_QUESTIONS: Question[] = [
     phase1: {
       cards: [
         { id: "c1", text: "LegalTechを業務主軸に本格導入すべき。契約書レビュー全件をAI一次審査、最終判断は弁護士、3年で対応案件数1.8倍目標", type: "conclusion", tier: 0, phrase: "AI一次＋弁護士最終・3年1.8倍", reason: "役割分担と数値目標を明示。" },
-        { id: "c5", text: "AI技術で契約書レビュー業務の課題は解決できるか？", type: "argument", tier: 1, phrase: "技術で課題は解決するか？", reason: "テクノロジー導入型の左：技術で課題が解決できるかを問うサブイシュー。" },
-        { id: "c3", text: "弁護士（人・組織）は質と倫理を維持して対応できるか？", type: "argument", tier: 1, phrase: "人・組織は対応できるか？", reason: "テクノロジー導入型の右：人・組織が対応できるかを問うサブイシュー。" },
+        { id: "c5", text: "LegalTech導入で生産性と受注処理量は飛躍するか？", type: "argument", tier: 1, phrase: "技術で課題は解決するか？", reason: "テクノロジー導入型の左：技術で課題が解決できるかを問うサブイシュー。" },
+        { id: "c3", text: "弁護士業務の質と倫理基準は維持できるか？", type: "argument", tier: 1, phrase: "人・組織は対応できるか？", reason: "テクノロジー導入型の右：人・組織が対応できるかを問うサブイシュー。" },
         { id: "c7", text: "LegalTechベンダーとはどう価格交渉するか？", type: "argument", tier: 1, phrase: "価格交渉はどうするか？", reason: "実行段階の調達で、核心ではない。" },
         { id: "c2", text: "1案件レビュー時間が平均8時間→2時間、弁護士1人あたり処理案件数2.5倍見込み", type: "evidence", tier: 2, phrase: "時間8h→2h・処理2.5倍", reason: "経済性の定量根拠。最重要。" },
         { id: "c4", text: "西村あさひ法律事務所はAIレビュー導入で大企業案件処理を3年で1.6倍、受注収益+30%", type: "evidence", tier: 2, phrase: "西村あさひで1.6倍化", reason: "先行事例。中央で補強。" },
@@ -2002,8 +2002,8 @@ export const LV3_QUESTIONS: Question[] = [
     phase1: {
       cards: [
         { id: "c1", text: "クラウド会計を業務主軸に全面移行すべき。3年で全顧問先2,000社をクラウド化、職員80%が認定資格取得", type: "conclusion", tier: 0, phrase: "3年全社クラウド化・職員80%資格", reason: "範囲と人材計画を具体化。" },
-        { id: "c5", text: "クラウド技術で記帳代行業務の課題は解決できるか？", type: "argument", tier: 1, phrase: "技術で課題は解決するか？", reason: "テクノロジー導入型の左：技術で課題が解決できるかを問うサブイシュー。" },
-        { id: "c3", text: "顧問先と職員（人・組織）はクラウド運用に対応できるか？", type: "argument", tier: 1, phrase: "人・組織は対応できるか？", reason: "テクノロジー導入型の右：人・組織が対応できるかを問うサブイシュー。" },
+        { id: "c5", text: "クラウド移行で1案件あたり生産性は飛躍するか？", type: "argument", tier: 1, phrase: "技術で課題は解決するか？", reason: "テクノロジー導入型の左：技術で課題が解決できるかを問うサブイシュー。" },
+        { id: "c3", text: "顧問先と職員のクラウド移行は管理可能か？", type: "argument", tier: 1, phrase: "人・組織は対応できるか？", reason: "テクノロジー導入型の右：人・組織が対応できるかを問うサブイシュー。" },
         { id: "c7", text: "推奨クラウド会計サービスはどれか？", type: "argument", tier: 1, phrase: "推奨サービスはどれか？", reason: "実行段階の選定で、核心ではない。" },
         { id: "c2", text: "クラウド会計化で1社あたり処理時間が-65%、職員1人あたり受け持ち顧問先が1.8倍に増加", type: "evidence", tier: 2, phrase: "処理-65%・受け持ち1.8倍", reason: "経済性の定量根拠。最重要。" },
         { id: "c4", text: "辻・本郷税理士法人はクラウド主軸戦略で5年で売上を1.5倍、利益率を15%→22%に改善", type: "evidence", tier: 2, phrase: "辻・本郷で利益率+7pt", reason: "先行事例。中央で補強。" },
@@ -2035,8 +2035,8 @@ export const LV3_QUESTIONS: Question[] = [
     phase1: {
       cards: [
         { id: "c1", text: "倉庫の自動化に大型投資すべき。5年で総投資300億円、3拠点をAGV＋自動倉庫化、受注処理能力を2倍に拡大", type: "conclusion", tier: 0, phrase: "5年300億・3拠点自動化", reason: "投資規模と対象を具体化。" },
-        { id: "c5", text: "自動化投資のROI（生産性・受注上限）は高いか？", type: "argument", tier: 1, phrase: "ROIは高いか？", reason: "投資判断型の左：投資価値を問うサブイシュー。" },
-        { id: "c3", text: "投資コスト・回収期間リスクは許容範囲か？", type: "argument", tier: 1, phrase: "コスト・リスクは許容範囲か？", reason: "投資判断型の右：コスト・リスク許容性を問うサブイシュー。" },
+        { id: "c5", text: "自動化で人時生産性と受注上限は大幅改善するか？", type: "argument", tier: 1, phrase: "ROIは高いか？", reason: "投資判断型の左：投資価値を問うサブイシュー。" },
+        { id: "c3", text: "投資規模と回収期間は許容範囲か？", type: "argument", tier: 1, phrase: "コスト・リスクは許容範囲か？", reason: "投資判断型の右：コスト・リスク許容性を問うサブイシュー。" },
         { id: "c7", text: "AGV運用ソフトはどう選ぶか？", type: "argument", tier: 1, phrase: "運用ソフトはどう選ぶか？", reason: "実行段階の選定で、核心ではない。" },
         { id: "c2", text: "自動化で人時生産性が3倍、受注処理能力2倍化（年商比+20%効果見込み）", type: "evidence", tier: 2, phrase: "生産性3倍・処理2倍", reason: "経済性の定量根拠。最重要。" },
         { id: "c4", text: "ニトリ物流子会社は5年で総投資400億円、利益率を5%→11%に改善、受注上限を倍化", type: "evidence", tier: 2, phrase: "ニトリで利益率+6pt", reason: "先行事例。中央で補強。" },
@@ -2068,8 +2068,8 @@ export const LV3_QUESTIONS: Question[] = [
     phase1: {
       cards: [
         { id: "c1", text: "高度専門職派遣に主軸転換すべき。IT・コンサル・データサイエンス領域を3軸、3年で売上比率を25%→55%に拡大", type: "conclusion", tier: 0, phrase: "3軸・3年で55%", reason: "領域と数値目標を具体化。" },
-        { id: "c5", text: "高度専門職派遣（新提供チャネル）に優位性はあるか？", type: "argument", tier: 1, phrase: "新チャネルに優位性はあるか？", reason: "チャネル転換型の左：新チャネルの優位性を問うサブイシュー。" },
-        { id: "c3", text: "既存一般派遣チャネル・登録者DB構築への影響は許容範囲か？", type: "argument", tier: 1, phrase: "既存影響は許容範囲か？", reason: "チャネル転換型の右：既存影響の許容性を問うサブイシュー。" },
+        { id: "c5", text: "高度専門特化で単価と利益率は飛躍するか？", type: "argument", tier: 1, phrase: "新チャネルに優位性はあるか？", reason: "チャネル転換型の左：新チャネルの優位性を問うサブイシュー。" },
+        { id: "c3", text: "高度専門職の登録者DBは構築可能か？", type: "argument", tier: 1, phrase: "既存影響は許容範囲か？", reason: "チャネル転換型の右：既存影響の許容性を問うサブイシュー。" },
         { id: "c7", text: "登録者向けセミナーはどう設計するか？", type: "argument", tier: 1, phrase: "セミナーはどう設計するか？", reason: "実行段階のマーケで、核心ではない。" },
         { id: "c2", text: "高度専門職派遣の単価は一般派遣の3倍、利益率は4%→18%へ改善見込み", type: "evidence", tier: 2, phrase: "単価3倍・利益率4→18%", reason: "経済性の定量根拠。最重要。" },
         { id: "c4", text: "クイックは専門特化シフトで5年で売上を1.6倍、利益率を6%→15%に改善", type: "evidence", tier: 2, phrase: "クイックで利益率+9pt", reason: "先行事例。中央で補強。" },
@@ -2101,8 +2101,8 @@ export const LV3_QUESTIONS: Question[] = [
     phase1: {
       cards: [
         { id: "c1", text: "法人研修事業に主軸転換すべき。営業組織の70%を法人担当に再編、3年で売上比率を法人65%・教材を法人向けに刷新", type: "conclusion", tier: 0, phrase: "営業70%再編・3年で法人65%", reason: "組織と目標を具体化。" },
-        { id: "c5", text: "法人研修（新提供チャネル）に優位性はあるか？", type: "argument", tier: 1, phrase: "新チャネルに優位性はあるか？", reason: "チャネル転換型の左：新チャネルの優位性を問うサブイシュー。" },
-        { id: "c3", text: "既存個人会員チャネル・営業教材構築への影響は許容範囲か？", type: "argument", tier: 1, phrase: "既存影響は許容範囲か？", reason: "チャネル転換型の右：既存影響の許容性を問うサブイシュー。" },
+        { id: "c5", text: "法人研修転換で売上規模と利益率は伸ばせるか？", type: "argument", tier: 1, phrase: "新チャネルに優位性はあるか？", reason: "チャネル転換型の左：新チャネルの優位性を問うサブイシュー。" },
+        { id: "c3", text: "法人営業組織と教材コンテンツは構築可能か？", type: "argument", tier: 1, phrase: "既存影響は許容範囲か？", reason: "チャネル転換型の右：既存影響の許容性を問うサブイシュー。" },
         { id: "c7", text: "個人会員の段階縮小ペースはどう調整するか？", type: "argument", tier: 1, phrase: "個人縮小ペースはどう調整するか？", reason: "実行段階の調整で、核心ではない。" },
         { id: "c2", text: "個人会員の利益率は3%・解約率20%、法人研修は利益率15%・契約継続率85%", type: "evidence", tier: 2, phrase: "個人3%vs法人15%", reason: "経済性の定量根拠。最重要。" },
         { id: "c4", text: "ベネッセホールディングスは法人主軸転換で5年で売上を1.4倍、利益率を5%→11%に改善", type: "evidence", tier: 2, phrase: "ベネッセで+6pt改善", reason: "先行事例。中央で補強。" },
@@ -2134,8 +2134,8 @@ export const LV3_QUESTIONS: Question[] = [
     phase1: {
       cards: [
         { id: "c1", text: "AIマッチング主軸に転換すべき。AI診断＋月1回コンサル面談のハイブリッド、3年で会員獲得コストを半減・成立率1.5倍目標", type: "conclusion", tier: 0, phrase: "AI＋月1コンサル・3年成立1.5倍", reason: "形態と目標を具体化。" },
-        { id: "c5", text: "AI技術で獲得コスト・マッチングの課題は解決できるか？", type: "argument", tier: 1, phrase: "技術で課題は解決するか？", reason: "テクノロジー導入型の左：技術で課題が解決できるかを問うサブイシュー。" },
-        { id: "c3", text: "対面コンサルタント（人・組織）はAI併用業務に対応できるか？", type: "argument", tier: 1, phrase: "人・組織は対応できるか？", reason: "テクノロジー導入型の右：人・組織が対応できるかを問うサブイシュー。" },
+        { id: "c5", text: "AI主軸で会員獲得コストとマッチング成立率は改善するか？", type: "argument", tier: 1, phrase: "技術で課題は解決するか？", reason: "テクノロジー導入型の左：技術で課題が解決できるかを問うサブイシュー。" },
+        { id: "c3", text: "対面コンサルタントの再配置と業務改革は実現可能か？", type: "argument", tier: 1, phrase: "人・組織は対応できるか？", reason: "テクノロジー導入型の右：人・組織が対応できるかを問うサブイシュー。" },
         { id: "c7", text: "AIマッチングのアプリ画面UIはどう作るか？", type: "argument", tier: 1, phrase: "アプリUIはどう作るか？", reason: "実行段階のUI設計で、核心ではない。" },
         { id: "c2", text: "AI主軸の他社事例で会員獲得コストが-45%、年間成婚数1.5倍に改善", type: "evidence", tier: 2, phrase: "獲得-45%・成婚1.5倍", reason: "経済性の定量根拠。最重要。" },
         { id: "c4", text: "IBJ（結婚相談所連盟）はAIマッチング導入で会員数を3年で1.4倍化、利益率を改善", type: "evidence", tier: 2, phrase: "IBJで会員1.4倍化", reason: "先行事例。中央で補強。" },
@@ -2167,8 +2167,8 @@ export const LV3_QUESTIONS: Question[] = [
     phase1: {
       cards: [
         { id: "c1", text: "法人オフィス・BPOに主軸転換すべき。専門営業組織80名・3年で売上比率を法人60%まで拡大、個人は段階縮小", type: "conclusion", tier: 0, phrase: "法人60%・営業80名", reason: "組織と数値目標を具体化。" },
-        { id: "c5", text: "法人オフィス・BPO（新提供チャネル）に優位性はあるか？", type: "argument", tier: 1, phrase: "新チャネルに優位性はあるか？", reason: "チャネル転換型の左：新チャネルの優位性を問うサブイシュー。" },
-        { id: "c3", text: "既存個人引越チャネル・営業体制構築への影響は許容範囲か？", type: "argument", tier: 1, phrase: "既存影響は許容範囲か？", reason: "チャネル転換型の右：既存影響の許容性を問うサブイシュー。" },
+        { id: "c5", text: "法人特化で利益率と契約継続性は改善するか？", type: "argument", tier: 1, phrase: "新チャネルに優位性はあるか？", reason: "チャネル転換型の左：新チャネルの優位性を問うサブイシュー。" },
+        { id: "c3", text: "法人BPO営業体制は構築可能か？", type: "argument", tier: 1, phrase: "既存影響は許容範囲か？", reason: "チャネル転換型の右：既存影響の許容性を問うサブイシュー。" },
         { id: "c7", text: "個人案件の段階縮小ペースはどう調整するか？", type: "argument", tier: 1, phrase: "個人縮小ペースはどう調整するか？", reason: "実行段階の調整で、核心ではない。" },
         { id: "c2", text: "個人引越の利益率1%vs法人BPOの利益率18%、法人契約は3年継続率85%超", type: "evidence", tier: 2, phrase: "個人1%vs法人18%・継続85%", reason: "経済性の定量根拠。最重要。" },
         { id: "c4", text: "サカイ引越センターは法人BPO強化で5年で関連売上を3倍化、利益率を改善", type: "evidence", tier: 2, phrase: "サカイで5年3倍化", reason: "先行事例。中央で補強。" },
@@ -2200,8 +2200,8 @@ export const LV3_QUESTIONS: Question[] = [
     phase1: {
       cards: [
         { id: "c1", text: "家電サブスク事業を主軸の一角に据えるべき。冷蔵庫・洗濯機の白物家電から開始、3年で売上比率10%目標、返却品はリファビッシュ販売", type: "conclusion", tier: 0, phrase: "白物家電・3年で10%", reason: "対象と目標を具体化。" },
-        { id: "c5", text: "現状の買い切りモデルのままで財務的に成立するか？", type: "argument", tier: 1, phrase: "現状維持で成立するか？", reason: "価格変更型の左：現状維持の財務必要性を問うサブイシュー。" },
-        { id: "c3", text: "サブスクに変更しても顧客は離れないか？", type: "argument", tier: 1, phrase: "顧客は離れないか？", reason: "価格変更型の右：顧客離反を問うサブイシュー。" },
+        { id: "c5", text: "サブスクで安定的な経常収益と顧客LTVは伸ばせるか？", type: "argument", tier: 1, phrase: "現状維持で成立するか？", reason: "価格変更型の左：現状維持の財務必要性を問うサブイシュー。" },
+        { id: "c3", text: "返却家電の再販・リサイクル運用は黒字化可能か？", type: "argument", tier: 1, phrase: "顧客は離れないか？", reason: "価格変更型の右：顧客離反を問うサブイシュー。" },
         { id: "c7", text: "サブスク用倉庫はどこに作るか？", type: "argument", tier: 1, phrase: "倉庫はどこに作るか？", reason: "実行段階の立地で、核心ではない。" },
         { id: "c2", text: "サブスクモデルでLTVは買い切りの2.4倍、月額収益安定化で財務評価も改善", type: "evidence", tier: 2, phrase: "LTV2.4倍", reason: "事業性の定量根拠。最重要。" },
         { id: "c4", text: "パナソニックは家電サブスクで5年で関連売上を年200億規模に育成、若年層獲得+45%", type: "evidence", tier: 2, phrase: "パナで200億化", reason: "先行事例。中央で補強。" },
@@ -2233,8 +2233,8 @@ export const LV3_QUESTIONS: Question[] = [
     phase1: {
       cards: [
         { id: "c1", text: "大人向け玩具市場に主軸シフトすべき。プレミアムフィギュア・コレクション・ボードゲームを3軸、3年で売上比率を25%→55%に拡大", type: "conclusion", tier: 0, phrase: "3軸・3年で55%", reason: "領域と数値目標を具体化。" },
-        { id: "c5", text: "大人向け玩具（新提供チャネル）に優位性はあるか？", type: "argument", tier: 1, phrase: "新チャネルに優位性はあるか？", reason: "チャネル転換型の左：新チャネルの優位性を問うサブイシュー。" },
-        { id: "c3", text: "既存子供向けブランドへの影響は許容範囲か？", type: "argument", tier: 1, phrase: "既存影響は許容範囲か？", reason: "チャネル転換型の右：既存影響の許容性を問うサブイシュー。" },
+        { id: "c5", text: "大人向け市場で利益率と単価は飛躍するか？", type: "argument", tier: 1, phrase: "新チャネルに優位性はあるか？", reason: "チャネル転換型の左：新チャネルの優位性を問うサブイシュー。" },
+        { id: "c3", text: "ブランドポジショニングの転換は可能か？", type: "argument", tier: 1, phrase: "既存影響は許容範囲か？", reason: "チャネル転換型の右：既存影響の許容性を問うサブイシュー。" },
         { id: "c7", text: "新商品のキャラクターIPはどう調達するか？", type: "argument", tier: 1, phrase: "IPはどう調達するか？", reason: "実行段階のIP調達で、核心ではない。" },
         { id: "c2", text: "大人向け玩具市場は年率18%成長、平均単価は子供向けの4.5倍、利益率は2倍", type: "evidence", tier: 2, phrase: "年18%・単価4.5倍・利益2倍", reason: "経済性の定量根拠。最重要。" },
         { id: "c4", text: "バンダイは大人向け強化で5年で関連売上を3倍、全社利益率を5%→13%に改善", type: "evidence", tier: 2, phrase: "バンダイで利益率+8pt", reason: "先行事例。中央で補強。" },
@@ -2266,8 +2266,8 @@ export const LV3_QUESTIONS: Question[] = [
     phase1: {
       cards: [
         { id: "c1", text: "高音質特化型サービスに転換すべき。月額3,000円のプレミアムプラン主軸・ハイレゾ独占楽曲を年300曲確保、3年で会員単価2倍目標", type: "conclusion", tier: 0, phrase: "プレミアム主軸・3年単価2倍", reason: "形態と数値目標を具体化。" },
-        { id: "c5", text: "現状の標準価格帯のままで財務的に成立するか？", type: "argument", tier: 1, phrase: "現状維持で成立するか？", reason: "価格変更型の左：現状維持の財務必要性を問うサブイシュー。" },
-        { id: "c3", text: "プレミアム価格に変更しても顧客は離れないか？", type: "argument", tier: 1, phrase: "顧客は離れないか？", reason: "価格変更型の右：顧客離反を問うサブイシュー。" },
+        { id: "c5", text: "高音質特化で会員単価とリピートは飛躍するか？", type: "argument", tier: 1, phrase: "現状維持で成立するか？", reason: "価格変更型の左：現状維持の財務必要性を問うサブイシュー。" },
+        { id: "c3", text: "高音質コンテンツのライセンス確保と原盤調達は可能か？", type: "argument", tier: 1, phrase: "顧客は離れないか？", reason: "価格変更型の右：顧客離反を問うサブイシュー。" },
         { id: "c7", text: "アプリのオーディオ波形表示はどう実装するか？", type: "argument", tier: 1, phrase: "波形表示はどう実装するか？", reason: "実行段階のUI実装で、核心ではない。" },
         { id: "c2", text: "ハイレゾ会員の単価は標準会員の3倍、リピート率も+38pt高い（業界調査）", type: "evidence", tier: 2, phrase: "単価3倍・リピート+38pt", reason: "経済性の定量根拠。最重要。" },
         { id: "c4", text: "Tidalは高音質特化で米欧で会員単価を業界平均比3倍、ARPUを5年で2.5倍化", type: "evidence", tier: 2, phrase: "Tidalでarpu2.5倍", reason: "先行事例。中央で補強。" },
@@ -2299,8 +2299,8 @@ export const LV3_QUESTIONS: Question[] = [
     phase1: {
       cards: [
         { id: "c1", text: "県主導の移住促進プラットフォームを本格化すべき。マッチング・補助金・住居斡旋を統合運営、3年で年間移住件数2,000件目標、市町村連携協議会設置", type: "conclusion", tier: 0, phrase: "統合運営・3年2,000件", reason: "形態と目標を具体化。" },
-        { id: "c5", text: "プラットフォーム投資のROI（移住件数・定着率）は高いか？", type: "argument", tier: 1, phrase: "ROIは高いか？", reason: "投資判断型の左：投資価値を問うサブイシュー。" },
-        { id: "c3", text: "投資コスト・市町村連携リスクは許容範囲か？", type: "argument", tier: 1, phrase: "コスト・リスクは許容範囲か？", reason: "投資判断型の右：コスト・リスク許容性を問うサブイシュー。" },
+        { id: "c5", text: "プラットフォーム化で移住件数と定着率は伸びるか？", type: "argument", tier: 1, phrase: "ROIは高いか？", reason: "投資判断型の左：投資価値を問うサブイシュー。" },
+        { id: "c3", text: "市町村連携と運営体制は構築可能か？", type: "argument", tier: 1, phrase: "コスト・リスクは許容範囲か？", reason: "投資判断型の右：コスト・リスク許容性を問うサブイシュー。" },
         { id: "c7", text: "プラットフォームのアプリUIはどう作るか？", type: "argument", tier: 1, phrase: "UIはどう作るか？", reason: "実行段階のUI設計で、核心ではない。" },
         { id: "c2", text: "統合プラットフォーム化により移住問い合わせ→成約率が3倍、定着率（5年）が55%→78%に改善試算", type: "evidence", tier: 2, phrase: "成約3倍・定着+23pt", reason: "事業性の定量根拠。最重要。" },
         { id: "c4", text: "島根県は移住促進統合プラットフォームで年間移住者数を3年で1,200→2,800人に拡大", type: "evidence", tier: 2, phrase: "島根で2.3倍化", reason: "先行自治体事例。中央で補強。" },
