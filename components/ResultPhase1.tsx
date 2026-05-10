@@ -359,29 +359,82 @@ export default function ResultPhase1({
                         </span>
                       )}
                     </div>
-                    {isOpen && correctCard?.reason && (
-                      <div
-                        style={{
-                          padding: "7px 9px 7px 12px",
-                          marginTop: 1,
-                          backgroundColor: "#334155",
-                          borderRadius: "0 0 6px 6px",
-                          borderLeft: "3px solid #475569",
-                        }}
-                      >
-                        <p
+                    {isOpen && (() => {
+                      const placedCardId = slots[sid];
+                      const placedCard = placedCardId
+                        ? phase1.cards.find((c) => c.id === placedCardId)
+                        : null;
+                      const wrongCardShown = !ok && placedCard;
+                      return (
+                        <div
                           style={{
-                            fontSize: 9,
-                            lineHeight: 1.7,
-                            color: "#94A3B8",
-                            margin: 0,
+                            padding: "7px 9px 7px 12px",
+                            marginTop: 1,
+                            backgroundColor: "#334155",
+                            borderRadius: "0 0 6px 6px",
+                            borderLeft: "3px solid #475569",
+                            display: "flex",
+                            flexDirection: "column",
+                            gap: 6,
                           }}
                         >
-                          <strong style={{ color: "#CBD5E1" }}>なぜこの位置か：</strong>
-                          {correctCard.reason}
-                        </p>
-                      </div>
-                    )}
+                          {wrongCardShown && (
+                            <p
+                              style={{
+                                fontSize: 9,
+                                lineHeight: 1.7,
+                                color: "#94A3B8",
+                                margin: 0,
+                              }}
+                            >
+                              <strong style={{ color: "#FCA5A5" }}>あなたが置いたカード：</strong>
+                              「{placedCard.phrase || placedCard.text?.slice(0, 15) || ""}」
+                            </p>
+                          )}
+                          {wrongCardShown && placedCard.type === "distractor" && placedCard.reason && (
+                            <p
+                              style={{
+                                fontSize: 9,
+                                lineHeight: 1.7,
+                                color: "#FDE68A",
+                                margin: 0,
+                              }}
+                            >
+                              <strong style={{ color: "#FDE68A" }}>⚠️ このカードはノイズです：</strong>
+                              {placedCard.reason}
+                            </p>
+                          )}
+                          {!ok && correctCard && (
+                            <p
+                              style={{
+                                fontSize: 9,
+                                lineHeight: 1.7,
+                                color: "#94A3B8",
+                                margin: 0,
+                              }}
+                            >
+                              <strong style={{ color: "#86EFAC" }}>正解のカード：</strong>
+                              「{correctCard.phrase || correctCard.text?.slice(0, 15) || ""}」
+                            </p>
+                          )}
+                          {correctCard?.reason && (
+                            <p
+                              style={{
+                                fontSize: 9,
+                                lineHeight: 1.7,
+                                color: "#94A3B8",
+                                margin: 0,
+                              }}
+                            >
+                              <strong style={{ color: "#CBD5E1" }}>
+                                {ok ? "なぜこの位置か：" : "なぜ正解か："}
+                              </strong>
+                              {correctCard.reason}
+                            </p>
+                          )}
+                        </div>
+                      );
+                    })()}
                   </div>
                 );
               })}
