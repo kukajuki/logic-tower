@@ -116,26 +116,30 @@ export default function Game() {
       const correctSlots = question.phase1.correctSlots;
       const c5Id = correctSlots["t1-0"];
       const c3Id = correctSlots["t1-1"];
-
-      // Map each picked sub-issue text to the card it corresponds to (c5/c3/c7).
-      // "Trap" candidates that don't match any card produce no auto-placement.
-      const matchedCards = chosenTexts
-        .map((text) => cards.find((c) => c.text === text) ?? null);
+      const candidates = question.subIssueSelection?.candidates ?? [];
+      // The two candidates with isCorrect=true map to c5 (1st) and c3 (2nd) in
+      // source order. Match by index here rather than text — the candidate
+      // wording can differ from the card text after pattern-aligned refactors.
+      const correctTexts = candidates.filter((c) => c.isCorrect).map((c) => c.text);
+      const c5Text = correctTexts[0];
+      const c3Text = correctTexts[1];
 
       const initialLocks: Slots = {};
       let subCorrect = 0;
-      for (const card of matchedCards) {
-        if (!card) continue;
-        if (card.id === c5Id) {
-          initialLocks["t1-0"] = card.id;
+      for (const text of chosenTexts) {
+        if (text === c5Text) {
+          initialLocks["t1-0"] = c5Id;
           subCorrect++;
-        } else if (card.id === c3Id) {
-          initialLocks["t1-1"] = card.id;
+        } else if (text === c3Text) {
+          initialLocks["t1-1"] = c3Id;
           subCorrect++;
         } else {
-          // c7 (or any other tier-1 card) → place into whichever arg slot is free.
-          if (!initialLocks["t1-0"]) initialLocks["t1-0"] = card.id;
-          else if (!initialLocks["t1-1"]) initialLocks["t1-1"] = card.id;
+          // Trap pick. Fall back to a text-match against actual cards (catches
+          // the c7 candidate, whose text mirrors c7's card text).
+          const matched = cards.find((c) => c.text === text);
+          if (!matched) continue;
+          if (!initialLocks["t1-0"]) initialLocks["t1-0"] = matched.id;
+          else if (!initialLocks["t1-1"]) initialLocks["t1-1"] = matched.id;
         }
       }
 
